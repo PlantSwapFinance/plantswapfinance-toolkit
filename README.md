@@ -1,34 +1,27 @@
-# 🌱 PlantSwap UIkit
+# 🌱 PlantSwap Toolkit
 
 PlantSwap UIkit is a set of React components and hooks used to build pages on PlantSwap's apps. It also contains a theme file for dark and light mode.
 
-## Install
+This repository is a monorepo manage with [yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/) and [Lerna](https://lerna.js.org/). 
 
-`yarn add @plantswap-libs/uikit`
+## Packages
 
-## Setup
+- [plantswapfinance-uikit](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit) : React components used to build the PlantSwap UI
+- [eslint-config-plantswap](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap) : An ESLint config for PlantSwap, with Typescript and Prettier support
 
-### Theme
+## How to use
 
-Before using PlantSwap UIkit, you need to provide the theme file to styled-component.
-
-```
-import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@plantswap-libs/uikit'
-...
-<ThemeProvider theme={isDark}>...</ThemeProvider>
-```
-
-### Reset
-
-A reset CSS is available as a global styled component.
+Clone the repository 
 
 ```
-import { ResetCSS } from '@plantswap-libs/uikit'
-...
-<ResetCSS />
+git clone git@github.com:plantswapfinance/plantswapfinance-toolkit.git
 ```
 
-### Types
+Run yarn at the root of the workspace
 
-This project is built with Typescript and export all the relevant types.
+```
+cd plantswapfinance-toolkit
+yarn
+```
+
+Then, refer to the readme of each project.
