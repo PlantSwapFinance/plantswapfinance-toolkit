@@ -8,7 +8,7 @@
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/plantswap/pancake-toolkit/tree/master/packages/pancake-uikit",
+  "repository": "https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/main/packages/plantswap-uikit",
   "license": "MIT",
   "scripts": {
     "start": "yarn storybook",
