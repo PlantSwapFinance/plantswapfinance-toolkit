@@ -151,7 +151,7 @@ export const links = [
       },
       {
         label: "Blog",
-        href: "https://plantswap.medium.com",
+        href: "https://plantswapfinance.medium.com",
       },
     ],
   },
