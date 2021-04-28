@@ -47,6 +47,21 @@ export const links = [
     href: "/gardens",
   },
   {
+    label: "Barn",
+    icon: "BarnIcon",
+    href: "/barn",
+  },
+  {
+    label: "Tree",
+    icon: "TreeIcon",
+    href: "/tree",
+  },
+  {
+    label: "TreePlanting",
+    icon: "TreePlantingIcon",
+    href: "/treePlanting",
+  },
+  {
     label: "Lottery",
     icon: "TicketIcon",
     href: "/lottery",

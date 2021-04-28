@@ -23,7 +23,7 @@ const PriceLink = styled.a`
 
 const PlantPrice: React.FC<Props> = ({ plantPriceUsd }) => {
   return plantPriceUsd ? (
-    <PriceLink href="https://plantswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+    <PriceLink href="https://plantswap.info/token/0x58BA5Bd8872ec18BD360a9592149daed2fC57c69" target="_blank">
       <PlantRoundIcon width="24px" mr="8px" />
       <Text color="textSubtle" bold>{`$${plantPriceUsd.toFixed(3)}`}</Text>
     </PriceLink>

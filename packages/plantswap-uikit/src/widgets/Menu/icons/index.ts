@@ -1,3 +1,4 @@
+export { default as BarnIcon } from "./Barn";
 export { default as BetaIcon } from "./Beta";
 export { default as FarmIcon } from "./Farm";
 export { default as GroupsIcon } from "./Groups";
@@ -20,4 +21,6 @@ export { default as TeamBattleIcon } from "./TeamBattle";
 export { default as TelegramIcon } from "./Telegram";
 export { default as TicketIcon } from "./Ticket";
 export { default as TradeIcon } from "./Trade";
+export { default as TreeIcon } from "./Tree";
+export { default as TreePlantingIcon } from "./TreePlanting";
 export { default as TwitterIcon } from "./Twitter";
