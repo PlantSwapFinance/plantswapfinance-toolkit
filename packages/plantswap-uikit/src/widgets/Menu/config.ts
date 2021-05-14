@@ -45,6 +45,7 @@ export const links = [
     label: "Garden",
     icon: "PoolIcon",
     href: "/gardens",
+    status: status.LIVE,
   },
   {
     label: "Barn",
@@ -75,6 +76,12 @@ export const links = [
     label: "Project",
     icon: "ProjectIcon",
     href: "/project",
+  },
+  {
+    label: "Gouvernance",
+    icon: "VoteIcon",
+    href: "/vote",
+    status: status.NEW,
   },
   {
     label: "Roadmap",

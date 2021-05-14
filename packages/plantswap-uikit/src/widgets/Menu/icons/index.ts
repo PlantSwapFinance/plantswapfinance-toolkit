@@ -24,3 +24,4 @@ export { default as TradeIcon } from "./Trade";
 export { default as TreeIcon } from "./Tree";
 export { default as TreePlantingIcon } from "./TreePlanting";
 export { default as TwitterIcon } from "./Twitter";
+export { default as VoteIcon } from "./Vote";
