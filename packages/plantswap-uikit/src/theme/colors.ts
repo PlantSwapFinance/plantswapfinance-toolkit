@@ -12,6 +12,9 @@ export const baseColors = {
 
 export const brandColors = {
   binance: "#F0B90B",
+  pancakeswap: "#3ed2db",
+  goose: "#ff9900",
+  cafeswap: "#9c2222",
 };
 
 export const lightColors: Colors = {
@@ -19,7 +22,7 @@ export const lightColors: Colors = {
   ...brandColors,
   background: "#FFFFFF",
   backgroundDisabled: "#E9EAEB",
-  contrast: "#191326",
+  contrast: "#0E3921",
   invertedContrast: "#FFFFFF",
   input: "#eeeaf4",
   inputSecondary: "#d7caec",
@@ -49,7 +52,7 @@ export const darkColors: Colors = {
   text: "#47B85B",
   textDisabled: "#666171",
   textSubtle: "#FFE3A8",
-  borderColor: "#2B5D99",
+  borderColor: "#2B6E37",
   card: "#27262c",
   gradients: {
     bubblegum: "linear-gradient(139.73deg, #399349 0%, #2B6E37 100%)",
