@@ -13,35 +13,146 @@ it("renders correctly", () => {
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
-      <div
-        class="sc-bdfBwQ sc-gsTCUz sc-dlfnbm iwJkGQ ckYhbt hfSAvK"
+      .c0 {
+      padding: 0 4px;
+    }
+
+    .c1 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .c2 {
+      border-bottom: 2px solid #7A6EAA;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      -webkit-scrollbar-width: none;
+      -moz-scrollbar-width: none;
+      -ms-scrollbar-width: none;
+      scrollbar-width: none;
+    }
+
+    .c2::-webkit-scrollbar {
+      display: none;
+    }
+
+    .c3 {
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+
+    .c3 > button + button {
+      margin-left: 4px;
+    }
+
+    .c4 {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding: 8px;
+      border-radius: 16px 16px 0 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #FFFFFF;
+      background-color: #7A6EAA;
+    }
+
+    .c5 {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding: 8px;
+      border-radius: 16px 16px 0 0;
+      font-size: 16px;
+      font-weight: 600;
+      color: #7A6EAA;
+      background-color: #eeeaf4;
+    }
+
+    @media screen and (min-width:370px) {
+      .c0 {
+        padding: 0 16px;
+      }
+    }
+
+    @media screen and (min-width:852px) {
+      .c3 {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+    }
+
+    @media screen and (min-width:852px) {
+      .c4 {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+    }
+
+    @media screen and (min-width:852px) {
+      .c5 {
+        -webkit-box-flex: 0;
+        -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+      }
+    }
+
+    <div
+        class="c0 c1 c2"
       >
         <div
-          class="sc-bdfBwQ sc-gsTCUz sc-hKgILt iwJkGQ ckYhbt kGuCa-d"
+          class="c1 c3"
         >
           <button
-            class="sc-eCssSg ixipzp"
-            color="card"
+            class="c4"
+            color="backgroundAlt"
+            scale="md"
           >
-            <div
-              class="sc-jSgupP dTcSYX"
-              color="card"
-              font-weight="600"
-            >
-              Item 1
-            </div>
+            Item 1
           </button>
           <button
-            class="sc-eCssSg bTcWnb"
+            class="c5"
             color="textSubtle"
+            scale="md"
           >
-            <div
-              class="sc-jSgupP fEsPNW"
-              color="textSubtle"
-              font-weight="600"
-            >
-              Item 2
-            </div>
+            Item 2
           </button>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React, { ChangeEvent } from "react";
 import { Box } from "../Box";
 import {
-  PlantSlider,
+  FarmerSlider,
   BarBackground,
   BarProgress,
-  PlantButt,
+  FarmerButt,
   StyledInput,
   SliderLabel,
   SliderLabelContainer,
@@ -28,13 +28,22 @@ const Slider: React.FC<SliderProps> = ({
 
   const progressPercentage = (value / max) * 100;
   const isMax = value === max;
-  const progressWidth = isMax ? "calc(100% - 16px)" : `${progressPercentage}%`;
+  let progressWidth: string;
+  if (progressPercentage <= 10) {
+    progressWidth = `${progressPercentage + 0.5}%`;
+  } else if (progressPercentage >= 90) {
+    progressWidth = `${progressPercentage - 4}%`;
+  } else if (progressPercentage >= 60) {
+    progressWidth = `${progressPercentage - 2.5}%`;
+  } else {
+    progressWidth = `${progressPercentage}%`;
+  }
   const labelProgress = isMax ? "calc(100% - 12px)" : `${progressPercentage}%`;
   const displayValueLabel = isMax ? "MAX" : valueLabel;
   return (
     <Box position="relative" height="48px" {...props}>
-      <PlantButt disabled={disabled} />
-      <PlantSlider>
+      <FarmerButt disabled={disabled} />
+      <FarmerSlider>
         <BarBackground disabled={disabled} />
         <BarProgress style={{ width: progressWidth }} disabled={disabled} />
         <StyledInput
@@ -48,7 +57,7 @@ const Slider: React.FC<SliderProps> = ({
           isMax={isMax}
           disabled={disabled}
         />
-      </PlantSlider>
+      </FarmerSlider>
       {valueLabel && (
         <SliderLabelContainer>
           <SliderLabel progress={labelProgress}>{displayValueLabel}</SliderLabel>

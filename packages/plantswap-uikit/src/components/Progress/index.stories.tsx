@@ -29,6 +29,10 @@ export const Default: React.FC = () => {
           </Box>
         );
       })}
+      <Heading size="md" mb="8px">
+        Small
+      </Heading>
+      <Progress scale="sm" primaryStep={progress} />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" scale="sm" onClick={handleClick}>
           Random Progress
@@ -57,13 +61,13 @@ export const WithSecondary: React.FC = () => {
   );
 };
 
-export const WithSecondaryAndProgressPlant: React.FC = () => {
+export const WithSecondaryAndProgressFarmer: React.FC = () => {
   const [primaryStep, setPrimaryStep] = useState(10);
   const [secondaryStep, setSecondaryStep] = useState(40);
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressPlant />
+      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressFarmer />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
           Random Primary Progress

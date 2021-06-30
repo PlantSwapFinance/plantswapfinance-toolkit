@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.plantswap.finance",
+        href: "https://exchange.pancakeswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.plantswap.finance/#/pool",
+        href: "https://exchange.pancakeswap.finance/#/pool",
       },
     ],
   },
@@ -46,6 +46,33 @@ export const links = [
     icon: "PoolIcon",
     href: "/gardens",
     status: status.LIVE,
+  },
+  {
+    label: "Vertical Garden",
+    icon: "VerticalGardenIcon",
+    href: "/verticalGardens",
+    status: status.NEW,
+  },
+  {
+    label: "Barn",
+    icon: "BarnIcon",
+    href: "/barn",
+  },
+  {
+    label: "Tree",
+    icon: "TreeIcon",
+    href: "/tree",
+  },
+  {
+    label: "Contribution",
+    icon: "ContributionIcon",
+    href: "/tree",
+    status: status.NEW,
+  },
+  {
+    label: "TreePlanting",
+    icon: "TreePlantingIcon",
+    href: "/treePlanting",
   },
   {
     label: "Lottery",
@@ -109,6 +136,7 @@ export const links = [
   {
     label: "Profile & Teams",
     icon: "GroupsIcon",
+    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",
@@ -145,9 +173,27 @@ export const links = [
     ],
   },
   {
+    label: "IFO",
+    icon: "IfoIcon",
+    items: [
+      {
+        label: "Next",
+        href: "/ifo",
+      },
+      {
+        label: "History",
+        href: "/ifo/history",
+      },
+    ],
+  },
+  {
     label: "More",
     icon: "MoreIcon",
     items: [
+      {
+        label: "Voting",
+        href: "https://voting.plantswap.finance",
+      },
       {
         label: "Github",
         href: "https://github.com/plantswapfinance",

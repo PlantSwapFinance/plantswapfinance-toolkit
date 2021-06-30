@@ -28,7 +28,7 @@ export const Default: React.FC = () => {
       <Row>
         <TabMenu activeIndex={index} onItemClick={handleClick}>
           <Tab>Total</Tab>
-          <Tab>Planters</Tab>
+          <Tab>Plantrs</Tab>
           <Tab>Flippers</Tab>
           <Tab>Storm</Tab>
         </TabMenu>
@@ -46,6 +46,23 @@ export const Default: React.FC = () => {
           <Tab>Short</Tab>
           <Tab>Medium length</Tab>
         </TabMenu>
+      </Row>
+    </>
+  );
+};
+
+export const Tabs: React.FC = () => {
+  return (
+    <>
+      <Row>
+        <Tab>Default</Tab>
+        <Tab color="primary" backgroundColor="secondary">
+          Custom colors
+        </Tab>
+      </Row>
+      <Row>
+        <Tab scale="md">Small scale (md)</Tab>
+        <Tab scale="lg">Large scale (lg)</Tab>
       </Row>
     </>
   );

@@ -1,9 +1,9 @@
 import { InputHTMLAttributes } from "react";
 import styled from "styled-components";
 import Text from "../Text/Text";
-import plantHeadMain from "./svg/planthead-main.svg";
-import plantHeadMax from "./svg/planthead-max.svg";
-import plantButt from "./svg/plantbutt.svg";
+import farmerHeadMain from "./svg/farmerhead-main.svg";
+import farmerHeadMax from "./svg/farmerhead-max.svg";
+import farmerButt from "./svg/farmerbutt.svg";
 
 interface SliderLabelProps {
   progress: string;
@@ -23,7 +23,9 @@ const getCursorStyle = ({ disabled = false }: DisabledProp) => {
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;
-  background-image: url(${isMax ? plantHeadMax : plantHeadMain});
+  background-image: url(${isMax ? farmerHeadMax : farmerHeadMain});
+  background-color: transparent;
+  border: 0;
   cursor: ${getCursorStyle};
   width: 24px;
   height: 32px;
@@ -52,15 +54,15 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
   min-width: 24px; // Slider thumb size
 `;
 
-export const PlantButt = styled.div<DisabledProp>`
-  background: url(${plantButt}) no-repeat;
+export const FarmerButt = styled.div<DisabledProp>`
+  background: url(${farmerButt}) no-repeat;
   height: 32px;
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
   position: absolute;
   width: 15px;
 `;
 
-export const PlantSlider = styled.div`
+export const FarmerSlider = styled.div`
   position: absolute;
   left: 14px;
   width: calc(100% - 14px);
@@ -72,15 +74,11 @@ export const StyledInput = styled.input<StyledInputProps>`
   position: relative;
 
   ::-webkit-slider-thumb {
-    -webkit-appearance: none;
     ${getBaseThumbStyles}
   }
 
   ::-moz-range-thumb {
     ${getBaseThumbStyles}
-
-    background-color: transparent;
-    border: 0;
   }
 
   ::-ms-thumb {

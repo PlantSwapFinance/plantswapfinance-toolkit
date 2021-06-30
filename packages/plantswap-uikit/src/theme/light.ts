@@ -1,6 +1,7 @@
 import { DefaultTheme } from "styled-components";
 import { light as lightAlert } from "../components/Alert/theme";
 import { light as lightCard } from "../components/Card/theme";
+import { light as lightPlantswapToggle } from "../components/PlantswapToggle/theme";
 import { light as lightRadio } from "../components/Radio/theme";
 import { light as lightToggle } from "../components/Toggle/theme";
 import { light as lightTooltip } from "../components/Tooltip/theme";
@@ -18,6 +19,7 @@ const lightTheme: DefaultTheme = {
   toggle: lightToggle,
   nav: lightNav,
   modal: lightModal,
+  plantswapToggle: lightPlantswapToggle,
   radio: lightRadio,
   tooltip: lightTooltip,
 };

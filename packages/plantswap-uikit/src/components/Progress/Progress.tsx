@@ -1,8 +1,8 @@
 import React from "react";
 import StyledProgress, { Bar } from "./StyledProgress";
-import ProgressPlantWrapper from "./ProgressPlantWrapper";
-import { ProgressPlant } from "../Svg";
-import { ProgressProps, variants } from "./types";
+import ProgressFarmerWrapper from "./ProgressFarmerWrapper";
+import { ProgressFarmer } from "../Svg";
+import { ProgressProps, variants, scales } from "./types";
 
 const stepGuard = (step: number) => {
   if (step < 0) {
@@ -18,16 +18,17 @@ const stepGuard = (step: number) => {
 
 const Progress: React.FC<ProgressProps> = ({
   variant = variants.ROUND,
+  scale = scales.MD,
   primaryStep = 0,
   secondaryStep = null,
-  showProgressPlant = false,
+  showProgressFarmer = false,
 }) => {
   return (
-    <StyledProgress variant={variant}>
-      {showProgressPlant && (
-        <ProgressPlantWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
-          <ProgressPlant />
-        </ProgressPlantWrapper>
+    <StyledProgress variant={variant} scale={scale}>
+      {showProgressFarmer && (
+        <ProgressFarmerWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
+          <ProgressFarmer />
+        </ProgressFarmerWrapper>
       )}
       <Bar primary style={{ width: `${stepGuard(primaryStep)}%` }} />
       {secondaryStep ? <Bar style={{ width: `${stepGuard(secondaryStep)}%` }} /> : null}

@@ -8,6 +8,9 @@ export const variants = {
   TEXTDISABLED: "textDisabled",
   TEXTSUBTLE: "textSubtle",
   BINANCE: "binance",
+  PANCAKESWAP: "pancakeswap",
+  GOOSE: "goose",
+  CAFESWAP: "cafeswap",
   FAILURE: "failure",
 } as const;
 
