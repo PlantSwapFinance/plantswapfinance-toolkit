@@ -3477,7 +3477,7 @@
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
 
 "@types/lodash@^4.14.162":
-  version "4.14.191"
+  version "4.17.0"
   dependencies:
     "@types/react" "*"
 
