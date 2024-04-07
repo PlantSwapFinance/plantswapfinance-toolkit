@@ -13537,9 +13537,7 @@ text-table@0.2.0, text-table@^0.2.0:
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
 themeprovider-storybook@^1.7.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/themeprovider-storybook/-/themeprovider-storybook-1.7.1.tgz#3f95aff1bf049795461a03367ab0ae8b9587400f"
-  integrity sha512-95LoKUIt+soe4XX7AB2Y58BA0f47bm4cLs9lftkDpa5/ANOm92cXyacESdcQVUy90R4Tx2itfYnp0vTDwZDuRQ==
+  version "1.8.0"
   dependencies:
     react-json-view "^1.19.1"
     styled-react-modal "^2.0.1"
