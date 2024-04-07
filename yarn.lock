@@ -2507,9 +2507,7 @@
     "@sinonjs/commons" "^1.7.0"
 
 "@storybook/addon-a11y@^6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-6.2.1.tgz#e55867b3e55d79aaeea87cc54faa0bdff44ff95f"
-  integrity sha512-NBBwtiJOgGEgwCYx9H+peREB1mjJGv3WnLTNewsQQCZ8pRSrhpXPFUYhd0vXq0SXQEjX6xWciAp5lEDzmvzl8Q==
+  version "6.5.16"
   dependencies:
     "@storybook/addons" "6.2.1"
     "@storybook/api" "6.2.1"
@@ -2632,9 +2630,7 @@
     util-deprecate "^1.0.2"
 
 "@storybook/addon-essentials@^6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-essentials/-/addon-essentials-6.2.1.tgz#6b8f5e7f10da431ef287e64df9e47ce6eb2fff78"
-  integrity sha512-jgz37V+FCIk3GKsVdvBf5Toz+yz/FPB1B85wFrkxNpJljdHC1XN5xd41AVFlkEsqzeaTLiHPpthHaPtjaQpbOw==
+  version "6.5.16"
   dependencies:
     "@storybook/addon-actions" "6.2.1"
     "@storybook/addon-backgrounds" "6.2.1"
@@ -2650,9 +2646,7 @@
     ts-dedent "^2.0.0"
 
 "@storybook/addon-links@^6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.2.1.tgz#64a9978b9eaec8a85de8b965d823cf5786c1a6ba"
-  integrity sha512-ZVAaNEVdQaL8+OLu6A7yfake0w8cn9YOZAnUcrIPalIVZ7MESy/vfxAE7lzYk17ngC9G+w5ELtzoD4WThTcCNg==
+  version "6.5.16"
   dependencies:
     "@storybook/addons" "6.2.1"
     "@storybook/client-logger" "6.2.1"
@@ -3072,9 +3066,7 @@
     core-js "^3.8.2"
 
 "@storybook/react@^6.2.1":
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/@storybook/react/-/react-6.2.1.tgz#d07d5dc3b48823527a6a632189008d4a2c9399be"
-  integrity sha512-k9muo4BqItVnCNx45uQAUP9gQOtEBMQljrUD+UesTxZ11gfWPE4QeUHryJJUsA3ojKtUN8VAQawwHp/5cSFDFw==
+  version "6.5.16"
   dependencies:
     "@babel/preset-flow" "^7.12.1"
     "@babel/preset-react" "^7.12.10"
