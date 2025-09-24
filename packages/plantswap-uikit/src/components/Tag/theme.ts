@@ -32,8 +32,11 @@ export const styleVariants = {
   [variants.BINANCE]: {
     backgroundColor: "binance",
   },
-  [variants.PANCAKESWAP]: {
-    backgroundColor: "pancakeswap",
+  [variants.PLANTSWAP]: {
+    backgroundColor: "plantswap",
+  },
+  [variants.APESWAP]: {
+    backgroundColor: "gold",
   },
   [variants.GOOSE]: {
     backgroundColor: "goose",
@@ -43,5 +46,8 @@ export const styleVariants = {
   },
   [variants.FAILURE]: {
     backgroundColor: "failure",
+  },
+  [variants.WARNING]: {
+    backgroundColor: "warning",
   },
 };

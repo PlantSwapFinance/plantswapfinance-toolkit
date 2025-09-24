@@ -14,7 +14,7 @@ const Overlay = styled.div.attrs({ role: "presentation" })<OverlayProps>`
   pointer-events: ${({ show }) => (show ? "initial" : "none")};
 `;
 
-Overlay.defaultProps = {
+(Overlay as any).defaultProps = {
   show: false,
   zIndex: 10,
 };

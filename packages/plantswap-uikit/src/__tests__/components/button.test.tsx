@@ -41,11 +41,11 @@ it("renders correctly", () => {
       color: white;
     }
 
-    .c0:hover:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled):not(:active) {
+    .c0:hover:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c0:active:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled) {
+    .c0:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -54,7 +54,7 @@ it("renders correctly", () => {
     }
 
     .c0:disabled,
-    .c0.plantswap-button--disabled {
+    .c0.plant-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;

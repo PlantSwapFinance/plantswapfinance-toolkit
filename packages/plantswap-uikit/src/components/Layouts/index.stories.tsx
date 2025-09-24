@@ -9,7 +9,7 @@ export default {
 
 const Stub = styled.div`
   width: 100%;
-  background: #1fc7d4;
+  background: #2B6E37;
   height: 300px;
 `;
 

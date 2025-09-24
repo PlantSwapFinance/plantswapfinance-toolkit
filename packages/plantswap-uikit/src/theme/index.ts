@@ -1,6 +1,6 @@
 import { AlertTheme } from "../components/Alert/types";
 import { CardTheme } from "../components/Card/types";
-import { PlantswapToggleTheme } from "../components/PlantswapToggle/types";
+import { PlantToggleTheme } from "../components/PlantToggle/types";
 import { RadioTheme } from "../components/Radio/types";
 import { ToggleTheme } from "../components/Toggle/types";
 import { TooltipTheme } from "../components/Tooltip/types";
@@ -8,7 +8,7 @@ import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
 
-export interface PlantswapTheme {
+export interface PlantTheme {
   siteWidth: number;
   isDark: boolean;
   alert: AlertTheme;
@@ -16,7 +16,7 @@ export interface PlantswapTheme {
   card: CardTheme;
   nav: NavTheme;
   modal: ModalTheme;
-  plantswapToggle: PlantswapToggleTheme;
+  plantToggle: PlantToggleTheme;
   radio: RadioTheme;
   toggle: ToggleTheme;
   tooltip: TooltipTheme;

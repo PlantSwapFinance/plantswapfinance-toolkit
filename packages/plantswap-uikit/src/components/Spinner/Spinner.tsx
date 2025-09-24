@@ -4,6 +4,7 @@ import PlantIcon from "./PlantIcon";
 import BeeIcon from "./BeeIcon";
 import BeeIcon2 from "./BeeIcon2";
 import SunIcon from "./SunIcon";
+import { SproutIcon } from "../Svg";
 import { SpinnerProps } from "./types";
 
 const rotate = keyframes`
@@ -44,11 +45,12 @@ const float2 = keyframes`
 
 const Container = styled.div`
   position: relative;
+  height: 100%;
 `;
 
 const RotatingSunIcon = styled(SunIcon)`
   position: absolute;
-  top: 0;
+  top: 4;
   left: 0;
   animation: ${rotate} 2s linear infinite;
   transform: translate3d(0, 0, 0);
@@ -64,7 +66,17 @@ const FloatingBeeIcon2 = styled(BeeIcon2)`
   transform: translate3d(20, 4, 0);
 `;
 
-const FixPlantIcon = styled(PlantIcon)`
+const FixPlantIconLeft = styled(SproutIcon)`
+  position: absolute;
+  left: 8%;
+  bottom: 0%;
+  transform: translate3d(0, 0, 0);
+`;
+
+const FixPlantIconRight = styled(SproutIcon)`
+  position: absolute;
+  right: 3%;
+  bottom: 0px;
   transform: translate3d(0, 0, 0);
 `;
 
@@ -72,9 +84,11 @@ const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => {
   return (
     <Container>
       <RotatingSunIcon width={`${size * 2}px`} />
-      <FloatingBeeIcon width={`${size * 2}px`} />
-      <FloatingBeeIcon2 width={`${size * 2}px`} />
-      <FixPlantIcon width={`${size * 3.5}px`} />
+      <FloatingBeeIcon width={`${size * 4}px`} />
+      <FloatingBeeIcon2 width={`${size * 4}px`} />
+      <br />
+      <FixPlantIconLeft width={`${size * 1.5}px`} />
+      <FixPlantIconRight width={`${size * 2}px`} />
     </Container>
   );
 };

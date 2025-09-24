@@ -11,7 +11,7 @@ const CardHeader = styled.div<CardHeaderProps>`
   ${space}
 `;
 
-CardHeader.defaultProps = {
+(CardHeader as any).defaultProps = {
   p: "24px",
 };
 

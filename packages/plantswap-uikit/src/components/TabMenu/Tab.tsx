@@ -25,7 +25,7 @@ const Tab = styled.button<TabProps>`
   ${color}
 `;
 
-Tab.defaultProps = {
+(Tab as any).defaultProps = {
   scale: "md",
 };
 

@@ -70,7 +70,7 @@ const Radio = styled.input.attrs({ type: "radio" })<RadioProps>`
   ${space}
 `;
 
-Radio.defaultProps = {
+(Radio as any).defaultProps = {
   scale: scales.MD,
   m: 0,
 };

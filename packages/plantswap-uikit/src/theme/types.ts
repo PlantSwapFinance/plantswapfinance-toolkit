@@ -28,12 +28,17 @@ export type Shadows = {
 };
 
 export type Gradients = {
+  cardHeader: string;
+  inverseCardHeader: string;
   bubblegum: string;
   inverseBubblegum: string;
-  cardHeader: string;
   blue: string;
   violet: string;
   violetAlt: string;
+  gold: string;
+  newTrees: string;
+  rainforest: string;
+  wildLife: string;
 };
 
 export type Colors = {
@@ -58,14 +63,20 @@ export type Colors = {
   text: string;
   textDisabled: string;
   textSubtle: string;
-  borderColor: string;
+  disabled: string;
 
   // Gradients
   gradients: Gradients;
 
   // Additional colors
   binance: string;
+  plantswap: string;
+  goose: string;
+  cafeswap: string;
   overlay: string;
+  gold: string;
+  silver: string;
+  bronze: string;
 };
 
 export type ZIndices = {

@@ -24,7 +24,7 @@ const Svg = styled.svg<SvgProps>`
   ${space}
 `;
 
-Svg.defaultProps = {
+(Svg as any).defaultProps = {
   color: "text",
   width: "20px",
   xmlns: "http://www.w3.org/2000/svg",

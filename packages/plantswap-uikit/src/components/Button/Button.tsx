@@ -3,18 +3,18 @@ import getExternalLinkProps from "../../util/getExternalLinkProps";
 import StyledButton from "./StyledButton";
 import { ButtonProps, scales, variants } from "./types";
 
-const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.Element => {
+const Button = <E extends ElementType = "button">(props: ButtonProps<E>): React.JSX.Element => {
   const { startIcon, endIcon, external, className, isLoading, disabled, children, ...rest } = props;
   const internalProps = external ? getExternalLinkProps() : {};
   const isDisabled = isLoading || disabled;
   const classNames = className ? [className] : [];
 
   if (isLoading) {
-    classNames.push("plantswap-button--loading");
+    classNames.push("plant-button--loading");
   }
 
   if (isDisabled && !isLoading) {
-    classNames.push("plantswap-button--disabled");
+    classNames.push("plant-button--disabled");
   }
 
   return (
@@ -29,12 +29,12 @@ const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.El
         {isValidElement(startIcon) &&
           cloneElement(startIcon, {
             mr: "0.5rem",
-          })}
+          } as any)}
         {children}
         {isValidElement(endIcon) &&
           cloneElement(endIcon, {
             ml: "0.5rem",
-          })}
+          } as any)}
       </>
     </StyledButton>
   );

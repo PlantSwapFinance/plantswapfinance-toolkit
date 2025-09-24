@@ -7,7 +7,7 @@ const CardBody = styled.div<CardBodyProps>`
   ${space}
 `;
 
-CardBody.defaultProps = {
+(CardBody as any).defaultProps = {
   p: "24px",
 };
 

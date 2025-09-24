@@ -86,6 +86,60 @@ export const CardHeader: React.FC = () => {
           <CardFooter>Footer</CardFooter>
         </Card>
       </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="bubblegum">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="gold">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="inverseCardHeader">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="newTrees">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="rainforest">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
+      <Row>
+        <Card>
+          <UIKitCardHeader variant="wildLife">
+            <Heading size="xl">Card Header</Heading>
+          </UIKitCardHeader>
+          <CardBody>Body</CardBody>
+          <CardFooter>Footer</CardFooter>
+        </Card>
+      </Row>
     </div>
   );
 };
@@ -115,6 +169,16 @@ export const Ribbon: React.FC = () => {
       </Row>
       <Row>
         <Card ribbon={<CardRibbon variantColor="failure" text="Failure" ribbonPosition="left" />}>
+          <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
+        </Card>
+      </Row>
+      <Row>
+        <Card ribbon={<CardRibbon variantColor="warning" text="Warning" />}>
+          <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
+        </Card>
+      </Row>
+      <Row>
+        <Card ribbon={<CardRibbon variantColor="primaryDark" text="PrimaryDark" ribbonPosition="left" />}>
           <CardBody style={{ height: "150px" }}>Any Color in the theme</CardBody>
         </Card>
       </Row>

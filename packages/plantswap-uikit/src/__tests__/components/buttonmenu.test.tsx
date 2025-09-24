@@ -21,11 +21,26 @@ it("renders correctly", () => {
       display: -webkit-inline-flex;
       display: -ms-inline-flexbox;
       display: inline-flex;
+      border: 1px solid #E9EAEB;
+      width: auto;
+    }
+
+    .c0 > button,
+    .c0 > a {
+      margin-left: 2px;
+      -webkit-flex: auto;
+      -ms-flex: auto;
+      flex: auto;
     }
 
     .c0 > button + button,
     .c0 > a + a {
       margin-left: 2px;
+    }
+
+    .c0 > button,
+    .c0 a {
+      box-shadow: none;
     }
 
     .c1 {
@@ -63,11 +78,11 @@ it("renders correctly", () => {
       color: white;
     }
 
-    .c1:hover:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled):not(:active) {
+    .c1:hover:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled):not(:active) {
       opacity: 0.65;
     }
 
-    .c1:active:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled) {
+    .c1:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
       opacity: 0.85;
       -webkit-transform: translateY(1px);
       -ms-transform: translateY(1px);
@@ -76,7 +91,7 @@ it("renders correctly", () => {
     }
 
     .c1:disabled,
-    .c1.plantswap-button--disabled {
+    .c1.plant-button--disabled {
       background-color: #E9EAEB;
       border-color: #E9EAEB;
       box-shadow: none;
@@ -85,68 +100,11 @@ it("renders correctly", () => {
     }
 
     .c2 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      border: 0;
-      border-radius: 16px;
-      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
-      cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      font-family: inherit;
-      font-size: 16px;
-      font-weight: 600;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-letter-spacing: 0.03em;
-      -moz-letter-spacing: 0.03em;
-      -ms-letter-spacing: 0.03em;
-      letter-spacing: 0.03em;
-      line-height: 1;
-      opacity: 1;
-      outline: 0;
-      -webkit-transition: background-color 0.2s,opacity 0.2s;
-      transition: background-color 0.2s,opacity 0.2s;
-      height: 48px;
-      padding: 0 24px;
-      background-color: #EFF4F5;
-      box-shadow: none;
+      background-color: transparent;
       color: #1FC7D4;
     }
 
-    .c2:hover:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled):not(:active) {
-      opacity: 0.65;
-    }
-
-    .c2:active:not(:disabled):not(.plantswap-button--disabled):not(.plantswap-button--disabled) {
-      opacity: 0.85;
-      -webkit-transform: translateY(1px);
-      -ms-transform: translateY(1px);
-      transform: translateY(1px);
-      box-shadow: none;
-    }
-
-    .c2:disabled,
-    .c2.plantswap-button--disabled {
-      background-color: #E9EAEB;
-      border-color: #E9EAEB;
-      box-shadow: none;
-      color: #BDC2C4;
-      cursor: not-allowed;
-    }
-
-    .c3 {
-      background-color: transparent;
-      color: #7A6EAA;
-    }
-
-    .c3:hover:not(:disabled):not(:active) {
+    .c2:hover:not(:disabled):not(:active) {
       background-color: transparent;
     }
 
@@ -160,7 +118,7 @@ it("renders correctly", () => {
           Item 1
         </button>
         <button
-          class="c2 c3"
+          class="c1 c2"
           scale="md"
         >
           Item 2

@@ -8,10 +8,12 @@ export const variants = {
   TEXTDISABLED: "textDisabled",
   TEXTSUBTLE: "textSubtle",
   BINANCE: "binance",
-  PANCAKESWAP: "pancakeswap",
+  PLANTSWAP: "pancakeswap",
+  APESWAP: "Apeswap",
   GOOSE: "goose",
   CAFESWAP: "cafeswap",
   FAILURE: "failure",
+  WARNING: "warning",
 } as const;
 
 export const scales = {
@@ -28,4 +30,5 @@ export interface TagProps extends SpaceProps {
   startIcon?: ReactNode;
   endIcon?: ReactNode;
   outline?: boolean;
+  children?: ReactNode;
 }

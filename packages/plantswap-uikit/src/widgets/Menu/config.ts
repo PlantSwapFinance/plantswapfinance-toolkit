@@ -11,7 +11,19 @@ export const status = {
   },
   NEW: <LinkStatus>{
     text: "NEW",
-    color: "success",
+    color: "success", // success
+  },
+  BETA: <LinkStatus>{
+    text: "BETA",
+    color: "failure",
+  },
+  HOT: <LinkStatus>{
+    text: "HOT",
+    color: "primaryDark",
+  },
+  FINISH: <LinkStatus>{
+    text: "FINISH",
+    color: "textDisabled",
   },
 };
 
@@ -27,11 +39,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://exchange.plantswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://exchange.plantswap.finance/#/pool",
       },
     ],
   },
@@ -42,10 +54,21 @@ export const links = [
     status: status.LIVE,
   },
   {
+    label: "Market",
+    icon: "MarketIcon",
+    href: "/market",
+    status: status.SOON,
+  },
+  {
     label: "Garden",
     icon: "PoolIcon",
     href: "/gardens",
-    status: status.LIVE,
+  },
+  {
+    label: "Garden V1",
+    icon: "PoolIcon",
+    href: "/gardensV1",
+    status: status.FINISH,
   },
   {
     label: "Vertical Garden",
@@ -54,20 +77,27 @@ export const links = [
     status: status.NEW,
   },
   {
+    label: "Collectibles Farm",
+    icon: "CollectiblesFarmIcon",
+    href: "/collectiblesFarm",
+    status: status.NEW,
+  },
+  {
     label: "Barn",
     icon: "BarnIcon",
     href: "/barn",
+    status: status.BETA,
   },
   {
     label: "Tree",
     icon: "TreeIcon",
     href: "/tree",
+    status: status.HOT,
   },
   {
     label: "Contribution",
     icon: "ContributionIcon",
     href: "/tree",
-    status: status.NEW,
   },
   {
     label: "TreePlanting",
@@ -75,25 +105,9 @@ export const links = [
     href: "/treePlanting",
   },
   {
-    label: "Lottery",
-    icon: "TicketIcon",
-    href: "/lottery",
-  },
-  {
-    label: "NFT",
-    icon: "NftIcon",
-    href: "/nft",
-  },
-  {
     label: "Project",
     icon: "ProjectIcon",
     href: "/project",
-  },
-  {
-    label: "Gouvernance",
-    icon: "VoteIcon",
-    href: "/vote",
-    status: status.NEW,
   },
   {
     label: "Roadmap",
@@ -126,6 +140,16 @@ export const links = [
           href: "/Beta5",
         },
       ],
+  },
+  {
+    label: "Lottery",
+    icon: "TicketIcon",
+    href: "/lottery",
+  },
+  {
+    label: "NFT",
+    icon: "NftIcon",
+    href: "/nft",
   },
   {
     label: "Team Battle",
@@ -193,18 +217,27 @@ export const links = [
       {
         label: "Voting",
         href: "https://voting.plantswap.finance",
+        target: "_blank",
       },
       {
         label: "Github",
-        href: "https://github.com/plantswapfinance",
+        href: "https://github.com/plantswap",
+        target: "_blank",
       },
       {
         label: "Docs",
         href: "https://docs.plantswap.finance",
+        target: "_blank",
       },
       {
         label: "Blog",
-        href: "https://plantswapfinance.medium.com",
+        href: "https://plantswap.medium.com",
+        target: "_blank",
+      },
+      {
+        label: "Gouvernance",
+        href: "https://snapshot.box/#/s:plantswap.eth",
+        target: "_blank",
       },
     ],
   },
@@ -234,5 +267,5 @@ export const socials = [
 
 export const MENU_HEIGHT = 64;
 export const MENU_ENTRY_HEIGHT = 48;
-export const SIDEBAR_WIDTH_FULL = 240;
+export const SIDEBAR_WIDTH_FULL = 270;
 export const SIDEBAR_WIDTH_REDUCED = 56;

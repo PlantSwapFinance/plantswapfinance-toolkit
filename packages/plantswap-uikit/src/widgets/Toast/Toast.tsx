@@ -24,7 +24,7 @@ const StyledToast = styled.div`
 `;
 
 const Toast: React.FC<ToastProps> = ({ toast, onRemove, style, ttl, ...props }) => {
-  const timer = useRef<number>();
+  const timer = useRef<number>(0);
   const ref = useRef(null);
   const removeHandler = useRef(onRemove);
   const { id, title, description, type } = toast;
