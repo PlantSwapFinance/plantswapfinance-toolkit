@@ -1,10 +1,10 @@
 import React, { ChangeEvent } from "react";
 import { Box } from "../Box";
 import {
-  FarmerSlider,
+  SproutSlider,
   BarBackground,
   BarProgress,
-  FarmerButt,
+  SproutButt,
   StyledInput,
   SliderLabel,
   SliderLabelContainer,
@@ -42,8 +42,8 @@ const Slider: React.FC<SliderProps> = ({
   const displayValueLabel = isMax ? "MAX" : valueLabel;
   return (
     <Box position="relative" height="48px" {...props}>
-      <FarmerButt disabled={disabled} />
-      <FarmerSlider>
+      <SproutButt disabled={disabled} />
+      <SproutSlider>
         <BarBackground disabled={disabled} />
         <BarProgress style={{ width: progressWidth }} disabled={disabled} />
         <StyledInput
@@ -57,7 +57,7 @@ const Slider: React.FC<SliderProps> = ({
           isMax={isMax}
           disabled={disabled}
         />
-      </FarmerSlider>
+      </SproutSlider>
       {valueLabel && (
         <SliderLabelContainer>
           <SliderLabel progress={labelProgress}>{displayValueLabel}</SliderLabel>

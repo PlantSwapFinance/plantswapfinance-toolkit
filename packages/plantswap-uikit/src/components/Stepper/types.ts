@@ -1,3 +1,4 @@
+import React from "react";
 import { DefaultTheme } from "styled-components";
 
 export interface ThemedProps {
@@ -15,4 +16,5 @@ export interface StepProps {
   index: number;
   status: Status;
   numberOfSteps?: number;
+  children?: React.ReactNode;
 }

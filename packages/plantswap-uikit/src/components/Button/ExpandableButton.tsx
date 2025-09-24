@@ -6,6 +6,7 @@ import IconButton from "./IconButton";
 interface Props {
   onClick?: () => void;
   expanded?: boolean;
+  children?: React.ReactNode;
 }
 
 export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {
@@ -16,7 +17,8 @@ export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children 
     </IconButton>
   );
 };
-ExpandableButton.defaultProps = {
+
+(ExpandableButton as any).defaultProps = {
   expanded: false,
 };
 
@@ -32,6 +34,7 @@ export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }
     </Button>
   );
 };
-ExpandableLabel.defaultProps = {
+
+(ExpandableLabel as any).defaultProps = {
   expanded: false,
 };

@@ -31,7 +31,7 @@ const Heading = styled(Text).attrs({ bold: true })<HeadingProps>`
   }
 `;
 
-Heading.defaultProps = {
+(Heading as any).defaultProps = {
   as: tags.H2,
 };
 

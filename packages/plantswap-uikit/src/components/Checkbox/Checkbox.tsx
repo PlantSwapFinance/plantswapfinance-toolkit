@@ -64,7 +64,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
   }
 `;
 
-Checkbox.defaultProps = {
+(Checkbox as any).defaultProps = {
   scale: scales.MD,
 };
 

@@ -1,6 +1,8 @@
 # 🌱 PlantSwap UIkit
 
-PlantSwap UIkit is a set of React components and hooks used to build pages on PlantSwap's apps. It also contains a theme file for dark and light mode.
+[![Version](https://img.shields.io/npm/v/@plantswap-libs/uikit)](https://www.npmjs.com/package/@plantswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@plantswap-libs/uikit)](https://www.npmjs.com/package/@plantswap-libs/uikit)
+
+PlantSwap UIkit is a set of React components and hooks used to build pages on Plantswap's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 

@@ -16,7 +16,7 @@ export const Bar = styled.div<BarProps>`
   transition: width 200ms ease;
 `;
 
-Bar.defaultProps = {
+(Bar as any).defaultProps = {
   primary: false,
 };
 

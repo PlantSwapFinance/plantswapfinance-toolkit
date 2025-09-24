@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes, DefaultTheme } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Text } from "../../../components/Text";
 import { Colors } from "../../../theme/types";
 import { MENU_ENTRY_HEIGHT } from "../config";
@@ -7,7 +7,6 @@ import { MENU_ENTRY_HEIGHT } from "../config";
 export interface Props {
   secondary?: boolean;
   isActive?: boolean;
-  theme: DefaultTheme;
 }
 
 const rainbowAnimation = keyframes`
@@ -26,7 +25,10 @@ const LinkLabel = styled.div<{ isPushed: boolean }>`
   flex-grow: 1;
 `;
 
-const MenuEntry = styled.div<Props>`
+const MenuEntry = styled.div.attrs<Props>(() => ({
+  secondary: false,
+  isActive: false,
+}))<Props>`
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -62,11 +64,6 @@ const MenuEntry = styled.div<Props>`
     background-size: 400% 100%;
   }
 `;
-MenuEntry.defaultProps = {
-  secondary: false,
-  isActive: false,
-  role: "button",
-};
 
 const LinkStatus = styled(Text)<{ color: keyof Colors }>`
   border-radius: ${({ theme }) => theme.radii.default};

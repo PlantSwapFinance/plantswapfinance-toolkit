@@ -61,13 +61,13 @@ export const WithSecondary: React.FC = () => {
   );
 };
 
-export const WithSecondaryAndProgressFarmer: React.FC = () => {
+export const WithSecondaryAndProgressSprout: React.FC = () => {
   const [primaryStep, setPrimaryStep] = useState(10);
   const [secondaryStep, setSecondaryStep] = useState(40);
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressFarmer />
+      <Progress primaryStep={primaryStep} secondaryStep={secondaryStep} showProgressSprout />
       <div style={{ marginTop: "32px" }}>
         <Button type="button" scale="sm" onClick={() => setPrimaryStep(random(1, 100))}>
           Random Primary Progress

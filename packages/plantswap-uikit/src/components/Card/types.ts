@@ -16,8 +16,14 @@ export type CardTheme = {
   boxShadowWarning: string;
   cardHeaderBackground: {
     default: string;
+    inverseCardHeader: string;
     blue: string;
+    bubblegum: string;
     violet: string;
+    gold: string;
+    newTrees: string;
+    rainforest: string;
+    wildLife: string;
   };
   dropShadow: string;
 };

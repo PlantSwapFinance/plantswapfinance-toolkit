@@ -1,7 +1,7 @@
 import React from "react";
 import StyledProgress, { Bar } from "./StyledProgress";
-import ProgressFarmerWrapper from "./ProgressFarmerWrapper";
-import { ProgressFarmer } from "../Svg";
+import ProgressSproutWrapper from "./ProgressSproutWrapper";
+import { ProgressSprout } from "../Svg";
 import { ProgressProps, variants, scales } from "./types";
 
 const stepGuard = (step: number) => {
@@ -21,14 +21,14 @@ const Progress: React.FC<ProgressProps> = ({
   scale = scales.MD,
   primaryStep = 0,
   secondaryStep = null,
-  showProgressFarmer = false,
+  showProgressSprout = false,
 }) => {
   return (
     <StyledProgress variant={variant} scale={scale}>
-      {showProgressFarmer && (
-        <ProgressFarmerWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
-          <ProgressFarmer />
-        </ProgressFarmerWrapper>
+      {showProgressSprout && (
+        <ProgressSproutWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
+          <ProgressSprout />
+        </ProgressSproutWrapper>
       )}
       <Bar primary style={{ width: `${stepGuard(primaryStep)}%` }} />
       {secondaryStep ? <Bar style={{ width: `${stepGuard(secondaryStep)}%` }} /> : null}
