@@ -6,8 +6,8 @@ This repository is a monorepo manage with [yarn workspaces](https://classic.yarn
 
 ## Packages
 
-- [plantswapfinance-uikit](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit) : React components used to build the PlantSwap UI
-- [eslint-config-plantswap](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap) : An ESLint config for PlantSwap, with Typescript and Prettier support
+- [@plantswap/uikit](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit) : React components used to build the PlantSwap UI
+- [@plantswap-libs/eslint-config-plantswap](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap) : An ESLint config for PlantSwap, with Typescript and Prettier support
 
 ## How to use
 
