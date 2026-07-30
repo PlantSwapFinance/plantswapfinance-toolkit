@@ -28,12 +28,23 @@ export default {
     babel({
       babelHelpers: "bundled",
       extensions: [".ts", ".tsx", ".js", ".jsx"],
+      // Ignore babel.config.js so its preset-env/styled-components preset
+      // doesn't bleed into the rollup pipeline (Babel 8's JSX parser would
+      // otherwise turn TS generic syntax like `<T>(...) =>` in plain `.ts`
+      // files into JSX parse errors).
+      configFile: false,
+      babelrc: false,
       presets: [
         ["@babel/preset-env", { targets: "> 0.25%, not dead" }],
         "@babel/preset-typescript",
-        ["@babel/preset-react", { runtime: "automatic" }],
       ],
-      plugins: ["babel-plugin-styled-components"],
+      overrides: [
+        {
+          test: /\.tsx$/,
+          presets: [["@babel/preset-react", { runtime: "automatic" }]],
+          plugins: ["babel-plugin-styled-components"],
+        },
+      ],
     }),
   ],
 };
