@@ -38,7 +38,7 @@
     "jest-styled-components": "^7.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^7.0.0",
     "styled-components": "^6.0.0"
   },
   "peerDependencies": {
