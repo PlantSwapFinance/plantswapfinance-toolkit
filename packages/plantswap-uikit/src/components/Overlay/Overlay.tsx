@@ -2,7 +2,11 @@ import styled from "styled-components";
 import { OverlayProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
-const Overlay = styled.div.withConfig(filterDomProps).attrs({ role: "presentation" })<OverlayProps>`
+const Overlay = styled.div.withConfig(filterDomProps).attrs<OverlayProps>(({ show = false, zIndex = 10 }) => ({
+  role: "presentation",
+  show,
+  zIndex,
+}))<OverlayProps>`
   position: fixed;
   top: 0px;
   left: 0px;
@@ -14,10 +18,5 @@ const Overlay = styled.div.withConfig(filterDomProps).attrs({ role: "presentatio
   z-index: ${({ zIndex }) => zIndex};
   pointer-events: ${({ show }) => (show ? "initial" : "none")};
 `;
-
-(Overlay as any).defaultProps = {
-  show: false,
-  zIndex: 10,
-};
 
 export default Overlay;

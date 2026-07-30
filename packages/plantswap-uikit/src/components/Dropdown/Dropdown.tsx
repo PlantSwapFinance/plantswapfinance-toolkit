@@ -49,8 +49,5 @@ const Dropdown: React.FC<DropdownProps> = ({ target, position = "bottom", childr
     </Container>
   );
 };
-(Dropdown as any).defaultProps = {
-  position: "bottom",
-};
 
 export default Dropdown;

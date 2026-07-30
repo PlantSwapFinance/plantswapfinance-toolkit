@@ -23,7 +23,9 @@ const getCheckedScale = ({ scale }: RadioProps) => {
   }
 };
 
-const Radio = styled.input.withConfig(filterDomProps).attrs({ type: "radio" })<RadioProps>`
+const Radio = styled.input
+  .withConfig(filterDomProps)
+  .attrs<RadioProps>(({ scale = scales.MD, m = 0 }) => ({ type: "radio", scale, m }))<RadioProps>`
   appearance: none;
   overflow: hidden;
   cursor: pointer;
@@ -70,10 +72,5 @@ const Radio = styled.input.withConfig(filterDomProps).attrs({ type: "radio" })<R
   }
   ${space}
 `;
-
-(Radio as any).defaultProps = {
-  scale: scales.MD,
-  m: 0,
-};
 
 export default Radio;

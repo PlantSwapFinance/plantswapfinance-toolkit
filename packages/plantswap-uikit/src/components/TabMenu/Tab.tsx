@@ -7,7 +7,7 @@ const getBorderRadius = ({ scale }: TabProps) => (scale === "md" ? "16px 16px 0 
 
 const getPadding = ({ scale }: TabProps) => (scale === "md" ? "8px" : "16px");
 
-const Tab = styled.button.withConfig(filterDomProps)<TabProps>`
+const Tab = styled.button.withConfig(filterDomProps).attrs<TabProps>(({ scale = "md" }) => ({ scale }))<TabProps>`
   display: inline-flex;
   justify-content: center;
   cursor: pointer;
@@ -25,9 +25,5 @@ const Tab = styled.button.withConfig(filterDomProps)<TabProps>`
 
   ${color}
 `;
-
-(Tab as any).defaultProps = {
-  scale: "md",
-};
 
 export default Tab;

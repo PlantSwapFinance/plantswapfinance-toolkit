@@ -8,7 +8,9 @@ interface BarProps {
   primary?: boolean;
 }
 
-export const Bar = styled.div.withConfig(filterDomProps)<BarProps>`
+export const Bar = styled.div.withConfig(filterDomProps).attrs<BarProps>(({ primary = false }) => ({
+  primary,
+}))<BarProps>`
   position: absolute;
   top: 0;
   left: 0;
@@ -16,10 +18,6 @@ export const Bar = styled.div.withConfig(filterDomProps)<BarProps>`
   height: 100%;
   transition: width 200ms ease;
 `;
-
-(Bar as any).defaultProps = {
-  primary: false,
-};
 
 interface StyledProgressProps {
   variant: ProgressProps["variant"];
