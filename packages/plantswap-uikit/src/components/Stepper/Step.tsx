@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Flex from "../Box/Flex";
 import Box from "../Box/Box";
 import { StatusProps, StepProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const getStepNumberFontColor = ({ theme, status }: StatusProps) => {
   if (status === "past") {
@@ -20,7 +21,7 @@ const StyledStep = styled(Flex)`
   }
 `;
 
-const Connector = styled.div<StatusProps>`
+const Connector = styled.div.withConfig(filterDomProps)<StatusProps>`
   position: absolute;
   width: 4px;
   height: 110%;
@@ -56,7 +57,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const StepNumber = styled.div<StatusProps>`
+export const StepNumber = styled.div.withConfig(filterDomProps)<StatusProps>`
   box-shadow: 0px 1px 4px rgba(25, 19, 38, 0.15);
   background-color: ${({ theme, status }) => theme.colors[status === "current" ? "secondary" : "invertedContrast"]};
   border: 2px solid ${({ theme, status }) => (status === "past" ? theme.colors.success : "transparent")};

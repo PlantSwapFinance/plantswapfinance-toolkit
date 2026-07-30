@@ -4,13 +4,14 @@ import PanelBody from "./PanelBody";
 import PanelFooter from "./PanelFooter";
 import { SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "../config";
 import { PanelProps, PushedProps } from "../types";
+import filterDomProps from "../../../util/filterDomProps";
 
 interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
   isMobile: boolean;
 }
 
-const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
+const StyledPanel = styled.div.withConfig(filterDomProps)<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
   padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)};
   top: 0;

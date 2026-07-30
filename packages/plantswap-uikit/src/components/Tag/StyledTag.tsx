@@ -3,6 +3,7 @@ import { space, variant } from "styled-system";
 import { Colors } from "../../theme/types";
 import { scaleVariants, styleVariants } from "./theme";
 import { TagProps, variants } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface ThemedProps extends TagProps {
   theme: DefaultTheme;
@@ -23,7 +24,7 @@ const getOutlineStyles = ({ outline, theme, variant: variantKey = variants.PRIMA
   return "";
 };
 
-export const StyledTag = styled.div<ThemedProps>`
+export const StyledTag = styled.div.withConfig(filterDomProps)<ThemedProps>`
   align-items: center;
   border-radius: 16px;
   color: #ffffff;

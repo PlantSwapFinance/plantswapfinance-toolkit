@@ -7,13 +7,14 @@ import Logo from "./components/Logo";
 import Panel from "./components/Panel";
 import { NavProps } from "./types";
 import { MENU_HEIGHT, SIDEBAR_WIDTH_REDUCED, SIDEBAR_WIDTH_FULL } from "./config";
+import filterDomProps from "../../util/filterDomProps";
 
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
 `;
 
-const StyledNav = styled.nav<{ showMenu: boolean }>`
+const StyledNav = styled.nav.withConfig(filterDomProps)<{ showMenu: boolean }>`
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
   left: 0;
@@ -36,7 +37,7 @@ const BodyWrapper = styled.div`
   display: flex;
 `;
 
-const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
+const Inner = styled.div.withConfig(filterDomProps)<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);

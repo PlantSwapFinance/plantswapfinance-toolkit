@@ -1,5 +1,6 @@
 import styled, { DefaultTheme } from "styled-components";
 import { InputProps, scales } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface StyledInputProps extends InputProps {
   theme: DefaultTheme;
@@ -32,7 +33,7 @@ const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
   }
 };
 
-const Input = styled.input<InputProps>`
+const Input = styled.input.withConfig(filterDomProps)<InputProps>`
   background-color: ${({ theme }) => theme.colors.input};
   border: 0;
   border-radius: 16px;

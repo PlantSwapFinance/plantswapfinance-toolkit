@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { scales } from "../Checkbox/types";
 import { ToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const scaleKeyValues = {
   sm: {
@@ -29,7 +30,7 @@ const getScale =
     return scaleKeyValues[scale][property];
   };
 
-export const Handle = styled.div<HandleProps>`
+export const Handle = styled.div.withConfig(filterDomProps)<HandleProps>`
   background-color: ${({ theme }) => theme.toggle.handleBackground};
   border-radius: 50%;
   cursor: pointer;
@@ -42,7 +43,7 @@ export const Handle = styled.div<HandleProps>`
   z-index: 1;
 `;
 
-export const Input = styled.input<InputProps>`
+export const Input = styled.input.withConfig(filterDomProps)<InputProps>`
   cursor: pointer;
   opacity: 0;
   height: 100%;
@@ -63,7 +64,7 @@ export const Input = styled.input<InputProps>`
   }
 `;
 
-const StyledToggle = styled.div<ToggleProps>`
+const StyledToggle = styled.div.withConfig(filterDomProps)<ToggleProps>`
   align-items: center;
   background-color: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};
   border-radius: 24px;

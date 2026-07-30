@@ -2,6 +2,7 @@ import styled, { DefaultTheme } from "styled-components";
 import { space, layout, variant } from "styled-system";
 import { scaleVariants, styleVariants } from "./theme";
 import { BaseButtonProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface ThemedButtonProps extends BaseButtonProps {
   theme: DefaultTheme;
@@ -43,7 +44,7 @@ const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
   return $isLoading ? ".5" : "1";
 };
 
-const StyledButton = styled.button<BaseButtonProps>`
+const StyledButton = styled.button.withConfig(filterDomProps)<BaseButtonProps>`
   align-items: center;
   border: 0;
   border-radius: 16px;

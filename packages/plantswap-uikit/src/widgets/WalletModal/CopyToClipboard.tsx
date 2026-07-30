@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import Text from "../../components/Text/Text";
 import { CopyIcon } from "../../components/Svg";
+import filterDomProps from "../../util/filterDomProps";
 
 interface Props {
   toCopy: string;
@@ -15,7 +16,7 @@ const StyleButton = styled(Text).attrs({ role: "button" })`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-const Tooltip = styled.div<{ isTooltipDisplayed: boolean }>`
+const Tooltip = styled.div.withConfig(filterDomProps)<{ isTooltipDisplayed: boolean }>`
   display: ${({ isTooltipDisplayed }) => (isTooltipDisplayed ? "block" : "none")};
   position: absolute;
   bottom: -22px;

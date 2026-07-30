@@ -4,6 +4,7 @@ import Text from "../Text/Text";
 import sproutHeadMain from "./svg/sprouthead-main.svg";
 import sproutHeadMax from "./svg/sprouthead-max.svg";
 import sproutButt from "./svg/sproutbutt.svg";
+import filterDomProps from "../../util/filterDomProps";
 
 interface SliderLabelProps {
   progress: string;
@@ -54,7 +55,7 @@ export const SliderLabel = styled(Text)<SliderLabelProps>`
   min-width: 24px; // Slider thumb size
 `;
 
-export const SproutButt = styled.div<DisabledProp>`
+export const SproutButt = styled.div.withConfig(filterDomProps)<DisabledProp>`
   background: url(${sproutButt}) no-repeat;
   height: 32px;
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
@@ -68,7 +69,7 @@ export const SproutSlider = styled.div`
   width: calc(100% - 14px);
 `;
 
-export const StyledInput = styled.input<StyledInputProps>`
+export const StyledInput = styled.input.withConfig(filterDomProps)<StyledInputProps>`
   cursor: ${getCursorStyle};
   height: 32px;
   position: relative;
@@ -86,7 +87,7 @@ export const StyledInput = styled.input<StyledInputProps>`
   }
 `;
 
-export const BarBackground = styled.div<DisabledProp>`
+export const BarBackground = styled.div.withConfig(filterDomProps)<DisabledProp>`
   background-color: ${({ theme, disabled }) => theme.colors[disabled ? "textDisabled" : "inputSecondary"]};
   height: 2px;
   position: absolute;
@@ -94,7 +95,7 @@ export const BarBackground = styled.div<DisabledProp>`
   width: 100%;
 `;
 
-export const BarProgress = styled.div<DisabledProp>`
+export const BarProgress = styled.div.withConfig(filterDomProps)<DisabledProp>`
   background-color: ${({ theme }) => theme.colors.primary};
   filter: ${({ disabled }) => (disabled ? "grayscale(100%)" : "none")};
   height: 10px;
