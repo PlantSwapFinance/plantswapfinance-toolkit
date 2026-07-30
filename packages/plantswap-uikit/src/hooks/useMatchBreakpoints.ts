@@ -36,22 +36,28 @@ const mediaQueries: MediaQueries = (() => {
 
 const getKey = (size: string) => `is${size.charAt(0).toUpperCase()}${size.slice(1)}`;
 
+const getInitialState = (): State =>
+  Object.keys(mediaQueries).reduce((accum, size) => {
+    const key = getKey(size);
+    return { ...accum, [key]: false };
+  }, {});
+
 const useMatchBreakpoints = (): State => {
-  const [state, setState] = useState<State>(() => {
-    return Object.keys(mediaQueries).reduce((accum, size) => {
-      const key = getKey(size);
-      const mql = window.matchMedia(mediaQueries[size]);
-      return { ...accum, [key]: mql.matches };
-    }, {});
-  });
+  const [state, setState] = useState<State>(getInitialState);
 
   useEffect(() => {
-    // Create listeners for each media query returning a function to unsubscribe
-    const handlers = Object.keys(mediaQueries).map((size) => {
-      const mql = window.matchMedia(mediaQueries[size]);
+    // Sync state with the real viewport after mount, so the hook is safe in
+    // SSR / non-browser environments where `window` is undefined.
+    const mqls = Object.keys(mediaQueries).map((size) => ({
+      key: getKey(size),
+      mql: window.matchMedia(mediaQueries[size]),
+    }));
 
+    setState(mqls.reduce((accum, { key, mql }) => ({ ...accum, [key]: mql.matches }), {}));
+
+    // Create listeners for each media query returning a function to unsubscribe
+    const handlers = mqls.map(({ key, mql }) => {
       const handler = (matchMediaQuery: MediaQueryListEvent) => {
-        const key = getKey(size);
         setState((prevState) => ({
           ...prevState,
           [key]: matchMediaQuery.matches,
