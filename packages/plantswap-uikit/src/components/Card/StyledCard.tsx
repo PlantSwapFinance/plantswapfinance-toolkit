@@ -26,7 +26,14 @@ const getBoxShadow = ({ isActive, isSuccess, isWarning, theme }: StyledCardProps
   return theme.card.boxShadow;
 };
 
-const StyledCard = styled.div.withConfig(filterDomProps)<StyledCardProps>`
+const StyledCard = styled.div
+  .withConfig(filterDomProps)
+  .attrs<StyledCardProps>(({ isActive = false, isSuccess = false, isWarning = false, isDisabled = false }) => ({
+    isActive,
+    isSuccess,
+    isWarning,
+    isDisabled,
+  }))<StyledCardProps>`
   background-color: ${({ theme }) => theme.card.background};
   border: ${({ theme }) => theme.card.boxShadow};
   border-radius: ${({ theme }) => theme.radii.card};
@@ -37,12 +44,5 @@ const StyledCard = styled.div.withConfig(filterDomProps)<StyledCardProps>`
 
   ${space}
 `;
-
-(StyledCard as any).defaultProps = {
-  isActive: false,
-  isSuccess: false,
-  isWarning: false,
-  isDisabled: false,
-};
 
 export default StyledCard;

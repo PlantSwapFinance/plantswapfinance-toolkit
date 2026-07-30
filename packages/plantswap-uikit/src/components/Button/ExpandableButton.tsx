@@ -9,7 +9,7 @@ interface Props {
   children?: React.ReactNode;
 }
 
-export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children }) => {
+export const ExpandableButton: React.FC<Props> = ({ onClick, expanded = false, children }) => {
   return (
     <IconButton aria-label="Hide or show expandable content" onClick={onClick}>
       {children}
@@ -18,11 +18,7 @@ export const ExpandableButton: React.FC<Props> = ({ onClick, expanded, children 
   );
 };
 
-(ExpandableButton as any).defaultProps = {
-  expanded: false,
-};
-
-export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }) => {
+export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded = false, children }) => {
   return (
     <Button
       variant="text"
@@ -33,8 +29,4 @@ export const ExpandableLabel: React.FC<Props> = ({ onClick, expanded, children }
       {children}
     </Button>
   );
-};
-
-(ExpandableLabel as any).defaultProps = {
-  expanded: false,
 };

@@ -33,7 +33,13 @@ const getHeight = ({ scale = scales.MD }: StyledInputProps) => {
   }
 };
 
-const Input = styled.input.withConfig(filterDomProps)<InputProps>`
+const Input = styled.input
+  .withConfig(filterDomProps)
+  .attrs<InputProps>(({ scale = scales.MD, isSuccess = false, isWarning = false }) => ({
+    scale,
+    isSuccess,
+    isWarning,
+  }))<InputProps>`
   background-color: ${({ theme }) => theme.colors.input};
   border: 0;
   border-radius: 16px;
@@ -62,11 +68,5 @@ const Input = styled.input.withConfig(filterDomProps)<InputProps>`
     box-shadow: ${({ theme }) => theme.shadows.focus};
   }
 `;
-
-(Input as any).defaultProps = {
-  scale: scales.MD,
-  isSuccess: false,
-  isWarning: false,
-};
 
 export default Input;

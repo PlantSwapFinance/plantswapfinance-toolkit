@@ -4,12 +4,8 @@ import filterDomProps from "../../util/filterDomProps";
 
 export type CardBodyProps = SpaceProps;
 
-const CardBody = styled.div.withConfig(filterDomProps)<CardBodyProps>`
+const CardBody = styled.div.withConfig(filterDomProps).attrs<CardBodyProps>(({ p = "24px" }) => ({ p }))<CardBodyProps>`
   ${space}
 `;
-
-(CardBody as any).defaultProps = {
-  p: "24px",
-};
 
 export default CardBody;

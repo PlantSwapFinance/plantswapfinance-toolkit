@@ -5,7 +5,7 @@ export const tags = {
   H4: "h4",
   H5: "h5",
   H6: "h6",
-};
+} as const;
 
 export const scales = {
   MD: "md",
@@ -14,8 +14,8 @@ export const scales = {
   XXL: "xxl",
 } as const;
 
-export type Tags = typeof tags[keyof typeof tags];
-export type Scales = typeof scales[keyof typeof scales];
+export type Tags = (typeof tags)[keyof typeof tags];
+export type Scales = (typeof scales)[keyof typeof scales];
 
 export interface HeadingProps {
   as?: Tags;

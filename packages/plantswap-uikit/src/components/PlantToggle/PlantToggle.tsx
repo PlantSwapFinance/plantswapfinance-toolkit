@@ -13,8 +13,4 @@ const PlantToggle: React.FC<PlantToggleProps> = ({ checked, scale = scales.MD, .
   </PlantStack>
 );
 
-(PlantToggle as any).defaultProps = {
-  scale: scales.MD,
-};
-
 export default PlantToggle;
