@@ -45,10 +45,9 @@
     "@rollup/plugin-typescript": "^11.0.0",
     "@rollup/plugin-url": "^8.0.0",
     "@storybook/addon-a11y": "^10.0.0",
-    "@storybook/addon-actions": "^9.0.0",
-    "@storybook/addon-essentials": "^8.0.0",
     "@storybook/addon-links": "^10.0.0",
     "@storybook/react": "^10.0.0",
+    "@storybook/react-vite": "^10.0.0",
     "@types/glob": "^9.0.0",
     "@types/minimatch": "^6.0.0",
     "@types/react": "^19.0.0",
@@ -66,9 +65,11 @@
     "prettier": "^2.1.2",
     "react-is": "^19.0.0",
     "rollup": "^2.44.0",
+    "storybook": "^10.0.0",
     "themeprovider-storybook": "^1.7.1",
     "ts-jest": "^29.0.0",
     "tslib": "^2.0.3",
-    "typescript": "^4.1.5"
+    "typescript": "^4.1.5",
+    "vite": "^7.0.0"
   }
 }
