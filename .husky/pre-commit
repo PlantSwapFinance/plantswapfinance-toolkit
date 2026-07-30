@@ -1,0 +1,8 @@
+FILES=$(git diff --cached --name-only --diff-filter=ACMR | grep -E '\.(js|jsx|ts|tsx)$' || true)
+
+if [ -z "$FILES" ]; then
+  exit 0
+fi
+
+printf '%s\n' "$FILES" | tr '\n' '\0' | xargs -0 yarn prettier --write
+printf '%s\n' "$FILES" | tr '\n' '\0' | xargs -0 git add

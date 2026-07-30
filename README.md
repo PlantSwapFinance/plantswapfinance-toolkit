@@ -25,3 +25,12 @@ yarn
 ```
 
 Then, refer to the readme of each project.
+
+## Git hooks
+
+Git hooks are managed with [Husky](https://typicode.github.io/husky/). Running `yarn` at the root installs them automatically via the `prepare` script:
+
+- `pre-commit` formats staged `.js`/`.jsx`/`.ts`/`.tsx` files with Prettier and re-stages them.
+- `commit-msg` runs [commitlint](https://commitlint.js.org/), which enforces [Conventional Commits](https://www.conventionalcommits.org/) with a sentence-case subject (e.g. `fix: Correct the button padding`).
+
+To bypass the hooks for a single commit, use `git commit --no-verify`.
