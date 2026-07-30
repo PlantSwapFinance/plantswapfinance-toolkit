@@ -2,7 +2,24 @@ import { babel } from "@rollup/plugin-babel";
 import commonjs from "@rollup/plugin-commonjs";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import url from "@rollup/plugin-url";
+import path from "node:path";
 import pkg from "./package.json" with { type: "json" };
+
+const ENTRY = path.resolve("src/index.ts");
+
+// Keep peer/runtime dependencies external so the published bundle does
+// not ship duplicate copies of React, styled-components, react-router,
+// lodash, etc. Consumers must deduplicate against their own installs;
+// bundling them inline broke theming and hooks in downstream apps.
+// Anything that is not a relative or absolute path is treated as a
+// bare module specifier and left as an `import`/`require` in the output.
+// The entry file is exempt — rollup refuses to treat the input as external.
+const external = (id) => {
+  if (id === ENTRY || id === "src/index.ts") return false;
+  if (id.startsWith("\0")) return false;
+  if (id.startsWith(".") || id.startsWith("/")) return false;
+  return !path.isAbsolute(id);
+};
 
 // @rollup/plugin-typescript relied on the TypeScript compiler API
 // (ModuleKind/ts.sys) that TypeScript 7 no longer exposes through the
@@ -14,7 +31,8 @@ import pkg from "./package.json" with { type: "json" };
 // against react's CJS entry). Declaration files are still produced by
 // the `tsc` step that follows rollup in `build`.
 export default {
-  input: "src/index.ts",
+  input: ENTRY,
+  external,
   output: [
     { file: pkg.main, format: "cjs" },
     { file: pkg.module, format: "es" },
