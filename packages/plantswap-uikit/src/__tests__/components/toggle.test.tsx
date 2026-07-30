@@ -16,7 +16,6 @@ it("renders correctly", () => {
       left: 4px;
       position: absolute;
       top: 4px;
-      -webkit-transition: left 200ms ease-in;
       transition: left 200ms ease-in;
       width: 32px;
       z-index: 1;
@@ -31,34 +30,27 @@ it("renders correctly", () => {
       z-index: 3;
     }
 
-    .c1:checked + .c2 {
+    .c1:checked+.c2 {
       left: calc(100% - 36px);
     }
 
-    .c1:focus + .c2 {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+    .c1:focus+.c2 {
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
-    .c1:hover + .c2:not(:disabled):not(:checked) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+    .c1:hover+.c2:not(:disabled):not(:checked) {
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
     .c0 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      background-color: #31D0AA;
+      background-color: #399349;
       border-radius: 24px;
-      box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
+      box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
       cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       height: 40px;
       position: relative;
-      -webkit-transition: background-color 200ms;
       transition: background-color 200ms;
       width: 72px;
     }
@@ -94,7 +86,6 @@ it("renders correctly scale sm", () => {
       left: 2px;
       position: absolute;
       top: 2px;
-      -webkit-transition: left 200ms ease-in;
       transition: left 200ms ease-in;
       width: 16px;
       z-index: 1;
@@ -109,34 +100,27 @@ it("renders correctly scale sm", () => {
       z-index: 3;
     }
 
-    .c1:checked + .c2 {
+    .c1:checked+.c2 {
       left: calc(100% - 18px);
     }
 
-    .c1:focus + .c2 {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+    .c1:focus+.c2 {
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
-    .c1:hover + .c2:not(:disabled):not(:checked) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+    .c1:hover+.c2:not(:disabled):not(:checked) {
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
     .c0 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      background-color: #31D0AA;
+      background-color: #399349;
       border-radius: 24px;
-      box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
+      box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
       cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       height: 20px;
       position: relative;
-      -webkit-transition: background-color 200ms;
       transition: background-color 200ms;
       width: 36px;
     }

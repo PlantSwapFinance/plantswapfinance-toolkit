@@ -3,6 +3,7 @@ import styled, { DefaultTheme } from "styled-components";
 import { space } from "styled-system";
 import { scales, variants } from "../Button/types";
 import { ButtonMenuProps, ButtonMenuItemProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface StyledButtonMenuProps extends ButtonMenuProps {
   theme: DefaultTheme;
@@ -16,7 +17,7 @@ const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
   return theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
 };
 
-const StyledButtonMenu = styled.div<StyledButtonMenuProps>`
+const StyledButtonMenu = styled.div.withConfig(filterDomProps)<StyledButtonMenuProps>`
   background-color: ${getBackgroundColor};
   border-radius: 16px;
   display: ${({ fullWidth }) => (fullWidth ? "flex" : "inline-flex")};

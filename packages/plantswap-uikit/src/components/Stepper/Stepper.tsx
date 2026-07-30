@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { ThemedProps, StepProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
-const StepperWrapper = styled.div<ThemedProps>`
+const StepperWrapper = styled.div.withConfig(filterDomProps)<ThemedProps>`
   display: flex;
   flex-direction: column;
   width: fit-content;

@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import SproutIcon from "../Svg/Icons/Logo";
 import { SproutProps, FallingSproutsProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const sproutFall = keyframes`
   0% {
@@ -20,7 +21,7 @@ const sproutFall = keyframes`
   }
 `;
 
-const Sprout = styled.div<SproutProps>`
+const Sprout = styled.div.withConfig(filterDomProps)<SproutProps>`
   display: inline-flex;
   position: fixed;
   top: 0;

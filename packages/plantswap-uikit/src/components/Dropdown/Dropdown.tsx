@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { DropdownProps, PositionProps, Position } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const getLeft = ({ position }: PositionProps) => {
   if (position === "top-right") {
@@ -16,7 +17,7 @@ const getBottom = ({ position }: PositionProps) => {
   return "auto";
 };
 
-const DropdownContent = styled.div<{ position: Position }>`
+const DropdownContent = styled.div.withConfig(filterDomProps)<{ position: Position }>`
   width: max-content;
   display: none;
   flex-direction: column;

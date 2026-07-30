@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { OverlayProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
-const Overlay = styled.div.attrs({ role: "presentation" })<OverlayProps>`
+const Overlay = styled.div.withConfig(filterDomProps).attrs({ role: "presentation" })<OverlayProps>`
   position: fixed;
   top: 0px;
   left: 0px;

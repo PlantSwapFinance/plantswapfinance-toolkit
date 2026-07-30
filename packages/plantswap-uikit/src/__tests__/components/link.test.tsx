@@ -7,28 +7,19 @@ it("renders link correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      color: #1FC7D4;
+      color: #2B6E37;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c1 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
     }
 
     .c1:hover {
-      -webkit-text-decoration: underline;
       text-decoration: underline;
     }
 
@@ -48,38 +39,25 @@ it("renders link external link correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      color: #1FC7D4;
+      color: #2B6E37;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c1 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      width: -webkit-fit-content;
-      width: -moz-fit-content;
       width: fit-content;
     }
 
     .c1:hover {
-      -webkit-text-decoration: underline;
       text-decoration: underline;
     }
 
     .c2 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
-      fill: #1FC7D4;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
+      fill: #2B6E37;
       flex-shrink: 0;
       margin-left: 4px;
     }

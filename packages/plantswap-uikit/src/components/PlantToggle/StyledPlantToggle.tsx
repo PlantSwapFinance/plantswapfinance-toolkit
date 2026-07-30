@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { scales, PlantToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const scaleKeyValues = {
   sm: {
@@ -48,7 +49,7 @@ const getScale =
     return scaleKeyValues[scale][property];
   };
 
-export const PlantStack = styled.div<HandleProps>`
+export const PlantStack = styled.div.withConfig(filterDomProps)<HandleProps>`
   position: relative;
   display: inline-block;
 
@@ -112,7 +113,7 @@ export const PlantStack = styled.div<HandleProps>`
   }
 `;
 
-export const PlantInput = styled.input<InputProps>`
+export const PlantInput = styled.input.withConfig(filterDomProps)<InputProps>`
   height: 40px;
   left: 0;
   opacity: 0;
@@ -150,7 +151,7 @@ export const PlantInput = styled.input<InputProps>`
   }
 `;
 
-export const PlantLabel = styled.label<PlantToggleProps>`
+export const PlantLabel = styled.label.withConfig(filterDomProps)<PlantToggleProps>`
   width: ${getScale("toggleWidth")};
   height: ${getScale("toggleHeight")};
   background: ${({ theme, checked }) => theme.colors[checked ? "success" : "input"]};

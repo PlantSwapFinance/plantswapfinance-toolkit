@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import { Text } from "../../../components/Text";
 import { Colors } from "../../../theme/types";
 import { MENU_ENTRY_HEIGHT } from "../config";
+import filterDomProps from "../../../util/filterDomProps";
 
 export interface Props {
   secondary?: boolean;
@@ -19,13 +20,13 @@ const rainbowAnimation = keyframes`
   }
 `;
 
-const LinkLabel = styled.div<{ isPushed: boolean }>`
+const LinkLabel = styled.div.withConfig(filterDomProps)<{ isPushed: boolean }>`
   color: ${({ isPushed, theme }) => (isPushed ? theme.colors.textSubtle : "transparent")};
   transition: color 0.4s;
   flex-grow: 1;
 `;
 
-const MenuEntry = styled.div.attrs<Props>(() => ({
+const MenuEntry = styled.div.withConfig(filterDomProps).attrs<Props>(() => ({
   secondary: false,
   isActive: false,
 }))<Props>`

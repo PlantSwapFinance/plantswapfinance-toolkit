@@ -1,6 +1,7 @@
 import styled, { DefaultTheme } from "styled-components";
 import { space } from "styled-system";
 import { CardProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface StyledCardProps extends CardProps {
   theme: DefaultTheme;
@@ -25,7 +26,7 @@ const getBoxShadow = ({ isActive, isSuccess, isWarning, theme }: StyledCardProps
   return theme.card.boxShadow;
 };
 
-const StyledCard = styled.div<StyledCardProps>`
+const StyledCard = styled.div.withConfig(filterDomProps)<StyledCardProps>`
   background-color: ${({ theme }) => theme.card.background};
   border: ${({ theme }) => theme.card.boxShadow};
   border-radius: ${({ theme }) => theme.radii.card};

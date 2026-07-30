@@ -7,8 +7,8 @@ import isTouchDevice from "../../util/isTouchDevice";
 import { StyledTooltip, Arrow } from "./StyledTooltip";
 import { TooltipOptions, TooltipRefs } from "./types";
 
-const invertTheme = (currentTheme: DefaultTheme) => {
-  if (currentTheme.isDark) {
+const invertTheme = (currentTheme?: DefaultTheme) => {
+  if (currentTheme?.isDark) {
     return light;
   }
   return dark;

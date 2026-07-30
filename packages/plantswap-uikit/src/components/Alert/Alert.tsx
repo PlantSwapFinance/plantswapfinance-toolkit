@@ -9,6 +9,7 @@ import { IconButton } from "../Button";
 import { CloseIcon } from "../Svg";
 import Flex from "../Box/Flex";
 import { AlertProps, variants } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface ThemedIconLabel {
   variant: AlertProps["variant"];
@@ -44,7 +45,7 @@ const getIcon = (variant: AlertProps["variant"] = variants.INFO) => {
   }
 };
 
-const IconLabel = styled.div<ThemedIconLabel>`
+const IconLabel = styled.div.withConfig(filterDomProps)<ThemedIconLabel>`
   background-color: ${getThemeColor};
   border-radius: 16px 0 0 16px;
   color: ${({ theme }) => theme.alert.background};
@@ -52,7 +53,7 @@ const IconLabel = styled.div<ThemedIconLabel>`
 `;
 
 const withHandlerSpacing = 32 + 12 + 8; // button size + inner spacing + handler position
-const Details = styled.div<{ hasHandler: boolean }>`
+const Details = styled.div.withConfig(filterDomProps)<{ hasHandler: boolean }>`
   flex: 1;
   padding-bottom: 12px;
   padding-left: 12px;

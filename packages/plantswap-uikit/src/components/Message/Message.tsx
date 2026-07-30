@@ -5,13 +5,14 @@ import { WarningIcon, ErrorIcon } from "../Svg";
 import { Box } from "../Box";
 import { MessageProps } from "./types";
 import variants from "./theme";
+import filterDomProps from "../../util/filterDomProps";
 
 const Icons = {
   warning: WarningIcon,
   danger: ErrorIcon,
 };
 
-const MessageContainer = styled.div<MessageProps>`
+const MessageContainer = styled.div.withConfig(filterDomProps)<MessageProps>`
   display: flex;
   background-color: gray;
   padding: 16px;

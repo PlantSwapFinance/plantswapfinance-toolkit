@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "target": "ES5",
     "lib": ["dom", "DOM.Iterable", "ESNext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -9,12 +8,13 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react",
-    "types": ["jest"] 
+    "types": ["jest"],
+    "rootDir": "./src"
   },
   "include": ["src"],
   "exclude": ["node_modules", "src/**/*.stories.tsx", "src/__tests__/**/*"]

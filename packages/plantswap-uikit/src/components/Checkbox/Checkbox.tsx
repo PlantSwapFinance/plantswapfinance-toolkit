@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { CheckboxProps, scales } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const getScale = ({ scale }: CheckboxProps) => {
   switch (scale) {
@@ -11,7 +12,7 @@ const getScale = ({ scale }: CheckboxProps) => {
   }
 };
 
-const Checkbox = styled.input.attrs({ type: "checkbox" })<CheckboxProps>`
+const Checkbox = styled.input.withConfig(filterDomProps).attrs({ type: "checkbox" })<CheckboxProps>`
   appearance: none;
   overflow: hidden;
   cursor: pointer;

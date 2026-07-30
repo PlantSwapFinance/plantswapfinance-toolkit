@@ -7,6 +7,7 @@ import isTouchDevice from "../../../../util/isTouchDevice";
 import { UserMenuProps, variants } from "./types";
 import MenuIcon from "./MenuIcon";
 import { UserMenuItem } from "./styles";
+import filterDomProps from "../../../../util/filterDomProps";
 
 const StyledUserMenu = styled(Flex)`
   align-items: center;
@@ -37,7 +38,7 @@ const LabelText = styled.div`
   }
 `;
 
-const Menu = styled.div<{ isOpen: boolean }>`
+const Menu = styled.div.withConfig(filterDomProps)<{ isOpen: boolean }>`
   background-color: ${({ theme }) => theme.card.background};
   border: 1px solid ${({ theme }) => theme.colors.cardBorder};
   border-radius: 16px;

@@ -6,6 +6,6 @@ module.exports = {
     options: {},
   },
   typescript: {
-    reactDocgen: "react-docgen-typescript",
+    reactDocgen: false,
   },
 };

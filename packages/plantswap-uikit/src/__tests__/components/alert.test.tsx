@@ -8,46 +8,37 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c3 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
       fill: currentColor;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
       flex-shrink: 0;
     }
 
     .c5 {
-      color: #280D5F;
+      color: #4D2419;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c6 {
-      color: #280D5F;
+      color: #4D2419;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
     }
 
     .c0 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
     }
 
     .c2 {
-      background-color: #7645D9;
+      background-color: #399349;
       border-radius: 16px 0 0 16px;
       color: #FFFFFF;
       padding: 12px;
     }
 
     .c4 {
-      -webkit-flex: 1;
-      -ms-flex: 1;
       flex: 1;
       padding-bottom: 12px;
       padding-left: 12px;
@@ -59,7 +50,7 @@ it("renders correctly", () => {
       position: relative;
       background-color: #FFFFFF;
       border-radius: 16px;
-      box-shadow: 0px 20px 36px -8px rgba(14,14,44,0.1),0px 1px 1px rgba(0,0,0,0.05);
+      box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),0px 1px 1px rgba(0, 0, 0, 0.05);
     }
 
     <div

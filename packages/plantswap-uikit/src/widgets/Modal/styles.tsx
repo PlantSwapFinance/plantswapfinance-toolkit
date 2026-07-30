@@ -5,8 +5,9 @@ import { Box } from "../../components/Box";
 import { ArrowBackIcon, CloseIcon } from "../../components/Svg";
 import { IconButton } from "../../components/Button";
 import { ModalProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
-export const ModalHeader = styled.div<{ background?: string }>`
+export const ModalHeader = styled.div.withConfig(filterDomProps)<{ background?: string }>`
   align-items: center;
   background: ${({ background }) => background || "transparent"};
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
