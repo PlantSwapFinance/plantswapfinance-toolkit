@@ -8,7 +8,7 @@ const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, tar
   const Tag: any = isHttpLink ? "a" : NavLink;
   const props = isHttpLink ? { href } : { to: href };
   const computedRel = target === "_blank" ? rel ?? "noopener noreferrer" : rel;
-  return <Tag role="button" target={target} rel={computedRel} {...props} {...otherProps} />;
+  return <Tag target={target} rel={computedRel} {...props} {...otherProps} />;
 };
 
 export default MenuLink;
