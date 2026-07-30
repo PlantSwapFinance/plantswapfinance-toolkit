@@ -17,7 +17,7 @@
     "start": "cross-env yarn storybook",
     "build": "rm -rf ./dist && rollup -c && tsc -p tsconfig.json -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
-    "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
+    "format:check": "prettier --check --log-level error 'src/**/*.{js,jsx,ts,tsx}'",
     "format:write": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
