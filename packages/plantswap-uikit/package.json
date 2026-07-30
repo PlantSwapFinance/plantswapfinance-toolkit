@@ -10,8 +10,11 @@
   ],
   "repository": "https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit",
   "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider yarn storybook",
+    "start": "cross-env yarn storybook",
     "build": "rm -rf ./dist && rollup -c && tsc -p tsconfig.json -d --emitDeclarationOnly --declarationDir dist",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "format:check": "prettier --check --loglevel error 'src/**/*.{js,jsx,ts,tsx}'",
