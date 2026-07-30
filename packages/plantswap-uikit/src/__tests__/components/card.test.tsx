@@ -14,10 +14,10 @@ it("renders correctly", () => {
     <DocumentFragment>
       .c0 {
       background-color: #FFFFFF;
-      border: 0px 2px 12px -8px rgba(25,19,38,0.1),0px 1px 1px rgba(25,19,38,0.05);
+      border: 0px 2px 12px -8px rgba(25, 19, 38, 0.1),0px 1px 1px rgba(25, 19, 38, 0.05);
       border-radius: 24px;
-      box-shadow: 0px 2px 12px -8px rgba(25,19,38,0.1),0px 1px 1px rgba(25,19,38,0.05);
-      color: #280D5F;
+      box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, 0.1),0px 1px 1px rgba(25, 19, 38, 0.05);
+      color: #4D2419;
       overflow: hidden;
       position: relative;
     }
@@ -27,7 +27,7 @@ it("renders correctly", () => {
     }
 
     .c1 {
-      background: linear-gradient(111.68deg,#F2ECF2 0%,#E8F2F6 100%);
+      background: linear-gradient(111.68deg, #FFFFFF 0%, #A7F1AE 100%);
       padding: 24px;
     }
 

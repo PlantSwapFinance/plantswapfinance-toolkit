@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { space, variant as StyledSystemVariant } from "styled-system";
 import { styleVariants, styleScales } from "./themes";
 import { ProgressProps, variants } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface BarProps {
   primary?: boolean;
 }
 
-export const Bar = styled.div<BarProps>`
+export const Bar = styled.div.withConfig(filterDomProps)<BarProps>`
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +26,7 @@ interface StyledProgressProps {
   scale: ProgressProps["scale"];
 }
 
-const StyledProgress = styled.div<StyledProgressProps>`
+const StyledProgress = styled.div.withConfig(filterDomProps)<StyledProgressProps>`
   position: relative;
   background-color: ${({ theme }) => theme.colors.input};
   box-shadow: ${({ theme }) => theme.shadows.inset};

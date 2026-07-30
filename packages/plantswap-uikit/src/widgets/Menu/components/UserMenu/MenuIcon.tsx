@@ -4,8 +4,9 @@ import { Variant, variants } from "./types";
 import { Image } from "../../../../components/Image";
 import { RefreshIcon, WalletFilledIcon, WarningIcon } from "../../../../components/Svg";
 import { Colors } from "../../../../theme/types";
+import filterDomProps from "../../../../util/filterDomProps";
 
-const MenuIconWrapper = styled.div<{ borderColor: keyof Colors }>`
+const MenuIconWrapper = styled.div.withConfig(filterDomProps)<{ borderColor: keyof Colors }>`
   align-items: center;
   background-color: ${({ theme }) => theme.colors.background};
   border-color: ${({ theme, borderColor }) => theme.colors[borderColor]};

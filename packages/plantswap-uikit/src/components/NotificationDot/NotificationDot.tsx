@@ -1,13 +1,14 @@
 import React, { cloneElement, Children, ReactElement } from "react";
 import styled from "styled-components";
 import { NotificationDotProps, DotProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const NotificationDotRoot = styled.span`
   display: inline-flex;
   position: relative;
 `;
 
-const Dot = styled.span<DotProps>`
+const Dot = styled.span.withConfig(filterDomProps)<DotProps>`
   display: ${({ show }) => (show ? "inline-flex" : "none")};
   position: absolute;
   top: 0;

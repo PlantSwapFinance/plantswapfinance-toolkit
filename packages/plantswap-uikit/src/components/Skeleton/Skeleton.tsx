@@ -2,6 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { space, layout } from "styled-system";
 import { SkeletonProps, animation as ANIMATION, variant as VARIANT } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const waves = keyframes`
    from {
@@ -24,7 +25,7 @@ const pulse = keyframes`
   }
 `;
 
-const Root = styled.div<SkeletonProps>`
+const Root = styled.div.withConfig(filterDomProps)<SkeletonProps>`
   min-height: 20px;
   display: block;
   background-color: ${({ theme }) => theme.colors.backgroundDisabled};

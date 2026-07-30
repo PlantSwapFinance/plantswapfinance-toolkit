@@ -32,14 +32,14 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c5 {
-      color: #280D5F;
+      color: #4D2419;
       font-size: 16px;
       font-weight: 600;
       line-height: 1.5;
     }
 
     .c18 {
-      color: #280D5F;
+      color: #4D2419;
       font-size: 14px;
       font-weight: 400;
       line-height: 1.5;
@@ -47,7 +47,7 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c21 {
-      color: #7A6EAA;
+      color: #2B6E37;
       font-size: 16px;
       font-weight: 400;
       line-height: 1.5;
@@ -62,38 +62,25 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c7 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       border: 0;
       border-radius: 16px;
-      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
       cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       font-family: inherit;
       font-size: 16px;
       font-weight: 600;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-letter-spacing: 0.03em;
-      -moz-letter-spacing: 0.03em;
-      -ms-letter-spacing: 0.03em;
       letter-spacing: 0.03em;
       line-height: 1;
       opacity: 1;
       outline: 0;
-      -webkit-transition: background-color 0.2s,opacity 0.2s;
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #2B6E37;
       box-shadow: none;
     }
 
@@ -103,8 +90,6 @@ it("renders ConnectModal correctly", () => {
 
     .c7:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
       opacity: 0.85;
-      -webkit-transform: translateY(1px);
-      -ms-transform: translateY(1px);
       transform: translateY(1px);
       box-shadow: none;
     }
@@ -119,38 +104,25 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c15 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       border: 0;
       border-radius: 16px;
-      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
       cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       font-family: inherit;
       font-size: 16px;
       font-weight: 600;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-letter-spacing: 0.03em;
-      -moz-letter-spacing: 0.03em;
-      -ms-letter-spacing: 0.03em;
       letter-spacing: 0.03em;
       line-height: 1;
       opacity: 1;
       outline: 0;
-      -webkit-transition: background-color 0.2s,opacity 0.2s;
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
       background-color: transparent;
-      color: #1FC7D4;
+      color: #2B6E37;
       box-shadow: none;
       width: 100%;
       padding-top: 16px;
@@ -163,8 +135,6 @@ it("renders ConnectModal correctly", () => {
 
     .c15:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
       opacity: 0.85;
-      -webkit-transform: translateY(1px);
-      -ms-transform: translateY(1px);
       transform: translateY(1px);
       box-shadow: none;
     }
@@ -179,37 +149,24 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c22 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       border: 0;
       border-radius: 16px;
-      box-shadow: 0px -1px 0px 0px rgba(14,14,44,0.4) inset;
+      box-shadow: 0px -1px 0px 0px rgba(14, 14, 44, 0.4) inset;
       cursor: pointer;
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       font-family: inherit;
       font-size: 16px;
       font-weight: 600;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
-      -webkit-letter-spacing: 0.03em;
-      -moz-letter-spacing: 0.03em;
-      -ms-letter-spacing: 0.03em;
       letter-spacing: 0.03em;
       line-height: 1;
       opacity: 1;
       outline: 0;
-      -webkit-transition: background-color 0.2s,opacity 0.2s;
       transition: background-color 0.2s,opacity 0.2s;
       height: 48px;
       padding: 0 24px;
-      background-color: #7A6EAA;
+      background-color: #2B6E37;
       color: #FFFFFF;
       width: 100%;
     }
@@ -220,8 +177,6 @@ it("renders ConnectModal correctly", () => {
 
     .c22:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
       opacity: 0.85;
-      -webkit-transform: translateY(1px);
-      -ms-transform: translateY(1px);
       transform: translateY(1px);
       box-shadow: none;
     }
@@ -241,71 +196,43 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c9 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
-      fill: #1FC7D4;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
+      fill: #2B6E37;
       flex-shrink: 0;
     }
 
     .c17 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
-      fill: #280D5F;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
+      fill: #4D2419;
       flex-shrink: 0;
       margin-bottom: 8px;
     }
 
     .c19 {
-      -webkit-align-self: center;
-      -ms-flex-item-align: center;
       align-self: center;
-      fill: #7A6EAA;
-      -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
+      fill: #2B6E37;
       flex-shrink: 0;
       margin-bottom: 8px;
     }
 
     .c3 {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
     }
 
     .c2 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      background: linear-gradient(139.73deg,#E5FDFF 0%,#F3EFFF 100%);
+      background: linear-gradient(139.73deg, #FFFFFF 0%, #71BE63 100%);
       border-bottom: 1px solid #E7E3EB;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
       padding: 12px 24px;
     }
 
     .c4 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      -webkit-flex: 1;
-      -ms-flex: 1;
       flex: 1;
     }
 
     .c11 {
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
       max-height: 90vh;
       overflow-y: auto;
@@ -314,7 +241,7 @@ it("renders ConnectModal correctly", () => {
     .c1 {
       overflow: hidden;
       background: #FFFFFF;
-      box-shadow: 0px 20px 36px -8px rgba(14,14,44,0.1),0px 1px 1px rgba(0,0,0,0.05);
+      box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.1),0px 1px 1px rgba(0, 0, 0, 0.05);
       border: 1px solid #E7E3EB;
       border-radius: 32px;
       width: 100%;
@@ -323,21 +250,10 @@ it("renders ConnectModal correctly", () => {
     }
 
     .c16 {
-      -webkit-align-items: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column;
       height: auto;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
@@ -347,23 +263,19 @@ it("renders ConnectModal correctly", () => {
       border-bottom: 1px solid #E7E3EB;
     }
 
-    @media screen and (min-width:370px) {
-
-    }
-
-    @media screen and (min-width:576px) {
+    @media screen and (min-width: 576px) {
       .c10 {
         width: 340px;
       }
     }
 
-    @media screen and (min-width:968px) {
+    @media screen and (min-width: 968px) {
       .c6 {
         font-size: 20px;
       }
     }
 
-    @media screen and (min-width:370px) {
+    @media screen and (min-width: 370px) {
       .c1 {
         width: auto;
         min-width: 320px;
@@ -655,7 +567,7 @@ it("renders ConnectModal correctly", () => {
             </p>
             <a
               class="c22"
-              href="https://docs.plantswap.finance/get-started/connection-guide"
+              href="https://plantswap.finance/documentation"
               rel="noreferrer noopener"
               scale="md"
               target="_blank"

@@ -11,9 +11,6 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      display: -webkit-inline-box;
-      display: -webkit-inline-flex;
-      display: -ms-inline-flexbox;
       display: inline-flex;
       position: relative;
     }
@@ -28,7 +25,7 @@ it("renders correctly", () => {
       pointer-events: none;
       border: 2px solid #FFFFFF;
       border-radius: 50%;
-      background-color: #ED4B9E;
+      background-color: #AC2C2C;
     }
 
     <span

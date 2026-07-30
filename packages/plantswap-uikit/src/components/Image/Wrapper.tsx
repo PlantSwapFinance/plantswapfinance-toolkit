@@ -2,8 +2,9 @@ import React, { forwardRef } from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
 import { WrapperProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
-const StyledWrapper = styled.div<{ $width: number; $height: number }>`
+const StyledWrapper = styled.div.withConfig(filterDomProps)<{ $width: number; $height: number }>`
   max-height: ${({ $height }) => $height}px;
   max-width: ${({ $width }) => $width}px;
   position: relative;

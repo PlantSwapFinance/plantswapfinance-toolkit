@@ -1,12 +1,13 @@
 import React from "react";
 import styled, { DefaultTheme } from "styled-components";
 import { CardRibbonProps } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 interface StyledCardRibbonProps extends CardRibbonProps {
   theme: DefaultTheme;
 }
 
-const StyledCardRibbon = styled.div<Partial<StyledCardRibbonProps>>`
+const StyledCardRibbon = styled.div.withConfig(filterDomProps)<Partial<StyledCardRibbonProps>>`
   z-index: 1;
   background-color: ${({ variantColor = "secondary", theme }) => theme.colors[variantColor]};
   color: white;

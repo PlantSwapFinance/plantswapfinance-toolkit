@@ -4,6 +4,7 @@ import { MENU_ENTRY_HEIGHT } from "../config";
 import { LinkLabel, LinkStatus as LinkStatusComponent, MenuEntry } from "./MenuEntry";
 import { LinkStatus, PushedProps } from "../types";
 import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../../components/Svg";
+import filterDomProps from "../../../util/filterDomProps";
 
 interface Props extends PushedProps {
   label: string;
@@ -22,7 +23,11 @@ const Container = styled.div`
   flex-shrink: 0;
 `;
 
-const AccordionContent = styled.div<{ isOpen: boolean; isPushed: boolean; maxHeight: number }>`
+const AccordionContent = styled.div.withConfig(filterDomProps)<{
+  isOpen: boolean;
+  isPushed: boolean;
+  maxHeight: number;
+}>`
   max-height: ${({ isOpen, maxHeight }) => (isOpen ? `${maxHeight}px` : 0)};
   transition: max-height 0.3s ease-out;
   overflow: hidden;

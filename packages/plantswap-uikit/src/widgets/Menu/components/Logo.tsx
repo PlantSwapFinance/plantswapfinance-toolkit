@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
@@ -14,11 +14,11 @@ interface Props {
 }
 
 const blink = keyframes`
-  0%,  100% { transform: scaleY(1); } 
-  50% { transform:  scaleY(0.1); } 
+  0%,  100% { transform: scaleY(1); }
+  50% { transform:  scaleY(0.1); }
 `;
 
-const StyledLink = styled(Link)`
+const logoStyles = css`
   display: flex;
   align-items: center;
   .mobile-icon {
@@ -48,6 +48,14 @@ const StyledLink = styled(Link)`
   }
 `;
 
+const StyledLink = styled(Link)`
+  ${logoStyles}
+`;
+
+const StyledAnchor = styled.a`
+  ${logoStyles}
+`;
+
 const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
   const isAbsoluteUrl = href.startsWith("http");
   const innerLogo = (
@@ -67,9 +75,9 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Plant home page">
+        <StyledAnchor href={href} aria-label="Plant home page">
           {innerLogo}
-        </StyledLink>
+        </StyledAnchor>
       ) : (
         <StyledLink to={href} aria-label="Plant home page">
           {innerLogo}

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { space } from "styled-system";
 import { RadioProps, scales } from "./types";
+import filterDomProps from "../../util/filterDomProps";
 
 const getScale = ({ scale }: RadioProps) => {
   switch (scale) {
@@ -22,7 +23,7 @@ const getCheckedScale = ({ scale }: RadioProps) => {
   }
 };
 
-const Radio = styled.input.attrs({ type: "radio" })<RadioProps>`
+const Radio = styled.input.withConfig(filterDomProps).attrs({ type: "radio" })<RadioProps>`
   appearance: none;
   overflow: hidden;
   cursor: pointer;

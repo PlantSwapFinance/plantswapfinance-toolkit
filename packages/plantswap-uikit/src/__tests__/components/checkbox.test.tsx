@@ -9,8 +9,6 @@ it("renders correctly", () => {
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c0 {
-      -webkit-appearance: none;
-      -moz-appearance: none;
       appearance: none;
       overflow: hidden;
       cursor: pointer;
@@ -19,12 +17,11 @@ it("renders correctly", () => {
       height: 32px;
       width: 32px;
       vertical-align: middle;
-      -webkit-transition: background-color 0.2s ease-in-out;
       transition: background-color 0.2s ease-in-out;
       border: 0;
       border-radius: 8px;
       background-color: #eeeaf4;
-      box-shadow: inset 0px 2px 2px -1px rgba(74,74,104,0.1);
+      box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
     }
 
     .c0:after {
@@ -39,24 +36,21 @@ it("renders correctly", () => {
       width: 50%;
       height: 25%;
       margin: auto;
-      -webkit-transform: rotate(-50deg);
-      -ms-transform: rotate(-50deg);
       transform: rotate(-50deg);
-      -webkit-transition: border-color 0.2s ease-in-out;
       transition: border-color 0.2s ease-in-out;
     }
 
     .c0:hover:not(:disabled):not(:checked) {
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
     .c0:focus {
       outline: none;
-      box-shadow: 0px 0px 0px 1px #7645D9,0px 0px 0px 4px rgba(118,69,217,0.6);
+      box-shadow: 0px 0px 0px 1px #2B6E37,0px 0px 0px 4px rgba(43, 110, 55, 0.5);
     }
 
     .c0:checked {
-      background-color: #31D0AA;
+      background-color: #399349;
     }
 
     .c0:checked:after {

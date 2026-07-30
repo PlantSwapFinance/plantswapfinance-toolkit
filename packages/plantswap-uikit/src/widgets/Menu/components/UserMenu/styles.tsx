@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { UserMenuItemProps } from "./types";
+import filterDomProps from "../../../../util/filterDomProps";
 
 export const UserMenuDivider = styled.hr`
   border-color: ${({ theme }) => theme.colors.cardBorder};
@@ -8,7 +9,7 @@ export const UserMenuDivider = styled.hr`
   margin: 4px 0;
 `;
 
-export const UserMenuItem = styled.button<UserMenuItemProps>`
+export const UserMenuItem = styled.button.withConfig(filterDomProps)<UserMenuItemProps>`
   align-items: center;
   border: 0;
   background: transparent;
