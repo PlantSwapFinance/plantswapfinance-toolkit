@@ -39,7 +39,7 @@
     "@babel/preset-typescript": "^8.0.0",
     "@commitlint/cli": "^21.0.0",
     "@commitlint/config-conventional": "^21.0.0",
-    "@plantswap-libs/eslint-config-plantswap": "0.0.1",
+    "@plantswap-libs/eslint-config-plantswap": "workspace:*",
     "@rollup/plugin-babel": "^7.0.0",
     "@rollup/plugin-commonjs": "^29.0.3",
     "@rollup/plugin-json": "^6.1.0",
