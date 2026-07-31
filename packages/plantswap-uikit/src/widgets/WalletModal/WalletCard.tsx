@@ -23,14 +23,12 @@ const WalletButton = styled(Button).attrs({ width: "100%", variant: "text", py: 
   margin-right: auto;
 `;
 
-export const MoreWalletCard: React.FC<ButtonProps> = (props) => {
-  return (
-    <WalletButton variant="tertiary" {...props}>
-      <MoreHorizontal width="40px" mb="8px" color="textSubtle" />
-      <Text fontSize="14px">More</Text>
-    </WalletButton>
-  );
-};
+export const MoreWalletCard: React.FC<ButtonProps> = (props) => (
+  <WalletButton variant="tertiary" {...props}>
+    <MoreHorizontal width="40px" mb="8px" color="textSubtle" />
+    <Text fontSize="14px">More</Text>
+  </WalletButton>
+);
 
 const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss }) => {
   const { title, icon: Icon } = walletConfig;
@@ -39,7 +37,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss }) => {
     <WalletButton
       variant="tertiary"
       onClick={() => {
-        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !('MSStream' in window);
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !("MSStream" in window);
 
         // Since iOS does not support Trust Wallet we fall back to WalletConnect
         if (walletConfig.title === "Trust Wallet" && isIOS) {

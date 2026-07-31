@@ -26,9 +26,8 @@ const scaleKeyValues = {
 
 const getScale =
   (property: ScaleKeys) =>
-  ({ scale = scales.MD }: ToggleProps) => {
-    return scaleKeyValues[scale][property];
-  };
+  ({ scale = scales.MD }: ToggleProps) =>
+    scaleKeyValues[scale][property];
 
 export const Handle = styled.div.withConfig(filterDomProps)<HandleProps>`
   background-color: ${({ theme }) => theme.toggle.handleBackground};

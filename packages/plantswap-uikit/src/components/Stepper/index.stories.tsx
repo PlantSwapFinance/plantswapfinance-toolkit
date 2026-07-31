@@ -22,70 +22,66 @@ const Row = styled.div`
   margin-bottom: 32px;
 `;
 
-export const Default: React.FC = () => {
-  return (
-    <Stepper>
-      {steps.map((step, index) => (
-        <Step key={step} index={index} status={status[index]}>
-          <Card>
-            <CardBody>{step}</CardBody>
-          </Card>
-        </Step>
-      ))}
-    </Stepper>
-  );
-};
+export const Default: React.FC = () => (
+  <Stepper>
+    {steps.map((step, index) => (
+      <Step key={step} index={index} status={status[index]}>
+        <Card>
+          <CardBody>{step}</CardBody>
+        </Card>
+      </Step>
+    ))}
+  </Stepper>
+);
 
-export const Components: React.FC = () => {
-  return (
-    <div>
-      <Row>
-        <StepNumber status="past">1</StepNumber>
-        <StepNumber status="current">1</StepNumber>
-        <StepNumber status="future">1</StepNumber>
-      </Row>
-      <Row>
-        <Step index={0} status="past">
-          <Card>
-            <CardBody>
-              <h2>Step 0</h2>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
-              </div>
-            </CardBody>
-          </Card>
-        </Step>
-      </Row>
-      <Row>
-        <Step index={1} status="current">
-          <Card>
-            <CardBody>
-              <h2>Step 1</h2>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
-              </div>
-            </CardBody>
-          </Card>
-        </Step>
-      </Row>
-      <Row>
-        <Step index={2} status="future">
-          <Card>
-            <CardBody>
-              <h2>Step 2</h2>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
-                placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
-                finibus neque. Phasellus consequat at lorem a venenatis.
-              </div>
-            </CardBody>
-          </Card>
-        </Step>
-      </Row>
-    </div>
-  );
-};
+export const Components: React.FC = () => (
+  <div>
+    <Row>
+      <StepNumber status="past">1</StepNumber>
+      <StepNumber status="current">1</StepNumber>
+      <StepNumber status="future">1</StepNumber>
+    </Row>
+    <Row>
+      <Step index={0} status="past">
+        <Card>
+          <CardBody>
+            <h2>Step 0</h2>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
+              placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
+              finibus neque. Phasellus consequat at lorem a venenatis.
+            </div>
+          </CardBody>
+        </Card>
+      </Step>
+    </Row>
+    <Row>
+      <Step index={1} status="current">
+        <Card>
+          <CardBody>
+            <h2>Step 1</h2>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
+              placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
+              finibus neque. Phasellus consequat at lorem a venenatis.
+            </div>
+          </CardBody>
+        </Card>
+      </Step>
+    </Row>
+    <Row>
+      <Step index={2} status="future">
+        <Card>
+          <CardBody>
+            <h2>Step 2</h2>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae nisl imperdiet, vestibulum lacus at,
+              placerat nisi. Vestibulum quis scelerisque purus. Curabitur non magna tincidunt, fermentum neque sed,
+              finibus neque. Phasellus consequat at lorem a venenatis.
+            </div>
+          </CardBody>
+        </Card>
+      </Step>
+    </Row>
+  </div>
+);

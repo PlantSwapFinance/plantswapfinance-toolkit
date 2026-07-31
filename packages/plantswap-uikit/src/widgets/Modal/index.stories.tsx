@@ -44,9 +44,7 @@ export const DisableOverlayClick: React.FC = () => {
 
 export const WithBackButton: React.FC = () => {
   const BackButtonModal: React.FC<ModalProps> = ({ title, onDismiss }) => {
-    const handleOnBack = () => {
-      return 1;
-    };
+    const handleOnBack = () => 1;
 
     return (
       <Modal title={title} onDismiss={onDismiss} onBack={handleOnBack} hideCloseButton>
@@ -63,34 +61,31 @@ export const WithBackButton: React.FC = () => {
 };
 
 export const WithCustomHeader: React.FC = () => {
-  const CustomHeaderModal: React.FC<ModalProps> = ({ title, onDismiss }) => {
-    return (
-      <Modal title={title} headerBackground="primary" onDismiss={onDismiss}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu pretium massa. Donec et gravida eros, eget
-        sollicitudin sapien. Donec imperdiet lorem nulla, at hendrerit purus lacinia ut. Phasellus rhoncus justo in
-        tincidunt cursus. Fusce vulputate, enim id facilisis faucibus, justo nunc consectetur nibh, sit amet euismod
-        ante mauris ut est. Vestibulum eu ligula eu erat eleifend imperdiet et eu nulla. Curabitur sodales ullamcorper
-        nibh sed sagittis. Integer a elit nec nisl cursus vehicula eu a nibh. Donec posuere tortor id egestas ultrices.
-        Aliquam in eros eros. Maecenas fringilla enim varius, fringilla lectus ut, finibus sapien. Phasellus ac
-        vulputate libero, id vehicula massa. Ut dignissim lorem ut risus accumsan feugiat. Quisque odio mi, sollicitudin
-        non elementum nec, tristique non est. Sed faucibus ante hendrerit viverra volutpat. Proin et enim nec ipsum
-        sodales suscipit eu nec lacus. Nulla consequat volutpat scelerisque. Phasellus ligula orci, dictum quis commodo
-        et, tempor quis ligula. Pellentesque eget dapibus leo. Aliquam in ipsum vehicula, suscipit ipsum nec, viverra
-        mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu pretium massa. Donec et gravida eros,
-        eget sollicitudin sapien. Donec imperdiet lorem nulla, at hendrerit purus lacinia ut. Phasellus rhoncus justo in
-        tincidunt cursus. Fusce vulputate, enim id facilisis faucibus, justo nunc consectetur nibh, sit amet euismod
-        ante mauris ut est. Vestibulum eu ligula eu erat eleifend imperdiet et eu nulla. Curabitur sodales ullamcorper
-        nibh sed sagittis. Integer a elit nec nisl cursus vehicula eu a nibh. Donec posuere tortor id egestas ultrices.
-        Aliquam in eros eros. Maecenas fringilla enim varius, fringilla lectus ut, finibus sapien. Phasellus ac
-        vulputate libero, id vehicula massa. Ut dignissim lorem ut risus accumsan feugiat. Quisque odio mi, sollicitudin
-        non elementum nec, tristique non est. Sed faucibus ante hendrerit viverra volutpat. Proin et enim nec ipsum
-        sodales suscipit eu nec lacus. Nulla consequat volutpat scelerisque. Phasellus ligula orci, dictum quis commodo
-        et, tempor quis ligula. Pellentesque eget dapibus leo. Aliquam in ipsum vehicula, suscipit ipsum nec, viverra
-        mauris.
-        <Button>This button Does nothing</Button>
-      </Modal>
-    );
-  };
+  const CustomHeaderModal: React.FC<ModalProps> = ({ title, onDismiss }) => (
+    <Modal title={title} headerBackground="primary" onDismiss={onDismiss}>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu pretium massa. Donec et gravida eros, eget
+      sollicitudin sapien. Donec imperdiet lorem nulla, at hendrerit purus lacinia ut. Phasellus rhoncus justo in
+      tincidunt cursus. Fusce vulputate, enim id facilisis faucibus, justo nunc consectetur nibh, sit amet euismod ante
+      mauris ut est. Vestibulum eu ligula eu erat eleifend imperdiet et eu nulla. Curabitur sodales ullamcorper nibh sed
+      sagittis. Integer a elit nec nisl cursus vehicula eu a nibh. Donec posuere tortor id egestas ultrices. Aliquam in
+      eros eros. Maecenas fringilla enim varius, fringilla lectus ut, finibus sapien. Phasellus ac vulputate libero, id
+      vehicula massa. Ut dignissim lorem ut risus accumsan feugiat. Quisque odio mi, sollicitudin non elementum nec,
+      tristique non est. Sed faucibus ante hendrerit viverra volutpat. Proin et enim nec ipsum sodales suscipit eu nec
+      lacus. Nulla consequat volutpat scelerisque. Phasellus ligula orci, dictum quis commodo et, tempor quis ligula.
+      Pellentesque eget dapibus leo. Aliquam in ipsum vehicula, suscipit ipsum nec, viverra mauris. Lorem ipsum dolor
+      sit amet, consectetur adipiscing elit. Nullam eu pretium massa. Donec et gravida eros, eget sollicitudin sapien.
+      Donec imperdiet lorem nulla, at hendrerit purus lacinia ut. Phasellus rhoncus justo in tincidunt cursus. Fusce
+      vulputate, enim id facilisis faucibus, justo nunc consectetur nibh, sit amet euismod ante mauris ut est.
+      Vestibulum eu ligula eu erat eleifend imperdiet et eu nulla. Curabitur sodales ullamcorper nibh sed sagittis.
+      Integer a elit nec nisl cursus vehicula eu a nibh. Donec posuere tortor id egestas ultrices. Aliquam in eros eros.
+      Maecenas fringilla enim varius, fringilla lectus ut, finibus sapien. Phasellus ac vulputate libero, id vehicula
+      massa. Ut dignissim lorem ut risus accumsan feugiat. Quisque odio mi, sollicitudin non elementum nec, tristique
+      non est. Sed faucibus ante hendrerit viverra volutpat. Proin et enim nec ipsum sodales suscipit eu nec lacus.
+      Nulla consequat volutpat scelerisque. Phasellus ligula orci, dictum quis commodo et, tempor quis ligula.
+      Pellentesque eget dapibus leo. Aliquam in ipsum vehicula, suscipit ipsum nec, viverra mauris.
+      <Button>This button Does nothing</Button>
+    </Modal>
+  );
 
   const [onPresent1] = useModal(<CustomHeaderModal title="Modal with custom header" />);
   return <Button onClick={onPresent1}>Modal with custom header</Button>;
@@ -104,26 +99,24 @@ export const ReactingToOusideChanges: React.FC = () => {
     }, 500);
     return () => clearInterval(intervalId);
   }, []);
-  const ReactiveModal: React.FC<ModalProps & { count: number }> = ({ title, count, onDismiss }) => {
-    return (
-      <Modal title={title} onDismiss={onDismiss}>
-        <h2>Counter: {count}</h2>
-        <Button mt="8px" onClick={onDismiss}>
-          Close
-        </Button>
-      </Modal>
-    );
-  };
+  const ReactiveModal: React.FC<ModalProps & { count: number }> = ({ title, count, onDismiss }) => (
+    <Modal title={title} onDismiss={onDismiss}>
+      <h2>Counter: {count}</h2>
+      <Button mt="8px" onClick={onDismiss}>
+        Close
+      </Button>
+    </Modal>
+  );
 
   const [onPresent1] = useModal(
     <ReactiveModal title={`[${counter}] Modal that reacts to outside change`} count={counter} />,
     true,
     true,
-    "reactiveModal"
+    "reactiveModal",
   );
 
   const [onPresent2] = useModal(
-    <ReactiveModal title={`[${counter}] Modal that does NOT react to outside change`} count={counter} />
+    <ReactiveModal title={`[${counter}] Modal that does NOT react to outside change`} count={counter} />,
   );
   return (
     <div>

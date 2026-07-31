@@ -14,7 +14,7 @@ const GridCell = styled.div`
 `;
 
 const ReferenceElement = styled.div`
-  background-color: #2B6E37;
+  background-color: #2b6e37;
   width: 160px;
   height: 160px;
   border-radius: 8px;

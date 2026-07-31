@@ -19,7 +19,7 @@ import { byTextAscending, byTextDescending } from "./utils";
 const sortByColumn = <T extends DataType>(
   data: RowType<T>[],
   sortColumn: string,
-  columns: ColumnStateType<T>[]
+  columns: ColumnStateType<T>[],
 ): RowType<T>[] => {
   let isAscending = null;
   let sortedRows: RowType<T>[] = [...data];
@@ -203,9 +203,9 @@ const createReducer =
 
         return {
           ...state,
-          rows: filteredRows.map((row) => {
-            return selectedRowsById[row.id] ? { ...row, selected: selectedRowsById[row.id] } : { ...row };
-          }),
+          rows: filteredRows.map((row) =>
+            selectedRowsById[row.id] ? { ...row, selected: selectedRowsById[row.id] } : { ...row },
+          ),
           filterOn: true,
         };
       case "SELECT_ROW":
@@ -237,16 +237,15 @@ const createReducer =
         return stateCopy;
       case "SEARCH_STRING":
         stateCopy = { ...state };
-        stateCopy.rows = stateCopy.originalRows.filter((row) => {
-          return (
+        stateCopy.rows = stateCopy.originalRows.filter(
+          (row) =>
             row.cells.filter((cell) => {
               if (cell.value.includes(action.searchString)) {
                 return true;
               }
               return false;
-            }).length > 0
-          );
-        });
+            }).length > 0,
+        );
         return stateCopy;
       case "TOGGLE_ALL":
         if (state.selectedRows.length < state.rows.length) {
@@ -265,9 +264,9 @@ const createReducer =
           stateCopy.toggleAllState = false;
         }
 
-        stateCopy.originalRows = stateCopy.originalRows.map((row) => {
-          return row.id in rowIds ? { ...row, selected: rowIds[row.id] } : { ...row };
-        });
+        stateCopy.originalRows = stateCopy.originalRows.map((row) =>
+          row.id in rowIds ? { ...row, selected: rowIds[row.id] } : { ...row },
+        );
 
         stateCopy.selectedRows = stateCopy.originalRows.filter((row) => row.selected);
 
@@ -277,9 +276,9 @@ const createReducer =
     }
   };
 
-const sortDataInOrder = <T extends DataType>(data: T[], columns: ColumnType<T>[]): T[] => {
+const sortDataInOrder = <T extends DataType>(data: T[], columns: ColumnType<T>[]): T[] =>
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return data.map((row: any) => {
+  data.map((row: any) => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const newRow: any = {};
     columns.forEach((column) => {
@@ -290,66 +289,55 @@ const sortDataInOrder = <T extends DataType>(data: T[], columns: ColumnType<T>[]
     });
     return newRow;
   });
-};
 
 export const makeRender = <T extends DataType>(
   // eslint-disable-next-line
   value: any,
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   render: (({ value, row }: { value: any; row: T }) => ReactNode) | undefined,
-  row: T
-): (() => React.ReactNode) => {
-  return render ? () => render({ row, value }) : () => value;
-};
+  row: T,
+): (() => React.ReactNode) => (render ? () => render({ row, value }) : () => value);
 
-const makeHeaderRender = (label: string, render?: HeaderRenderType) => {
-  return render ? () => render({ label }) : () => label;
-};
+const makeHeaderRender = (label: string, render?: HeaderRenderType) => (render ? () => render({ label }) : () => label);
 
 export const useTable = <T extends DataType>(
   columns: ColumnType<T>[],
   data: T[],
-  options?: UseTableOptionsType<T>
+  options?: UseTableOptionsType<T>,
 ): UseTableReturnType<T> => {
   const columnsWithSorting: ColumnStateType<T>[] = useMemo(
     () =>
-      columns.map((column) => {
-        return {
-          ...column,
-          label: column.label ? column.label : column.name,
-          hidden: column.hidden ? column.hidden : false,
-          sort: column.sort,
-          sorted: {
-            on: false,
-            asc: false,
-          },
-        };
-      }),
-    [columns]
+      columns.map((column) => ({
+        ...column,
+        label: column.label ? column.label : column.name,
+        hidden: column.hidden ? column.hidden : false,
+        sort: column.sort,
+        sorted: {
+          on: false,
+          asc: false,
+        },
+      })),
+    [columns],
   );
   const columnsByName = useMemo(() => getColumnsByName(columnsWithSorting), [columnsWithSorting]);
 
   const tableData: RowType<T>[] = useMemo(() => {
     const sortedData = sortDataInOrder(data, columnsWithSorting);
 
-    const newData = sortedData.map((row, idx) => {
-      return {
-        id: idx,
-        selected: false,
-        hidden: false,
-        original: row,
-        cells: Object.entries(row)
-          .map(([column, value]) => {
-            return {
-              hidden: columnsByName[column].hidden,
-              field: column,
-              value,
-              render: makeRender(value, columnsByName[column].render, row),
-            };
-          })
-          .filter((cell) => !cell.hidden),
-      };
-    });
+    const newData = sortedData.map((row, idx) => ({
+      id: idx,
+      selected: false,
+      hidden: false,
+      original: row,
+      cells: Object.entries(row)
+        .map(([column, value]) => ({
+          hidden: columnsByName[column].hidden,
+          field: column,
+          value,
+          render: makeRender(value, columnsByName[column].render, row),
+        }))
+        .filter((cell) => !cell.hidden),
+    }));
     return newData;
   }, [data, columnsWithSorting, columnsByName]);
 
@@ -370,9 +358,9 @@ export const useTable = <T extends DataType>(
       perPage: 10,
       canNext: true,
       canPrev: false,
-      // eslint-disable-next-line @typescript-eslint/no-empty-function
+
       nextPage: noop,
-      // eslint-disable-next-line @typescript-eslint/no-empty-function
+
       prevPage: noop,
     },
   });
@@ -386,8 +374,8 @@ export const useTable = <T extends DataType>(
     dispatch({ type: "SET_ROWS", data: tableData });
   }, [tableData]);
 
-  const headers: HeaderType<T>[] = useMemo(() => {
-    return [
+  const headers: HeaderType<T>[] = useMemo(
+    () => [
       ...state.columns.map((column) => {
         const label = column.label ? column.label : column.name;
         return {
@@ -395,8 +383,9 @@ export const useTable = <T extends DataType>(
           render: makeHeaderRender(label, column.headerRender),
         };
       }),
-    ];
-  }, [state.columns]);
+    ],
+    [state.columns],
+  );
 
   useEffect(() => {
     if (options && options.filter) {

@@ -1,4 +1,5 @@
 import React, { cloneElement, ElementType, isValidElement } from "react";
+import { SpaceProps } from "styled-system";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
 import StyledButton from "./StyledButton";
 import { ButtonProps, scales, variants } from "./types";
@@ -42,12 +43,12 @@ const Button = <E extends ElementType = "button">(props: ButtonProps<E>): React.
         {isValidElement(startIcon) &&
           cloneElement(startIcon, {
             mr: "0.5rem",
-          } as any)}
+          } as SpaceProps)}
         {children}
         {isValidElement(endIcon) &&
           cloneElement(endIcon, {
             ml: "0.5rem",
-          } as any)}
+          } as SpaceProps)}
       </>
     </StyledButton>
   );

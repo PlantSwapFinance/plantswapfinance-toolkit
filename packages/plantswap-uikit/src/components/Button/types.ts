@@ -18,8 +18,8 @@ export const variants = {
   SUCCESS: "success",
 } as const;
 
-export type Scale = typeof scales[keyof typeof scales];
-export type Variant = typeof variants[keyof typeof variants];
+export type Scale = (typeof scales)[keyof typeof scales];
+export type Variant = (typeof variants)[keyof typeof variants];
 
 /**
  * @see https://www.benmvp.com/blog/polymorphic-react-components-typescript/
@@ -33,7 +33,7 @@ export type MergeProps<E extends ElementType> = AsProps<E> & Omit<ComponentProps
 export type PolymorphicComponentProps<E extends ElementType, P> = P & MergeProps<E>;
 
 export type PolymorphicComponent<P, D extends ElementType = "button"> = <E extends ElementType = D>(
-  props: PolymorphicComponentProps<E, P>
+  props: PolymorphicComponentProps<E, P>,
 ) => ReactElement | null;
 
 export interface BaseButtonProps extends LayoutProps, SpaceProps {

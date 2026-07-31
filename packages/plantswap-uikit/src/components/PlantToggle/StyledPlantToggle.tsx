@@ -45,9 +45,8 @@ const scaleKeyValues = {
 
 const getScale =
   (property: ScaleKeys) =>
-  ({ scale = scales.MD }: PlantToggleProps) => {
-    return scaleKeyValues[scale][property];
-  };
+  ({ scale = scales.MD }: PlantToggleProps) =>
+    scaleKeyValues[scale][property];
 
 export const PlantStack = styled.div.withConfig(filterDomProps)<HandleProps>`
   position: relative;
@@ -62,7 +61,7 @@ export const PlantStack = styled.div.withConfig(filterDomProps)<HandleProps>`
   }
 
   .plant {
-    background: #2B6E37;
+    background: #2b6e37;
     border-radius: 50%;
     width: ${getScale("plantSize")};
     height: ${getScale("plantSize")};
@@ -96,7 +95,7 @@ export const PlantStack = styled.div.withConfig(filterDomProps)<HandleProps>`
   .plant:nth-child(3):after {
     content: "";
     position: absolute;
-    background: #2B6E37;
+    background: #2b6e37;
     border-radius: 20px;
     width: 50%;
     height: 20%;
@@ -130,7 +129,7 @@ export const PlantInput = styled.input.withConfig(filterDomProps)<InputProps>`
   }
 
   &:checked + label .plant:nth-child(1) {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0 ${getScale("plantThickness")} 0 ${getScale("plantThickness")} #399349;
     transition-delay: 0.2s;
   }

@@ -2,5 +2,21 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "ESLint 10 has no compatible eslint-plugin-react / eslint-plugin-import / eslint-plugin-jsx-a11y release, and the Airbnb rule set depends on all three. Revisit once those plugins ship v10 support.",
+      "matchPackageNames": [
+        "eslint"
+      ],
+      "allowedVersions": "<10"
+    },
+    {
+      "description": "typescript-eslint throws on TypeScript >= 7 (typescript-eslint#10940). The lint toolchain pins the TypeScript 6 compiler API via @typescript/typescript6; keep it on 6.x until upstream supports 7.",
+      "matchPackageNames": [
+        "@typescript/typescript6"
+      ],
+      "allowedVersions": "<7"
+    }
   ]
 }

@@ -6,7 +6,7 @@ it("renders correctly", () => {
   const { asFragment } = renderWithTheme(
     <NotificationDot>
       <div />
-    </NotificationDot>
+    </NotificationDot>,
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>

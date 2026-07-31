@@ -13,48 +13,46 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return (
-    <BrowserRouter>
-      <Flex mb="24px" p="8px" width="300px" border="1px solid grey" justifyContent="space-between" alignItems="center">
-        <Text>Icon</Text>
-        <SubMenu
-          component={<EllipsisIcon height="16px" width="16px" />}
-          options={{ placement: "right", offset: [0, 15], padding: { top: 20 } }}
-        >
-          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
-            View on BSCScan
-          </SubMenuItem>
-          <SubMenuItem as={LinkExternal} href="https://plantswap.info" bold={false} color="text" target="blank">
-            View on PCS Info
-          </SubMenuItem>
-          <SubMenuItem as={Link} to="/profile">
-            Go to profile page
-          </SubMenuItem>
-          <SubMenuItem>Just button</SubMenuItem>
-        </SubMenu>
-      </Flex>
-      <Flex p="8px" width="300px" border="1px solid grey" justifyContent="space-between" alignItems="center">
-        <Text>Text</Text>
-        <SubMenu
-          component={
-            <Text color="primary" bold>
-              Click me
-            </Text>
-          }
-        >
-          <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
-            View on BSCScan
-          </SubMenuItem>
-          <SubMenuItem as={LinkExternal} href="https://plantswap.info" bold={false} color="text" target="blank">
-            View on PCS Info
-          </SubMenuItem>
-          <SubMenuItem as={Link} to="/profile">
-            Go to profile page
-          </SubMenuItem>
-          <SubMenuItem>Just button</SubMenuItem>
-        </SubMenu>
-      </Flex>
-    </BrowserRouter>
-  );
-};
+export const Default: React.FC = () => (
+  <BrowserRouter>
+    <Flex mb="24px" p="8px" width="300px" border="1px solid grey" justifyContent="space-between" alignItems="center">
+      <Text>Icon</Text>
+      <SubMenu
+        component={<EllipsisIcon height="16px" width="16px" />}
+        options={{ placement: "right", offset: [0, 15], padding: { top: 20 } }}
+      >
+        <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
+          View on BSCScan
+        </SubMenuItem>
+        <SubMenuItem as={LinkExternal} href="https://plantswap.info" bold={false} color="text" target="blank">
+          View on PCS Info
+        </SubMenuItem>
+        <SubMenuItem as={Link} to="/profile">
+          Go to profile page
+        </SubMenuItem>
+        <SubMenuItem>Just button</SubMenuItem>
+      </SubMenu>
+    </Flex>
+    <Flex p="8px" width="300px" border="1px solid grey" justifyContent="space-between" alignItems="center">
+      <Text>Text</Text>
+      <SubMenu
+        component={
+          <Text color="primary" bold>
+            Click me
+          </Text>
+        }
+      >
+        <SubMenuItem as={LinkExternal} href="https://bscscan.com" bold={false} color="text">
+          View on BSCScan
+        </SubMenuItem>
+        <SubMenuItem as={LinkExternal} href="https://plantswap.info" bold={false} color="text" target="blank">
+          View on PCS Info
+        </SubMenuItem>
+        <SubMenuItem as={Link} to="/profile">
+          Go to profile page
+        </SubMenuItem>
+        <SubMenuItem>Just button</SubMenuItem>
+      </SubMenu>
+    </Flex>
+  </BrowserRouter>
+);

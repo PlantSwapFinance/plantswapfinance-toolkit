@@ -42,7 +42,10 @@ export type ColumnByNamesType<T extends DataType> = {
   [key: string]: ColumnType<T>;
 };
 
-export type RenderFunctionType<T extends DataType> = ({ value, row }: RenderFunctionArgsType<T>) => React.ReactNode | undefined;
+export type RenderFunctionType<T extends DataType> = ({
+  value,
+  row,
+}: RenderFunctionArgsType<T>) => React.ReactNode | undefined;
 
 type RenderFunctionArgsType<T extends DataType> = {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -19,31 +19,29 @@ export default {
   },
 };
 
-export const Default: React.FC = () => {
-  return (
+export const Default: React.FC = () => (
+  <div>
     <div>
-      <div>
-        <Link href="/">Default</Link>
-      </div>
-      <div>
-        <Link href="/" color="text">
-          Custom color
-        </Link>
-      </div>
-      <div>
-        <Link external href="/">
-          External
-        </Link>
-      </div>
-      <div>
-        <Link href="/">
-          With icon
-          <PlantsIcon />
-        </Link>
-      </div>
-      <div>
-        <LinkExternal href="/">LinkExternal</LinkExternal>
-      </div>
+      <Link href="/">Default</Link>
     </div>
-  );
-};
+    <div>
+      <Link href="/" color="text">
+        Custom color
+      </Link>
+    </div>
+    <div>
+      <Link external href="/">
+        External
+      </Link>
+    </div>
+    <div>
+      <Link href="/">
+        With icon
+        <PlantsIcon />
+      </Link>
+    </div>
+    <div>
+      <LinkExternal href="/">LinkExternal</LinkExternal>
+    </div>
+  </div>
+);

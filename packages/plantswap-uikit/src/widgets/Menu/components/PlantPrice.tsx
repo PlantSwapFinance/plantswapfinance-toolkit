@@ -21,8 +21,8 @@ const PriceLink = styled.a`
   }
 `;
 
-const PlantPrice: React.FC<Props> = ({ plantPriceUsd }) => {
-  return plantPriceUsd ? (
+const PlantPrice: React.FC<Props> = ({ plantPriceUsd }) =>
+  plantPriceUsd ? (
     <PriceLink
       href="https://exchange.plantswap.finance/#/swap?outputCurrency=0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
       target="_blank"
@@ -33,6 +33,5 @@ const PlantPrice: React.FC<Props> = ({ plantPriceUsd }) => {
   ) : (
     <Skeleton width={80} height={24} />
   );
-};
 
 export default React.memo(PlantPrice);

@@ -19,16 +19,14 @@ export const Default: React.FC = () => {
 
   return (
     <div style={{ padding: "32px", width: "400px" }}>
-      {Object.values(variants).map((variant) => {
-        return (
-          <Box key={variant} mb="16px">
-            <Heading size="md" mb="8px">
-              {capitalize(variant)}
-            </Heading>
-            <Progress variant={variant} primaryStep={progress} />
-          </Box>
-        );
-      })}
+      {Object.values(variants).map((variant) => (
+        <Box key={variant} mb="16px">
+          <Heading size="md" mb="8px">
+            {capitalize(variant)}
+          </Heading>
+          <Progress variant={variant} primaryStep={progress} />
+        </Box>
+      ))}
       <Heading size="md" mb="8px">
         Small
       </Heading>

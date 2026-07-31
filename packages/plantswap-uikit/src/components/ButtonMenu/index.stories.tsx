@@ -65,23 +65,21 @@ export const Default: React.FC = () => {
   );
 };
 
-export const AsLinks: React.FC = () => {
-  return (
-    <Row>
-      <ButtonMenu activeIndex={0}>
-        <ButtonMenuItem as="a" href="https://plantswap.finance">
-          Link 1
-        </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://plantswap.finance">
-          Link 2
-        </ButtonMenuItem>
-        <ButtonMenuItem as="a" href="https://plantswap.finance">
-          Link 3
-        </ButtonMenuItem>
-      </ButtonMenu>
-    </Row>
-  );
-};
+export const AsLinks: React.FC = () => (
+  <Row>
+    <ButtonMenu activeIndex={0}>
+      <ButtonMenuItem as="a" href="https://plantswap.finance">
+        Link 1
+      </ButtonMenuItem>
+      <ButtonMenuItem as="a" href="https://plantswap.finance">
+        Link 2
+      </ButtonMenuItem>
+      <ButtonMenuItem as="a" href="https://plantswap.finance">
+        Link 3
+      </ButtonMenuItem>
+    </ButtonMenu>
+  </Row>
+);
 
 export const DisabledMenu: React.FC = () => {
   const [index, setIndex] = useState(0);

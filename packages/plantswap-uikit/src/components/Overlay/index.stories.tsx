@@ -6,6 +6,4 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return <Overlay show />;
-};
+export const Default: React.FC = () => <Overlay show />;

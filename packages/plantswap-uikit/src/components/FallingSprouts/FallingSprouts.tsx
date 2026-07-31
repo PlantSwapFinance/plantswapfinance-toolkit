@@ -73,6 +73,10 @@ const FallingSprouts: React.FC<FallingSproutsProps> = ({
   duration = 10,
 }) => {
   const sprouts = [...Array(count)].map((_, index) => (
+    // These sprouts are purely decorative and carry no data identity, so the
+    // index *is* the identity: the list is never reordered, filtered or keyed
+    // off anything else.
+    // eslint-disable-next-line react/no-array-index-key
     <Sprout key={String(index)} position={Math.random() * 100} iterations={iterations} duration={duration}>
       <SproutIcon width={size} height={size} />
     </Sprout>

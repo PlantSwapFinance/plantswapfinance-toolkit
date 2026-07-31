@@ -1551,109 +1551,105 @@ const tokens = {
     projectLink: "https://www.ampleforth.org/",
   },
 
-  
-  
   // Goose
-  
+
   egg: {
-    symbol: 'EGG',
+    symbol: "EGG",
     address: {
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
-      97: '',
+      56: "0xf952fc3ca7325cc27d15885d37117676d25bfda6",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://www.goosedefi.com/',
+    projectLink: "https://www.goosedefi.com/",
   },
   auto: {
-    symbol: 'AUTO',
+    symbol: "AUTO",
     address: {
-      56: '0xa184088a740c695e156f91f5cc086a06bb78b827',
-      97: '',
+      56: "0xa184088a740c695e156f91f5cc086a06bb78b827",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://autofarm.network/',
+    projectLink: "https://autofarm.network/",
   },
 
-
   // Apeswap
-  
+
   banana: {
-    symbol: 'BANANA',
+    symbol: "BANANA",
     address: {
-      56: '0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95',
-      97: '',
+      56: "0x603c7f932ED1fc6575303D8Fb018fDCBb0f39a95",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://apeswap.finance/',
+    projectLink: "https://apeswap.finance/",
   },
 
   // Cafeswap
-  
+
   brew: {
-    symbol: 'BREW',
+    symbol: "BREW",
     address: {
-      56: '0x790be81c3ca0e53974be2688cdb954732c9862e1',
-      97: '',
+      56: "0x790be81c3ca0e53974be2688cdb954732c9862e1",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://app.cafeswap.finance/',
+    projectLink: "https://app.cafeswap.finance/",
   },
   xditto: {
-    symbol: 'DITTO',
+    symbol: "DITTO",
     address: {
-      56: '0xb0a1de764a033a76f28e821fbe402edbfee937db',
-      97: '',
+      56: "0xb0a1de764a033a76f28e821fbe402edbfee937db",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://ditto.money/',
+    projectLink: "https://ditto.money/",
   },
   mist: {
-    symbol: 'MIST',
+    symbol: "MIST",
     address: {
-      56: '0x68E374F856bF25468D365E539b700b648Bf94B67',
-      97: '',
+      56: "0x68E374F856bF25468D365E539b700b648Bf94B67",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://mist.game/',
+    projectLink: "https://mist.game/",
   },
   naut: {
-    symbol: 'NAUT',
+    symbol: "NAUT",
     address: {
-      56: '0x05b339b0a346bf01f851dde47a5d485c34fe220c',
-      97: '',
+      56: "0x05b339b0a346bf01f851dde47a5d485c34fe220c",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://astronaut.to/',
+    projectLink: "https://astronaut.to/",
   },
   numbertcs: {
-    symbol: '3CS',
+    symbol: "3CS",
     address: {
-      56: '0x1c7381f12e376bfa470bca6410ace8cb3f2454ae',
-      97: '',
+      56: "0x1c7381f12e376bfa470bca6410ace8cb3f2454ae",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'http://www.cryptocricketclub.com/',
+    projectLink: "http://www.cryptocricketclub.com/",
   },
   flp: {
-    symbol: 'FLP',
+    symbol: "FLP",
     address: {
-      56: '0x87ff96aba480f1813af5c780387d8de7cf7d8261',
-      97: '',
+      56: "0x87ff96aba480f1813af5c780387d8de7cf7d8261",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://app.cafeswap.finance/',
+    projectLink: "https://app.cafeswap.finance/",
   },
-
 
   // Eggplant Finance
   eggp: {
-    symbol: 'EGGP',
+    symbol: "EGGP",
     address: {
-      56: '0x21adB1c644663069e83059AC3f9d9Ca1133D29e4',
-      97: '',
+      56: "0x21adB1c644663069e83059AC3f9d9Ca1133D29e4",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://eggplant.fi/',
+    projectLink: "https://eggplant.fi/",
   },
 };
 

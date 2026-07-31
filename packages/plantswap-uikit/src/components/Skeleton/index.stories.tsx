@@ -10,9 +10,7 @@ export default {
   },
 };
 
-export const Default: React.FC = (args) => {
-  return <Skeleton {...args} />;
-};
+export const Default: React.FC = (args) => <Skeleton {...args} />;
 
 export const Avatar = Default.bind({});
 Avatar.args = {
@@ -28,14 +26,12 @@ Animation.args = {
   animation: "waves",
 };
 
-export const ParentSize: React.FC = (args) => {
-  return (
-    <div style={{ width: 200, height: 90 }}>
-      {" "}
-      <Skeleton {...args} />{" "}
-    </div>
-  );
-};
+export const ParentSize: React.FC = (args) => (
+  <div style={{ width: 200, height: 90 }}>
+    {" "}
+    <Skeleton {...args} />{" "}
+  </div>
+);
 
 export const Text: React.FC = (args) => {
   const [loading, setLoading] = useState(true);

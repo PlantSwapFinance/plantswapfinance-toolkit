@@ -7,6 +7,4 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return <FallingSprouts />;
-};
+export const Default: React.FC = () => <FallingSprouts />;

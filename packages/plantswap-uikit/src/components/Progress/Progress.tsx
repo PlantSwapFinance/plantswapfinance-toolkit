@@ -22,18 +22,16 @@ const Progress: React.FC<ProgressProps> = ({
   primaryStep = 0,
   secondaryStep = null,
   showProgressSprout = false,
-}) => {
-  return (
-    <StyledProgress variant={variant} scale={scale}>
-      {showProgressSprout && (
-        <ProgressSproutWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
-          <ProgressSprout />
-        </ProgressSproutWrapper>
-      )}
-      <Bar primary style={{ width: `${stepGuard(primaryStep)}%` }} />
-      {secondaryStep ? <Bar style={{ width: `${stepGuard(secondaryStep)}%` }} /> : null}
-    </StyledProgress>
-  );
-};
+}) => (
+  <StyledProgress variant={variant} scale={scale}>
+    {showProgressSprout && (
+      <ProgressSproutWrapper style={{ left: `${stepGuard(primaryStep)}%` }}>
+        <ProgressSprout />
+      </ProgressSproutWrapper>
+    )}
+    <Bar primary style={{ width: `${stepGuard(primaryStep)}%` }} />
+    {secondaryStep ? <Bar style={{ width: `${stepGuard(secondaryStep)}%` }} /> : null}
+  </StyledProgress>
+);
 
 export default Progress;

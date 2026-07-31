@@ -36,13 +36,11 @@ const SliderVariant = ({ initialValue }: { initialValue: number }) => {
   );
 };
 
-export const Default: React.FC = () => {
-  return (
-    <Col>
-      <SliderVariant initialValue={5} />
-    </Col>
-  );
-};
+export const Default: React.FC = () => (
+  <Col>
+    <SliderVariant initialValue={5} />
+  </Col>
+);
 
 export const Variants: React.FC = () => {
   const [value, setValue] = useState(10);

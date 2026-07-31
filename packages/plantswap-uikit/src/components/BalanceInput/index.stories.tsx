@@ -12,12 +12,11 @@ export const Default: React.FC = () => {
   const [decimalValue, setDecimalValue] = useState(1.43333);
   const [numericValue, setNumericValue] = useState(5);
 
-  const currencyValue = (input: number) => {
-    return `~${(input * 1.3).toLocaleString(undefined, {
+  const currencyValue = (input: number) =>
+    `~${(input * 1.3).toLocaleString(undefined, {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     })} USD`;
-  };
 
   const handleDecimalChange = (input) => {
     setDecimalValue(input);
