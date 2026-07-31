@@ -119,27 +119,27 @@ export const links = [
     label: "Beta dev.",
     icon: "BetaIcon",
     items: [
-        {
-          label: "Beta 1",
-          href: "/Beta1",
-        },
-        {
-          label: "Beta 2",
-          href: "/Beta2",
-        },
-        {
-          label: "Beta 3",
-          href: "/Beta3",
-        },
-        {
-          label: "Beta 4",
-          href: "/Beta4",
-        },
-        {
-          label: "Beta 5",
-          href: "/Beta5",
-        },
-      ],
+      {
+        label: "Beta 1",
+        href: "/Beta1",
+      },
+      {
+        label: "Beta 2",
+        href: "/Beta2",
+      },
+      {
+        label: "Beta 3",
+        href: "/Beta3",
+      },
+      {
+        label: "Beta 4",
+        href: "/Beta4",
+      },
+      {
+        label: "Beta 5",
+        href: "/Beta5",
+      },
+    ],
   },
   {
     label: "Lottery",

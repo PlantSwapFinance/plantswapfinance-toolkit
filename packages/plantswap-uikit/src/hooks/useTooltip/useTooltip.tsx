@@ -58,7 +58,7 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
         hide();
       }
     },
-    [tooltipElement, trigger]
+    [tooltipElement, trigger],
   );
 
   const showTooltip = useCallback(
@@ -77,7 +77,7 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
         }
       }
     },
-    [tooltipElement, targetElement, trigger]
+    [tooltipElement, targetElement, trigger],
   );
 
   const toggleTooltip = useCallback(
@@ -85,7 +85,7 @@ const useTooltip = (content: React.ReactNode, options: TooltipOptions): TooltipR
       e.stopPropagation();
       setVisible(!visible);
     },
-    [visible]
+    [visible],
   );
 
   // Trigger = hover

@@ -9,26 +9,22 @@ export default {
 
 const Stub = styled.div`
   width: 100%;
-  background: #2B6E37;
+  background: #2b6e37;
   height: 300px;
 `;
 
-export const Base: React.FC = () => {
-  return (
-    <BaseLayout>
-      {[...Array(24)].map((value) => (
-        <Stub key={value} />
-      ))}
-    </BaseLayout>
-  );
-};
+export const Base: React.FC = () => (
+  <BaseLayout>
+    {[...Array(24)].map((value) => (
+      <Stub key={value} />
+    ))}
+  </BaseLayout>
+);
 
-export const Cards: React.FC = () => {
-  return (
-    <CardsLayout>
-      {[...Array(10)].map((value) => (
-        <Stub key={value} />
-      ))}
-    </CardsLayout>
-  );
-};
+export const Cards: React.FC = () => (
+  <CardsLayout>
+    {[...Array(10)].map((value) => (
+      <Stub key={value} />
+    ))}
+  </CardsLayout>
+);

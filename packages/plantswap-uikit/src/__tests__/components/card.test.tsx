@@ -8,7 +8,7 @@ it("renders correctly", () => {
       <CardHeader>Header</CardHeader>
       <CardBody>Body</CardBody>
       <CardFooter>Footer</CardFooter>
-    </Card>
+    </Card>,
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>

@@ -3,9 +3,7 @@ import { act, renderHook } from "@testing-library/react";
 import { breakpointMap } from "../../theme/base";
 import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
 
-const expectedKeys = Object.keys(breakpointMap).map(
-  (size) => `is${size.charAt(0).toUpperCase()}${size.slice(1)}`,
-);
+const expectedKeys = Object.keys(breakpointMap).map((size) => `is${size.charAt(0).toUpperCase()}${size.slice(1)}`);
 
 describe("useMatchBreakpoints", () => {
   it("does not access window during initial render", () => {

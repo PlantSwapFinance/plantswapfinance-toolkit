@@ -10,7 +10,6 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
   const textColor = isDark ? "#47B85B" : "#4D2419";
   return (
     <Svg viewBox="0 0 680 155" {...props}>
-      
       <path
         d="M73.48 71.328S82.324 18.33 13.883 18.33c0 0 .384 25.547 15.38 38.83C44.258 70.444 73.48 71.327 73.48 71.327z"
         fill="#47B85B"

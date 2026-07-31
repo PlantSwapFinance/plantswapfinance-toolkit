@@ -2,6 +2,8 @@ import "styled-components";
 import { PlantTheme } from "./theme";
 
 declare module "styled-components" {
-  /* eslint-disable @typescript-eslint/no-empty-interface */
+  // The empty body is the point: this merges PlantTheme into styled-components'
+  // DefaultTheme so `theme` is typed everywhere.
+  // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   export interface DefaultTheme extends PlantTheme {}
 }

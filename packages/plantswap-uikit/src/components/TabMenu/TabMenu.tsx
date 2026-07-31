@@ -27,22 +27,20 @@ const Inner = styled(Flex)`
   }
 `;
 
-const ButtonMenu: React.FC<TabMenuProps> = ({ activeIndex = 0, onItemClick, children }) => {
-  return (
-    <Wrapper p={["0 4px", "0 16px"]}>
-      <Inner>
-        {Children.map(children, (child: ReactElement<TabProps>, index) => {
-          const isActive = activeIndex === index;
-          return cloneElement<TabProps>(child, {
-            isActive,
-            onClick: onItemClick ? () => onItemClick(index) : undefined,
-            color: isActive ? "backgroundAlt" : "textSubtle",
-            backgroundColor: isActive ? "textSubtle" : "input",
-          });
-        })}
-      </Inner>
-    </Wrapper>
-  );
-};
+const ButtonMenu: React.FC<TabMenuProps> = ({ activeIndex = 0, onItemClick, children }) => (
+  <Wrapper p={["0 4px", "0 16px"]}>
+    <Inner>
+      {Children.map(children, (child: ReactElement<TabProps>, index) => {
+        const isActive = activeIndex === index;
+        return cloneElement<TabProps>(child, {
+          isActive,
+          onClick: onItemClick ? () => onItemClick(index) : undefined,
+          color: isActive ? "backgroundAlt" : "textSubtle",
+          backgroundColor: isActive ? "textSubtle" : "input",
+        });
+      })}
+    </Inner>
+  </Wrapper>
+);
 
 export default ButtonMenu;

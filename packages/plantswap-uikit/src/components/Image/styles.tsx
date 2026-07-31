@@ -57,26 +57,25 @@ export const StyledSecondaryImage = styled(TokenImage)<StyledImageProps>`
 `;
 
 export const StyledThirdImage = styled(TokenImage)<StyledImageProps>`
-position: absolute;
-width: 75%;
+  position: absolute;
+  width: 75%;
 
-${StyledSystemVariant({
-  variants: {
-    [variants.DEFAULT]: {
-      bottom: 0,
-      left: 0,
-      right: "auto",
-      top: "auto",
-      zIndex: 6,
+  ${StyledSystemVariant({
+    variants: {
+      [variants.DEFAULT]: {
+        bottom: 0,
+        left: 0,
+        right: "auto",
+        top: "auto",
+        zIndex: 6,
+      },
+      [variants.INVERTED]: {
+        bottom: "auto",
+        left: 0,
+        right: "auto",
+        top: 0,
+        zIndex: 5,
+      },
     },
-    [variants.INVERTED]: {
-      bottom: "auto",
-      left: 0,
-      right: "auto",
-      top: 0,
-      zIndex: 5,
-    },
-  },
-})}
+  })}
 `;
-

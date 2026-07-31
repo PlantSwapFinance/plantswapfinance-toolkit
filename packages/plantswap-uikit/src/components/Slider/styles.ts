@@ -18,9 +18,7 @@ interface DisabledProp {
   disabled?: boolean;
 }
 
-const getCursorStyle = ({ disabled = false }: DisabledProp) => {
-  return disabled ? "not-allowed" : "cursor";
-};
+const getCursorStyle = ({ disabled = false }: DisabledProp) => (disabled ? "not-allowed" : "cursor");
 
 const getBaseThumbStyles = ({ isMax, disabled }: StyledInputProps) => `
   -webkit-appearance: none;

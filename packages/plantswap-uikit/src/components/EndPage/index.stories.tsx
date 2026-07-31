@@ -7,6 +7,4 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return <EndPage />;
-};
+export const Default: React.FC = () => <EndPage />;

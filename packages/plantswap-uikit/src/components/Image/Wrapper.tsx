@@ -19,8 +19,8 @@ const StyledWrapper = styled.div.withConfig(filterDomProps)<{ $width: number; $h
   ${space}
 `;
 
-const Wrapper = forwardRef<HTMLDivElement, WrapperProps>(({ width, height, ...props }, ref) => {
-  return <StyledWrapper ref={ref} $width={width} $height={height} {...props} />;
-});
+const Wrapper = forwardRef<HTMLDivElement, WrapperProps>(({ width, height, ...props }, ref) => (
+  <StyledWrapper ref={ref} $width={width} $height={height} {...props} />
+));
 
 export default Wrapper;

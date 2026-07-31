@@ -10,7 +10,7 @@ export const scales = {
   MD: "md",
 } as const;
 
-export type Scales = typeof scales[keyof typeof scales];
+export type Scales = (typeof scales)[keyof typeof scales];
 
 export interface PlantToggleProps extends InputHTMLAttributes<HTMLInputElement> {
   scale?: Scales;
@@ -45,4 +45,4 @@ export const scaleKeys = {
   butterSmearTwoRight: "butterSmearTwoRight",
 } as const;
 
-export type ScaleKeys = typeof scaleKeys[keyof typeof scaleKeys];
+export type ScaleKeys = (typeof scaleKeys)[keyof typeof scaleKeys];

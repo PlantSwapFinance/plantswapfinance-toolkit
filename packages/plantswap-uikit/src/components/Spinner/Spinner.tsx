@@ -80,17 +80,15 @@ const FixPlantIconRight = styled(SproutIcon)`
   transform: translate3d(0, 0, 0);
 `;
 
-const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => {
-  return (
-    <Container>
-      <RotatingSunIcon width={`${size * 2}px`} />
-      <FloatingBeeIcon width={`${size * 4}px`} />
-      <FloatingBeeIcon2 width={`${size * 4}px`} />
-      <br />
-      <FixPlantIconLeft width={`${size * 1.5}px`} />
-      <FixPlantIconRight width={`${size * 2}px`} />
-    </Container>
-  );
-};
+const Spinner: React.FC<SpinnerProps> = ({ size = 128 }) => (
+  <Container>
+    <RotatingSunIcon width={`${size * 2}px`} />
+    <FloatingBeeIcon width={`${size * 4}px`} />
+    <FloatingBeeIcon2 width={`${size * 4}px`} />
+    <br />
+    <FixPlantIconLeft width={`${size * 1.5}px`} />
+    <FixPlantIconRight width={`${size * 2}px`} />
+  </Container>
+);
 
 export default Spinner;

@@ -587,25 +587,13 @@ const Icon: React.FC<SvgProps> = (props) => {
       />
       <defs>
         <clipPath id="prefix__clip0">
-          <path
-            fill="#fff"
-            transform="translate(1470.14 1365.75)"
-            d="M0 0h739.32v707.931H0z"
-          />
+          <path fill="#fff" transform="translate(1470.14 1365.75)" d="M0 0h739.32v707.931H0z" />
         </clipPath>
         <clipPath id="prefix__clip1">
-          <path
-            fill="#fff"
-            transform="translate(273.928 1405.97)"
-            d="M0 0h654.75v654.764H0z"
-          />
+          <path fill="#fff" transform="translate(273.928 1405.97)" d="M0 0h654.75v654.764H0z" />
         </clipPath>
         <clipPath id="prefix__clip2">
-          <path
-            fill="#fff"
-            transform="translate(792.179 191.188)"
-            d="M0 0h817.469v817.495H0z"
-          />
+          <path fill="#fff" transform="translate(792.179 191.188)" d="M0 0h817.469v817.495H0z" />
         </clipPath>
       </defs>
     </Svg>

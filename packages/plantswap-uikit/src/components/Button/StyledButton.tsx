@@ -40,9 +40,7 @@ const getDisabledStyles = ({ $isLoading, theme }: TransientButtonProps) => {
  * @see https://github.com/styled-components/styled-components/issues/135
  */
 
-const getOpacity = ({ $isLoading = false }: TransientButtonProps) => {
-  return $isLoading ? ".5" : "1";
-};
+const getOpacity = ({ $isLoading = false }: TransientButtonProps) => ($isLoading ? ".5" : "1");
 
 const StyledButton = styled.button.withConfig(filterDomProps)<BaseButtonProps>`
   align-items: center;
@@ -59,7 +57,9 @@ const StyledButton = styled.button.withConfig(filterDomProps)<BaseButtonProps>`
   line-height: 1;
   opacity: ${getOpacity};
   outline: 0;
-  transition: background-color 0.2s, opacity 0.2s;
+  transition:
+    background-color 0.2s,
+    opacity 0.2s;
 
   &:hover:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled):not(:active) {
     opacity: 0.65;

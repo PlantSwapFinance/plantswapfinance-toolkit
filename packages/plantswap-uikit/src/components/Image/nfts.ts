@@ -21,13 +21,13 @@ const tokens = {
     projectLink: "https://pancakeswap.finance/",
   },
   eggp: {
-    symbol: 'EGGP',
+    symbol: "EGGP",
     address: {
-      56: '0xdf7952b35f24acf7fc0487d01c8d5690a60dba07',
-      97: '',
+      56: "0xdf7952b35f24acf7fc0487d01c8d5690a60dba07",
+      97: "",
     },
     decimals: 18,
-    projectLink: 'https://eggplant.fi/',
+    projectLink: "https://eggplant.fi/",
   },
 };
 

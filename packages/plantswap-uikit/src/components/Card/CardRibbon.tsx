@@ -53,12 +53,10 @@ const StyledCardRibbon = styled.div.withConfig(filterDomProps)<Partial<StyledCar
   }
 `;
 
-const CardRibbon: React.FC<CardRibbonProps> = ({ variantColor, text, ribbonPosition = "right", ...props }) => {
-  return (
-    <StyledCardRibbon variantColor={variantColor} ribbonPosition={ribbonPosition} {...props}>
-      <div title={text}>{text}</div>
-    </StyledCardRibbon>
-  );
-};
+const CardRibbon: React.FC<CardRibbonProps> = ({ variantColor, text, ribbonPosition = "right", ...props }) => (
+  <StyledCardRibbon variantColor={variantColor} ribbonPosition={ribbonPosition} {...props}>
+    <div title={text}>{text}</div>
+  </StyledCardRibbon>
+);
 
 export default CardRibbon;

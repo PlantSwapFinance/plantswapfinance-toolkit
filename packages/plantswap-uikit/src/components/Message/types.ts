@@ -6,7 +6,7 @@ export const variants = {
   DANGER: "danger",
 } as const;
 
-export type Variant = typeof variants[keyof typeof variants];
+export type Variant = (typeof variants)[keyof typeof variants];
 
 export interface MessageProps extends SpaceProps {
   variant: Variant;

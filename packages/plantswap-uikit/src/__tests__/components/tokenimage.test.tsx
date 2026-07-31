@@ -9,7 +9,7 @@ it("renders correctly", () => {
       src="https://plantswap.finance/images/tokens/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82.svg"
       height={48}
       width={48}
-    />
+    />,
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>

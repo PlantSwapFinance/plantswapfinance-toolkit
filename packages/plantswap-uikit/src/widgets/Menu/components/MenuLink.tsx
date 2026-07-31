@@ -7,7 +7,7 @@ const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, tar
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Tag: any = isHttpLink ? "a" : NavLink;
   const props = isHttpLink ? { href } : { to: href };
-  const computedRel = target === "_blank" ? rel ?? "noopener noreferrer" : rel;
+  const computedRel = target === "_blank" ? (rel ?? "noopener noreferrer") : rel;
   return <Tag target={target} rel={computedRel} {...props} {...otherProps} />;
 };
 

@@ -7,15 +7,13 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return (
-    <>
-      <div style={{ marginBottom: "32px" }}>
-        <Checkbox />
-      </div>
-      <div>
-        <Checkbox scale="sm" />
-      </div>
-    </>
-  );
-};
+export const Default: React.FC = () => (
+  <>
+    <div style={{ marginBottom: "32px" }}>
+      <Checkbox />
+    </div>
+    <div>
+      <Checkbox scale="sm" />
+    </div>
+  </>
+);

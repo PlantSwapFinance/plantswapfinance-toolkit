@@ -11,13 +11,11 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return (
-    <NotificationDot show>
-      <Button>Hi</Button>
-    </NotificationDot>
-  );
-};
+export const Default: React.FC = () => (
+  <NotificationDot show>
+    <Button>Hi</Button>
+  </NotificationDot>
+);
 
 const Row = styled.div`
   & > * + * {

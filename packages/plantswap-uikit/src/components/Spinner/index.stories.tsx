@@ -7,6 +7,4 @@ export default {
   argTypes: {},
 };
 
-export const Default: React.FC = () => {
-  return <Spinner size={100} />;
-};
+export const Default: React.FC = () => <Spinner size={100} />;

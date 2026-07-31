@@ -9,7 +9,7 @@ it("renders correctly", () => {
     <TabMenu activeIndex={0} onItemClick={handleClick}>
       <Tab>Item 1</Tab>
       <Tab>Item 2</Tab>
-    </TabMenu>
+    </TabMenu>,
   );
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>

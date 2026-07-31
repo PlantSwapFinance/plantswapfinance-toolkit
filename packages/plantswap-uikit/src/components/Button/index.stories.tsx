@@ -24,124 +24,110 @@ const Row = styled(Flex)`
   }
 `;
 
-export const Default: React.FC = () => {
-  return (
-    <>
-      <Box mb="32px">
-        <button type="button">Unstyled Button</button>
-      </Box>
-      <Box mb="32px">
-        {Object.values(variants).map((variant) => {
-          return (
-            <Box key={variant} mb="32px">
-              {Object.values(scales).map((scale) => {
-                return (
-                  <Button key={scale} variant={variant} scale={scale} mr="8px">
-                    {`${capitalize(variant)} ${scale.toUpperCase()}`}
-                  </Button>
-                );
-              })}
-            </Box>
-          );
-        })}
-      </Box>
-      <Box>
-        <Button mr="8px" disabled>
-          Disabled
-        </Button>
-        <Button variant="secondary" disabled>
-          Disabled
-        </Button>
-      </Box>
-    </>
-  );
-};
-
-export const Anchors: React.FC = () => {
-  return (
-    <>
-      <Box mb="32px">
-        {Object.values(variants).map((variant) => {
-          return (
-            <Box key={variant} mb="32px">
-              {Object.values(scales).map((scale) => {
-                return (
-                  <Button
-                    as="a"
-                    href="https://plantswap.finance"
-                    key={scale}
-                    variant={variant}
-                    scale={scale}
-                    external
-                    mr="8px"
-                  >
-                    {`${capitalize(variant)} anchor ${scale.toUpperCase()}`}
-                  </Button>
-                );
-              })}
-            </Box>
-          );
-        })}
-      </Box>
-      <Box>
-        <Button as="a" href="https://plantswap.finance" mr="8px" external disabled>
-          Disabled
-        </Button>
-        <Button as="a" href="https://plantswap.finance" variant="secondary" external disabled>
-          Disabled
-        </Button>
-      </Box>
-    </>
-  );
-};
-
-export const Variants: React.FC = () => {
-  return (
-    <Box width="640px">
-      <BrowserRouter>
-        <Row>
-          <Button as={Link} to="/router-link" variant="secondary">
-            As an React Router link
-          </Button>
-        </Row>
-        <Row>
-          <Button width="100%">Full size</Button>
-        </Row>
-        <Row>
-          <Button isLoading endIcon={<AutoRenewIcon spin color="currentColor" />}>
-            Approving
-          </Button>
-          <Button isLoading variant="success">
-            Approving
-          </Button>
-        </Row>
-        <Row>
-          <Button startIcon={<SproutIcon />}>Start Icon</Button>
-          <Button endIcon={<SproutIcon />}>End Icon</Button>
-          <Button startIcon={<SproutIcon />} endIcon={<SproutIcon />}>
-            Start & End Icon
-          </Button>
-        </Row>
-        <Row>
-          <IconButton>
-            <SproutIcon />
-          </IconButton>
-          <IconButton variant="secondary">
-            <AddIcon />
-          </IconButton>
-        </Row>
-        <Row>
-          <IconButton scale="sm" variant="danger">
-            <SproutIcon />
-          </IconButton>
-          <IconButton scale="sm" variant="success">
-            <AddIcon color="currentColor" />
-          </IconButton>
-        </Row>
-      </BrowserRouter>
+export const Default: React.FC = () => (
+  <>
+    <Box mb="32px">
+      <button type="button">Unstyled Button</button>
     </Box>
-  );
-};
+    <Box mb="32px">
+      {Object.values(variants).map((variant) => (
+        <Box key={variant} mb="32px">
+          {Object.values(scales).map((scale) => (
+            <Button key={scale} variant={variant} scale={scale} mr="8px">
+              {`${capitalize(variant)} ${scale.toUpperCase()}`}
+            </Button>
+          ))}
+        </Box>
+      ))}
+    </Box>
+    <Box>
+      <Button mr="8px" disabled>
+        Disabled
+      </Button>
+      <Button variant="secondary" disabled>
+        Disabled
+      </Button>
+    </Box>
+  </>
+);
+
+export const Anchors: React.FC = () => (
+  <>
+    <Box mb="32px">
+      {Object.values(variants).map((variant) => (
+        <Box key={variant} mb="32px">
+          {Object.values(scales).map((scale) => (
+            <Button
+              as="a"
+              href="https://plantswap.finance"
+              key={scale}
+              variant={variant}
+              scale={scale}
+              external
+              mr="8px"
+            >
+              {`${capitalize(variant)} anchor ${scale.toUpperCase()}`}
+            </Button>
+          ))}
+        </Box>
+      ))}
+    </Box>
+    <Box>
+      <Button as="a" href="https://plantswap.finance" mr="8px" external disabled>
+        Disabled
+      </Button>
+      <Button as="a" href="https://plantswap.finance" variant="secondary" external disabled>
+        Disabled
+      </Button>
+    </Box>
+  </>
+);
+
+export const Variants: React.FC = () => (
+  <Box width="640px">
+    <BrowserRouter>
+      <Row>
+        <Button as={Link} to="/router-link" variant="secondary">
+          As an React Router link
+        </Button>
+      </Row>
+      <Row>
+        <Button width="100%">Full size</Button>
+      </Row>
+      <Row>
+        <Button isLoading endIcon={<AutoRenewIcon spin color="currentColor" />}>
+          Approving
+        </Button>
+        <Button isLoading variant="success">
+          Approving
+        </Button>
+      </Row>
+      <Row>
+        <Button startIcon={<SproutIcon />}>Start Icon</Button>
+        <Button endIcon={<SproutIcon />}>End Icon</Button>
+        <Button startIcon={<SproutIcon />} endIcon={<SproutIcon />}>
+          Start & End Icon
+        </Button>
+      </Row>
+      <Row>
+        <IconButton>
+          <SproutIcon />
+        </IconButton>
+        <IconButton variant="secondary">
+          <AddIcon />
+        </IconButton>
+      </Row>
+      <Row>
+        <IconButton scale="sm" variant="danger">
+          <SproutIcon />
+        </IconButton>
+        <IconButton scale="sm" variant="success">
+          <AddIcon color="currentColor" />
+        </IconButton>
+      </Row>
+    </BrowserRouter>
+  </Box>
+);
 
 export const Expandable: React.FC = () => {
   const [expanded, setExpanded] = useState(false);

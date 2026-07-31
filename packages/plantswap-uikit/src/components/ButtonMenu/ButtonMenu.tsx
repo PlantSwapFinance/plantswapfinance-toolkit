@@ -9,13 +9,11 @@ interface StyledButtonMenuProps extends ButtonMenuProps {
   theme: DefaultTheme;
 }
 
-const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
-};
+const getBackgroundColor = ({ theme, variant }: StyledButtonMenuProps) =>
+  theme.colors[variant === variants.SUBTLE ? "input" : "tertiary"];
 
-const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) => {
-  return theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
-};
+const getBorderColor = ({ theme, variant }: StyledButtonMenuProps) =>
+  theme.colors[variant === variants.SUBTLE ? "inputSecondary" : "disabled"];
 
 const StyledButtonMenu = styled.div.withConfig(filterDomProps)<StyledButtonMenuProps>`
   background-color: ${getBackgroundColor};
@@ -65,20 +63,18 @@ const ButtonMenu: React.FC<ButtonMenuProps> = ({
   children,
   fullWidth = false,
   ...props
-}) => {
-  return (
-    <StyledButtonMenu disabled={disabled} variant={variant} fullWidth={fullWidth} {...props}>
-      {Children.map(children, (child: ReactElement<ButtonMenuItemProps>, index) => {
-        return cloneElement(child, {
-          isActive: activeIndex === index,
-          onClick: onItemClick ? () => onItemClick(index) : undefined,
-          scale,
-          variant,
-          disabled,
-        });
-      })}
-    </StyledButtonMenu>
-  );
-};
+}) => (
+  <StyledButtonMenu disabled={disabled} variant={variant} fullWidth={fullWidth} {...props}>
+    {Children.map(children, (child: ReactElement<ButtonMenuItemProps>, index) =>
+      cloneElement(child, {
+        isActive: activeIndex === index,
+        onClick: onItemClick ? () => onItemClick(index) : undefined,
+        scale,
+        variant,
+        disabled,
+      }),
+    )}
+  </StyledButtonMenu>
+);
 
 export default ButtonMenu;

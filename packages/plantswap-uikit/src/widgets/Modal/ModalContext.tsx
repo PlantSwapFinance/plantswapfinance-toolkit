@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useCallback, useMemo, useState } from "react";
 import styled from "styled-components";
 import Overlay from "../../components/Overlay/Overlay";
 import { Handler, InjectedProps } from "./types";
@@ -46,17 +46,17 @@ const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
   const [nodeId, setNodeId] = useState("");
   const [closeOnOverlayClick, setCloseOnOverlayClick] = useState(true);
 
-  const handlePresent = (node: React.ReactNode, newNodeId: string) => {
+  const handlePresent = useCallback((node: React.ReactNode, newNodeId: string) => {
     setModalNode(node);
     setIsOpen(true);
     setNodeId(newNodeId);
-  };
+  }, []);
 
-  const handleDismiss = () => {
+  const handleDismiss = useCallback(() => {
     setModalNode(undefined);
     setIsOpen(false);
     setNodeId("");
-  };
+  }, []);
 
   const handleOverlayDismiss = () => {
     if (closeOnOverlayClick) {
@@ -64,18 +64,23 @@ const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
     }
   };
 
+  // Memoised so consumers of the context are not re-rendered on every render of
+  // the provider.
+  const contextValue = useMemo(
+    () => ({
+      isOpen,
+      nodeId,
+      modalNode,
+      setModalNode,
+      onPresent: handlePresent,
+      onDismiss: handleDismiss,
+      setCloseOnOverlayClick,
+    }),
+    [isOpen, nodeId, modalNode, handlePresent, handleDismiss],
+  );
+
   return (
-    <Context.Provider
-      value={{
-        isOpen,
-        nodeId,
-        modalNode,
-        setModalNode,
-        onPresent: handlePresent,
-        onDismiss: handleDismiss,
-        setCloseOnOverlayClick,
-      }}
-    >
+    <Context.Provider value={contextValue}>
       {isOpen && (
         <ModalWrapper>
           <Overlay show onClick={handleOverlayDismiss} />
