@@ -9,7 +9,6 @@
   "repository": "https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap",
   "license": "MIT",
   "author": "RabbitDoge",
-  "private": false,
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^8.0.0",

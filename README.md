@@ -6,10 +6,18 @@ This repository is a monorepo manage with [yarn workspaces](https://classic.yarn
 
 ## Packages
 
-- [plantswapfinance-uikit](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit) : React components used to build the PlantSwap UI
-- [eslint-config-plantswap](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap) : An ESLint config for PlantSwap, with Typescript and Prettier support
+- [@plantswap/uikit](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/plantswap-uikit) : React components used to build the PlantSwap UI
+- [@plantswap-libs/eslint-config-plantswap](https://github.com/plantswapfinance/plantswapfinance-toolkit/tree/master/packages/eslint-config-plantswap) : An ESLint config for PlantSwap, with Typescript and Prettier support
 
 ## How to use
+
+This repository pins its package manager via the `packageManager` field, so enable
+[Corepack](https://nodejs.org/api/corepack.html) once to get the right Yarn version
+automatically. It ships with Node, which must be 24 or newer:
+
+```
+corepack enable
+```
 
 Clone the repository 
 
