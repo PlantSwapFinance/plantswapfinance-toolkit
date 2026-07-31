@@ -13,11 +13,20 @@ This repository is a monorepo manage with [yarn workspaces](https://classic.yarn
 
 This repository pins its package manager via the `packageManager` field, so enable
 [Corepack](https://nodejs.org/api/corepack.html) once to get the right Yarn version
-automatically. It ships with Node, which must be 24 or newer:
+automatically. The required Node version for **contributors** (running the
+monorepo toolchain, lint, tests, and Storybook) is **Node 24 or newer**, pinned
+in `.nvmrc` and the root `engines` field. Use `nvm use` to align with the
+project's pinned version:
 
 ```
 corepack enable
+nvm use
 ```
+
+The published `@plantswap/uikit` package targets consumers on any currently
+supported Node LTS (Node 18 or newer). Its `engines.node` range is deliberately
+looser than the contributor toolchain so apps on Node 18/20/22 can install it
+without engine warnings.
 
 Clone the repository 
 
