@@ -3771,7 +3771,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plantswap-libs/eslint-config-plantswap@npm:0.0.1, @plantswap-libs/eslint-config-plantswap@workspace:packages/eslint-config-plantswap":
+"@plantswap-libs/eslint-config-plantswap@workspace:*, @plantswap-libs/eslint-config-plantswap@workspace:packages/eslint-config-plantswap":
   version: 0.0.0-use.local
   resolution: "@plantswap-libs/eslint-config-plantswap@workspace:packages/eslint-config-plantswap"
   dependencies:
@@ -12145,7 +12145,7 @@ __metadata:
     "@babel/preset-typescript": "npm:^8.0.0"
     "@commitlint/cli": "npm:^21.0.0"
     "@commitlint/config-conventional": "npm:^21.0.0"
-    "@plantswap-libs/eslint-config-plantswap": "npm:0.0.1"
+    "@plantswap-libs/eslint-config-plantswap": "workspace:*"
     "@rollup/plugin-babel": "npm:^7.0.0"
     "@rollup/plugin-commonjs": "npm:^29.0.3"
     "@rollup/plugin-json": "npm:^6.1.0"
