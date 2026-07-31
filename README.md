@@ -11,6 +11,14 @@ This repository is a monorepo manage with [yarn workspaces](https://classic.yarn
 
 ## How to use
 
+This repository pins its package manager via the `packageManager` field, so enable
+[Corepack](https://nodejs.org/api/corepack.html) once to get the right Yarn version
+automatically. It ships with Node, which must be 24 or newer:
+
+```
+corepack enable
+```
+
 Clone the repository 
 
 ```

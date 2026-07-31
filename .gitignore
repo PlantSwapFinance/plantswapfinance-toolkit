@@ -3,11 +3,13 @@
 # dependencies
 node_modules
 
-# Yarn Berry artifacts (this project uses Yarn Classic)
-.yarn/
-.yarnrc.yml
-.pnp.cjs
-.pnp.loader.mjs
+# Yarn Berry: .yarnrc.yml and yarn.lock are committed so Corepack activates the
+# pinned Yarn version and CI resolves from the lockfile. Local caches are not.
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+.pnp.*
 
 # testing
 coverage
