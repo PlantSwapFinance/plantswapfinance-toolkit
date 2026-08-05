@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { Text } from "../../../components/Text";
-import { Colors } from "../../../theme/types";
+import type { Colors } from "../../../theme/types";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import filterDomProps from "../../../util/filterDomProps";
 

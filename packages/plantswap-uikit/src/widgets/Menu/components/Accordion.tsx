@@ -1,8 +1,9 @@
-import React, { ReactNode, useState } from "react";
+import type { ReactNode } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { MENU_ENTRY_HEIGHT } from "../config";
 import { LinkLabel, LinkStatus as LinkStatusComponent, MenuEntry } from "./MenuEntry";
-import { LinkStatus, PushedProps } from "../types";
+import type { LinkStatus, PushedProps } from "../types";
 import { ArrowDropDownIcon, ArrowDropUpIcon } from "../../../components/Svg";
 import filterDomProps from "../../../util/filterDomProps";
 

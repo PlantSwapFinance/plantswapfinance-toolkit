@@ -10,7 +10,7 @@ import { Button } from "../../components/Button";
 import { ModalBody, ModalCloseButton, ModalContainer, ModalHeader, ModalTitle } from "../Modal";
 import WalletCard, { MoreWalletCard } from "./WalletCard";
 import config, { walletLocalStorageKey } from "./config";
-import { Config, Login } from "./types";
+import type { Config, Login } from "./types";
 
 interface Props {
   login: Login;

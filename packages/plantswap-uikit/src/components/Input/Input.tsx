@@ -1,5 +1,7 @@
-import styled, { DefaultTheme } from "styled-components";
-import { InputProps, scales } from "./types";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
+import type { InputProps } from "./types";
+import { scales } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface StyledInputProps extends InputProps {

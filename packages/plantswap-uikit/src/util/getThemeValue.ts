@@ -1,5 +1,5 @@
 import get from "lodash/get";
-import { DefaultTheme } from "styled-components";
+import type { DefaultTheme } from "styled-components";
 
 const getThemeValue =
   (path: string, fallback?: string | number) =>

@@ -11,19 +11,7 @@ it("renders correctly", () => {
   );
   expect(asFragment()).toMatchInlineSnapshot(`
    <DocumentFragment>
-     .c0 {
-     min-width: 320px;
-   }
-
-   .c10 {
-     padding: 24px;
-   }
-
-   .c3 {
-     display: flex;
-   }
-
-   .c5 {
+     .c5 {
      color: #4D2419;
      font-size: 16px;
      font-weight: 600;
@@ -34,6 +22,18 @@ it("renders correctly", () => {
      font-size: 20px;
      font-weight: 600;
      line-height: 1.1;
+   }
+
+   .c0 {
+     min-width: 320px;
+   }
+
+   .c10 {
+     padding: 24px;
+   }
+
+   .c3 {
+     display: flex;
    }
 
    .c9 {

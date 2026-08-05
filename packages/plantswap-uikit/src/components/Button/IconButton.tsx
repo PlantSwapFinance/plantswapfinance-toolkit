@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Button from "./Button";
-import { BaseButtonProps, PolymorphicComponent } from "./types";
+import type { BaseButtonProps, PolymorphicComponent } from "./types";
 
 // The styled component returned by `styled(Button)` is typed as
 // `IStyledComponentBase<...>` under styled-components v6; widening it to

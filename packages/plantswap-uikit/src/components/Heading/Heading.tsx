@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Text from "../Text/Text";
-import { tags, scales, HeadingProps } from "./types";
+import type { HeadingProps } from "./types";
+import { tags, scales } from "./types";
 
 const style = {
   [scales.MD]: {

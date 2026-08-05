@@ -1,6 +1,7 @@
-import styled, { DefaultTheme } from "styled-components";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import { space } from "styled-system";
-import { CardProps } from "./types";
+import type { CardProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface StyledCardProps extends CardProps {

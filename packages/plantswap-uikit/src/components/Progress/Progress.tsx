@@ -2,7 +2,8 @@ import React from "react";
 import StyledProgress, { Bar } from "./StyledProgress";
 import ProgressSproutWrapper from "./ProgressSproutWrapper";
 import { ProgressSprout } from "../Svg";
-import { ProgressProps, variants, scales } from "./types";
+import type { ProgressProps } from "./types";
+import { variants, scales } from "./types";
 
 const stepGuard = (step: number) => {
   if (step < 0) {

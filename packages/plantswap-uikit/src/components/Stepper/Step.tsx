@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "../Box/Flex";
 import Box from "../Box/Box";
-import { StatusProps, StepProps } from "./types";
+import type { StatusProps, StepProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const getStepNumberFontColor = ({ theme, status }: StatusProps) => {

@@ -1,5 +1,5 @@
-import { HTMLAttributes } from "react";
-import {
+import type { HTMLAttributes } from "react";
+import type {
   BackgroundProps,
   BorderProps,
   FlexboxProps,

@@ -1,6 +1,6 @@
-import { ReactElement } from "react";
-import { SpaceProps } from "styled-system";
-import { BaseButtonProps, Scale, variants } from "../Button/types";
+import type { ReactElement } from "react";
+import type { SpaceProps } from "styled-system";
+import type { BaseButtonProps, Scale, variants } from "../Button/types";
 
 export interface ButtonMenuItemProps extends BaseButtonProps {
   isActive?: boolean;

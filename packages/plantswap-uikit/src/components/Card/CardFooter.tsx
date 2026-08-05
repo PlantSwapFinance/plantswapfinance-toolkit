@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { space, SpaceProps } from "styled-system";
+import type { SpaceProps } from "styled-system";
+import { space } from "styled-system";
 import filterDomProps from "../../util/filterDomProps";
 
 export type CardFooterProps = SpaceProps;

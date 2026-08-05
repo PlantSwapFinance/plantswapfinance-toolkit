@@ -7,7 +7,8 @@ import BinanceChain from "../../components/Svg/Icons/BinanceChain";
 import SafePal from "../../components/Svg/Icons/SafePal";
 import Coin98 from "../../components/Svg/Icons/Coin98";
 
-import { Config, ConnectorNames } from "./types";
+import type { Config } from "./types";
+import { ConnectorNames } from "./types";
 
 const connectors: Config[] = [
   {

@@ -1,5 +1,7 @@
-import React, { ReactNode } from "react";
-import { render, RenderResult } from "@testing-library/react";
+import type { ReactNode } from "react";
+import React from "react";
+import type { RenderResult } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";
 import { light } from "./theme";
 

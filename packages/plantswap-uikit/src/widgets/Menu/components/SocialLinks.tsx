@@ -1,5 +1,5 @@
 import React from "react";
-import { SvgProps } from "../../../components/Svg";
+import type { SvgProps } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
 import Dropdown from "../../../components/Dropdown/Dropdown";
 import Link from "../../../components/Link/Link";

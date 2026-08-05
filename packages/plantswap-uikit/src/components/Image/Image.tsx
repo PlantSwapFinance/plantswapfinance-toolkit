@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import observerOptions from "./options";
 import Wrapper from "./Wrapper";
-import { ImageProps } from "./types";
+import type { ImageProps } from "./types";
 
 const StyledImage = styled.img`
   height: 100%;

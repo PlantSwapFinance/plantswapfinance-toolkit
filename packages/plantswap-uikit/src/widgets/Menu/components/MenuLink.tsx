@@ -1,4 +1,5 @@
-import React, { AnchorHTMLAttributes } from "react";
+import type { AnchorHTMLAttributes } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 const MenuLink: React.FC<AnchorHTMLAttributes<HTMLAnchorElement>> = ({ href, target, rel, ...otherProps }) => {

@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import { Variant, variants } from "./types";
+import type { Variant } from "./types";
+import { variants } from "./types";
 import { Image } from "../../../../components/Image";
 import { RefreshIcon, WalletFilledIcon, WarningIcon } from "../../../../components/Svg";
-import { Colors } from "../../../../theme/types";
+import type { Colors } from "../../../../theme/types";
 import filterDomProps from "../../../../util/filterDomProps";
 
 const MenuIconWrapper = styled.div.withConfig(filterDomProps)<{ borderColor: keyof Colors }>`

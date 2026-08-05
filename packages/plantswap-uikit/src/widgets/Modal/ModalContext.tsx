@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useMemo, useState } from "react";
 import styled from "styled-components";
 import Overlay from "../../components/Overlay/Overlay";
-import { Handler, InjectedProps } from "./types";
+import type { Handler, InjectedProps } from "./types";
 
 interface ModalsContext {
   isOpen: boolean;

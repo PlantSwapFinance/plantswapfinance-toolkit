@@ -1,12 +1,12 @@
-import { AlertTheme } from "../components/Alert/types";
-import { CardTheme } from "../components/Card/types";
-import { PlantToggleTheme } from "../components/PlantToggle/types";
-import { RadioTheme } from "../components/Radio/types";
-import { ToggleTheme } from "../components/Toggle/types";
-import { TooltipTheme } from "../components/Tooltip/types";
-import { NavTheme } from "../widgets/Menu/types";
-import { ModalTheme } from "../widgets/Modal/types";
-import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
+import type { AlertTheme } from "../components/Alert/types";
+import type { CardTheme } from "../components/Card/types";
+import type { PlantToggleTheme } from "../components/PlantToggle/types";
+import type { RadioTheme } from "../components/Radio/types";
+import type { ToggleTheme } from "../components/Toggle/types";
+import type { TooltipTheme } from "../components/Tooltip/types";
+import type { NavTheme } from "../widgets/Menu/types";
+import type { ModalTheme } from "../widgets/Modal/types";
+import type { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
 
 export interface PlantTheme {
   siteWidth: number;

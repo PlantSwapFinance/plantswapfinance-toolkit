@@ -3,7 +3,7 @@ import Text from "../../../components/Text/Text";
 import Dropdown from "../../../components/Dropdown/Dropdown";
 import Button from "../../../components/Button/Button";
 import LanguageIcon from "../../../components/Svg/Icons/Language";
-import { Language } from "../types";
+import type { Language } from "../types";
 import MenuButton from "./MenuButton";
 
 interface Props {

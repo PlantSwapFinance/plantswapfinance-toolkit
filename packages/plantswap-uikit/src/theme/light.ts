@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import type { DefaultTheme } from "styled-components";
 import { light as lightAlert } from "../components/Alert/theme";
 import { light as lightCard } from "../components/Card/theme";
 import { light as lightPlantToggle } from "../components/PlantToggle/theme";

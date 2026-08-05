@@ -1,6 +1,7 @@
-import React, { cloneElement, Children, ReactElement } from "react";
+import type { ReactElement } from "react";
+import React, { cloneElement, Children } from "react";
 import styled from "styled-components";
-import { NotificationDotProps, DotProps } from "./types";
+import type { NotificationDotProps, DotProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const NotificationDotRoot = styled.span`

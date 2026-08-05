@@ -1,6 +1,6 @@
-import { ComponentProps, ElementType, ReactElement, ReactNode } from "react";
-import { Link } from "react-router-dom";
-import { LayoutProps, SpaceProps } from "styled-system";
+import type { ComponentProps, ElementType, ReactElement, ReactNode } from "react";
+import type { Link } from "react-router-dom";
+import type { LayoutProps, SpaceProps } from "styled-system";
 
 export const scales = {
   MD: "md",

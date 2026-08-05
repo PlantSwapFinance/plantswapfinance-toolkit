@@ -1,5 +1,5 @@
-import { ReactElement, ReactNode } from "react";
-import { Colors } from "../../theme/types";
+import type { ReactElement, ReactNode } from "react";
+import type { Colors } from "../../theme/types";
 
 export interface Language {
   code: string;

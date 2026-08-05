@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { space } from "styled-system";
-import { RadioProps, scales } from "./types";
+import type { RadioProps } from "./types";
+import { scales } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const getScale = ({ scale }: RadioProps) => {

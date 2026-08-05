@@ -1,7 +1,8 @@
-import { useMemo, useReducer, useEffect, ReactNode, useCallback } from "react";
+import type { ReactNode } from "react";
+import { useMemo, useReducer, useEffect, useCallback } from "react";
 import noop from "lodash/noop";
 
-import {
+import type {
   ColumnByNamesType,
   ColumnType,
   TableState,

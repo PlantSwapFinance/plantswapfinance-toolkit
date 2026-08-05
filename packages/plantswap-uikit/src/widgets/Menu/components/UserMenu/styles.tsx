@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { UserMenuItemProps } from "./types";
+import type { UserMenuItemProps } from "./types";
 import filterDomProps from "../../../../util/filterDomProps";
 
 export const UserMenuDivider = styled.hr`

@@ -1,6 +1,6 @@
 import React, { useCallback, useContext, useEffect } from "react";
 import { Context } from "./ModalContext";
-import { Handler } from "./types";
+import type { Handler } from "./types";
 
 const arePropsEqual = (first: object, second: object) => {
   const firstProps = first as Record<string, unknown>;

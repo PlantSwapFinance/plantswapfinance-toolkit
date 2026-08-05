@@ -1,5 +1,5 @@
-import React from "react";
-import { DefaultTheme } from "styled-components";
+import type React from "react";
+import type { DefaultTheme } from "styled-components";
 
 export interface ThemedProps {
   theme: DefaultTheme;

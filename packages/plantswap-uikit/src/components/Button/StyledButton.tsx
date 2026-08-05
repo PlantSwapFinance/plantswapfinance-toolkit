@@ -1,7 +1,8 @@
-import styled, { DefaultTheme } from "styled-components";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import { space, layout, variant } from "styled-system";
 import { scaleVariants, styleVariants } from "./theme";
-import { BaseButtonProps } from "./types";
+import type { BaseButtonProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface ThemedButtonProps extends BaseButtonProps {

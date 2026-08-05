@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { scales, PlantToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
+import type { PlantToggleProps, HandleProps, InputProps, ScaleKeys } from "./types";
+import { scales } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const scaleKeyValues = {

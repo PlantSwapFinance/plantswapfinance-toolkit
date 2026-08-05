@@ -3,9 +3,10 @@ import styled from "styled-components";
 import Button from "../../components/Button/Button";
 import Text from "../../components/Text/Text";
 import MoreHorizontal from "../../components/Svg/Icons/MoreHorizontal";
-import { ButtonProps } from "../../components/Button";
+import type { ButtonProps } from "../../components/Button";
 import { connectorLocalStorageKey, walletLocalStorageKey } from "./config";
-import { Login, Config, ConnectorNames } from "./types";
+import type { Login, Config } from "./types";
+import { ConnectorNames } from "./types";
 
 interface Props {
   walletConfig: Config;

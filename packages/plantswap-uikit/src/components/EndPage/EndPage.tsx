@@ -1,6 +1,6 @@
 import React from "react";
 import { useTheme } from "styled-components";
-import { EndPageProps } from "./types";
+import type { EndPageProps } from "./types";
 
 const Icon: React.FC<EndPageProps> = (props) => {
   const theme = useTheme();

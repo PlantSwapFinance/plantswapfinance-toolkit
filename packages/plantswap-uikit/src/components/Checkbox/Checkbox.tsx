@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { CheckboxProps, scales } from "./types";
+import type { CheckboxProps } from "./types";
+import { scales } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const getScale = ({ scale }: CheckboxProps) => {

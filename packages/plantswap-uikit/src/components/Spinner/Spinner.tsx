@@ -5,7 +5,7 @@ import BeeIcon from "./BeeIcon";
 import BeeIcon2 from "./BeeIcon2";
 import SunIcon from "./SunIcon";
 import { SproutIcon } from "../Svg";
-import { SpinnerProps } from "./types";
+import type { SpinnerProps } from "./types";
 
 const rotate = keyframes`
   from {

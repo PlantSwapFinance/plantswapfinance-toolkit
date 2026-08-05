@@ -26,10 +26,6 @@ it("renders ConnectModal correctly", () => {
      padding: 24px;
    }
 
-   .c3 {
-     display: flex;
-   }
-
    .c14 {
      display: grid;
      grid-template-columns: 1fr 1fr;
@@ -217,6 +213,10 @@ it("renders ConnectModal correctly", () => {
      fill: #2B6E37;
      flex-shrink: 0;
      margin-bottom: 8px;
+   }
+
+   .c3 {
+     display: flex;
    }
 
    .c2 {

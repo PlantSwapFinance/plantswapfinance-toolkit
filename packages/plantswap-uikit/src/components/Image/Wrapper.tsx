@@ -1,7 +1,7 @@
 import React, { forwardRef } from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
-import { WrapperProps } from "./types";
+import type { WrapperProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const StyledWrapper = styled.div.withConfig(filterDomProps)<{ $width: number; $height: number }>`

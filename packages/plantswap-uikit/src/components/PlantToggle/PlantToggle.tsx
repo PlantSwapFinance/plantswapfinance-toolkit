@@ -1,6 +1,7 @@
 import React from "react";
 import { PlantStack, PlantInput, PlantLabel } from "./StyledPlantToggle";
-import { PlantToggleProps, scales } from "./types";
+import type { PlantToggleProps } from "./types";
+import { scales } from "./types";
 
 const PlantToggle: React.FC<PlantToggleProps> = ({ checked, scale = scales.MD, ...props }) => (
   <PlantStack scale={scale}>
