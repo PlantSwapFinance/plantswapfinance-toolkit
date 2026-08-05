@@ -24,19 +24,19 @@ export const Default: React.FC = () => (
   </div>
 );
 
-const context = require.context("./Icons", true, /.tsx$/);
-const components = context.keys().reduce((accum, path) => {
-  const file = path.substring(2).replace(".tsx", "");
+const modules = import.meta.glob("./Icons/*.tsx", { eager: true });
+const components = Object.entries(modules).reduce<Record<string, React.ComponentType<unknown>>>((accum, [path, mod]) => {
+  const file = path.replace(/^\.\/Icons\//, "").replace(".tsx", "");
   return {
     ...accum,
-    [file]: context(path),
+    [file]: (mod as { default: React.ComponentType<unknown> }).default,
   };
 }, {});
 
 export const Icons: React.FC = () => (
   <Flex justifyContent="start" alignItems="center" flexWrap="wrap">
     {Object.keys(components).map((file) => {
-      const Icon = components[file].default;
+      const Icon = components[file];
       return (
         <Flex
           key={file}
