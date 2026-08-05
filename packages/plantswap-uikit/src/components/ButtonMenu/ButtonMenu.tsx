@@ -1,8 +1,10 @@
-import React, { cloneElement, Children, ReactElement } from "react";
-import styled, { DefaultTheme } from "styled-components";
+import type { ReactElement } from "react";
+import React, { cloneElement, Children } from "react";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import { space } from "styled-system";
 import { scales, variants } from "../Button/types";
-import { ButtonMenuProps, ButtonMenuItemProps } from "./types";
+import type { ButtonMenuProps, ButtonMenuItemProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface StyledButtonMenuProps extends ButtonMenuProps {

@@ -1,5 +1,5 @@
 import "styled-components";
-import { PlantTheme } from "./theme";
+import type { PlantTheme } from "./theme";
 
 declare module "styled-components" {
   // The empty body is the point: this merges PlantTheme into styled-components'

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { OverlayProps } from "./types";
+import type { OverlayProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const Overlay = styled.div.withConfig(filterDomProps).attrs<OverlayProps>(({ show = false, zIndex = 10 }) => ({

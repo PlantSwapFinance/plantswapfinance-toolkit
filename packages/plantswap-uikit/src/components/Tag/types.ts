@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { SpaceProps } from "styled-system";
+import type { ReactNode } from "react";
+import type { SpaceProps } from "styled-system";
 
 export const variants = {
   PRIMARY: "primary",

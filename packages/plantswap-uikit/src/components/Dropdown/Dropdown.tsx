@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { DropdownProps, PositionProps, Position } from "./types";
+import type { DropdownProps, PositionProps, Position } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const getLeft = ({ position }: PositionProps) => {

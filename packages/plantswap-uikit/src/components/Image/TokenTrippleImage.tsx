@@ -1,5 +1,6 @@
 import React from "react";
-import { TokenTrippleImageProps, variants } from "./types";
+import type { TokenTrippleImageProps } from "./types";
+import { variants } from "./types";
 import { StyledPrimaryImage, StyledSecondaryImage, StyledThirdImage } from "./styles";
 import Wrapper from "./Wrapper";
 

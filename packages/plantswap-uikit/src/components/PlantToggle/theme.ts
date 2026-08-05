@@ -1,5 +1,5 @@
 import { darkColors, lightColors } from "../../theme/colors";
-import { PlantToggleTheme } from "./types";
+import type { PlantToggleTheme } from "./types";
 
 export const light: PlantToggleTheme = {
   handleBackground: lightColors.backgroundAlt,

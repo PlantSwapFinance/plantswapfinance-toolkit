@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "styled-components";
 import { Modal, useModal } from ".";
-import { ModalProps } from "./types";
+import type { ModalProps } from "./types";
 import Button from "../../components/Button/Button";
 import Heading from "../../components/Heading/Heading";
 

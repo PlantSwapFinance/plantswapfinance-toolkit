@@ -1,5 +1,5 @@
-import { InputHTMLAttributes, ReactNode } from "react";
-import { BoxProps } from "../Box";
+import type { InputHTMLAttributes, ReactNode } from "react";
+import type { BoxProps } from "../Box";
 
 export interface BalanceInputProps extends BoxProps {
   value: string | number;

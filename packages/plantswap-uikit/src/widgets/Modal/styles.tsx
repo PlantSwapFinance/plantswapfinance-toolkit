@@ -4,7 +4,7 @@ import Flex from "../../components/Box/Flex";
 import { Box } from "../../components/Box";
 import { ArrowBackIcon, CloseIcon } from "../../components/Svg";
 import { IconButton } from "../../components/Button";
-import { ModalProps } from "./types";
+import type { ModalProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 export const ModalHeader = styled.div.withConfig(filterDomProps)<{ background?: string }>`

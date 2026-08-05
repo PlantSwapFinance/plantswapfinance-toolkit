@@ -1,4 +1,4 @@
-import { Colors } from "./types";
+import type { Colors } from "./types";
 
 export const baseColors = {
   failure: "#AC2C2C",

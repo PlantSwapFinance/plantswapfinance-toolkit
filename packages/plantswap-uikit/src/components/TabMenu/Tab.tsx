@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { color } from "styled-system";
-import { TabProps } from "./types";
+import type { TabProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const getBorderRadius = ({ scale }: TabProps) => (scale === "md" ? "16px 16px 0 0" : "24px 24px 0 0");

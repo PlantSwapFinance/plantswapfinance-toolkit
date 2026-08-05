@@ -1,6 +1,7 @@
 import React from "react";
-import { SpaceProps } from "styled-system";
-import { scales, TagProps } from "./types";
+import type { SpaceProps } from "styled-system";
+import type { TagProps } from "./types";
+import { scales } from "./types";
 import { StyledTag } from "./StyledTag";
 
 const Tag: React.FC<TagProps> = ({

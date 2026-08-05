@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Stepper from "./Stepper";
 import { Step, StepNumber } from "./Step";
-import { Status } from "./types";
+import type { Status } from "./types";
 import Card from "../Card/Card";
 import CardBody from "../Card/CardBody";
 

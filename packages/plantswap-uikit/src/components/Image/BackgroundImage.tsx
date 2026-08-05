@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import observerOptions from "./options";
 import Wrapper from "./Wrapper";
-import { ImageProps } from "./types";
+import type { ImageProps } from "./types";
 
 const StyledBackgroundImage = styled(Wrapper)`
   background-repeat: no-repeat;

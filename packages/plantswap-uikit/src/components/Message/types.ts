@@ -1,5 +1,5 @@
-import React from "react";
-import { SpaceProps } from "styled-system";
+import type React from "react";
+import type { SpaceProps } from "styled-system";
 
 export const variants = {
   WARNING: "warning",

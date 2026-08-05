@@ -2,7 +2,7 @@ import React from "react";
 import { useModal } from "../Modal";
 import ConnectModal from "./ConnectModal";
 import AccountModal from "./AccountModal";
-import { Login } from "./types";
+import type { Login } from "./types";
 
 interface ReturnType {
   onPresentConnectModal: () => void;

@@ -1,6 +1,6 @@
-import { SVGAttributes } from "react";
-import { DefaultTheme } from "styled-components";
-import { SpaceProps } from "styled-system";
+import type { SVGAttributes } from "react";
+import type { DefaultTheme } from "styled-components";
+import type { SpaceProps } from "styled-system";
 
 export interface SvgProps extends SVGAttributes<HTMLOrSVGElement>, SpaceProps {
   theme?: DefaultTheme;

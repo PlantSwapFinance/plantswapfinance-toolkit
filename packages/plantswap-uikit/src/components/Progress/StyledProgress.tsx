@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { space, variant as StyledSystemVariant } from "styled-system";
 import { styleVariants, styleScales } from "./themes";
-import { ProgressProps, variants } from "./types";
+import type { ProgressProps } from "./types";
+import { variants } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface BarProps {

@@ -44,6 +44,16 @@ module.exports = [
       "@typescript-eslint/no-use-before-define": ["warn"],
       "no-shadow": "off",
       "@typescript-eslint/no-shadow": ["error"],
+      // Keep type-only imports as `import type` so Rollup (via Babel) does not
+      // try to resolve erased TypeScript interfaces/types as runtime exports.
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        {
+          prefer: "type-imports",
+          fixStyle: "separate-type-imports",
+          disallowTypeAnnotations: false,
+        },
+      ],
       // React
       "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
       "react/prop-types": 0,

@@ -1,5 +1,5 @@
 import { darkColors, lightColors } from "../../theme/colors";
-import { TooltipTheme } from "./types";
+import type { TooltipTheme } from "./types";
 
 export const light: TooltipTheme = {
   background: darkColors.backgroundAlt,

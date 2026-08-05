@@ -1,4 +1,4 @@
-import { LinkStatus } from "./types";
+import type { LinkStatus } from "./types";
 
 export const status = {
   LIVE: <LinkStatus>{

@@ -1,8 +1,10 @@
-import styled, { DefaultTheme } from "styled-components";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
 import { space, variant } from "styled-system";
-import { Colors } from "../../theme/types";
+import type { Colors } from "../../theme/types";
 import { scaleVariants, styleVariants } from "./theme";
-import { TagProps, variants } from "./types";
+import type { TagProps } from "./types";
+import { variants } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface ThemedProps extends TagProps {

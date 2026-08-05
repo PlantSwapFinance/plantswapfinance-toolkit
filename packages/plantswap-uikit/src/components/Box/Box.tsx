@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { background, border, layout, position, space } from "styled-system";
-import { BoxProps } from "./types";
+import type { BoxProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const Box = styled.div.withConfig(filterDomProps)<BoxProps>`

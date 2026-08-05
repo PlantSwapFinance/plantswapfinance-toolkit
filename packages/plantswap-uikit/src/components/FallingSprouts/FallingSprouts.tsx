@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import SproutIcon from "../Svg/Icons/Logo";
-import { SproutProps, FallingSproutsProps } from "./types";
+import type { SproutProps, FallingSproutsProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const sproutFall = keyframes`

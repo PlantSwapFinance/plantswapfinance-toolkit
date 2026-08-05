@@ -1,9 +1,10 @@
 /* eslint-disable react/no-array-index-key */
-import React, { Children, isValidElement, ReactNode } from "react";
+import type { ReactNode } from "react";
+import React, { Children, isValidElement } from "react";
 import styled from "styled-components";
 import { space } from "styled-system";
 import ChevronRightIcon from "../Svg/Icons/ChevronRight";
-import { BreadcrumbsProps } from "./types";
+import type { BreadcrumbsProps } from "./types";
 
 const Separator = styled.div`
   align-items: center;

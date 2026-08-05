@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { space, SpaceProps } from "styled-system";
-import { CardTheme } from "./types";
+import type { SpaceProps } from "styled-system";
+import { space } from "styled-system";
+import type { CardTheme } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 export interface CardHeaderProps extends SpaceProps {

@@ -1,4 +1,5 @@
-import React, { ChangeEvent } from "react";
+import type { ChangeEvent } from "react";
+import React from "react";
 import { Box } from "../Box";
 import {
   SproutSlider,
@@ -9,7 +10,7 @@ import {
   SliderLabel,
   SliderLabelContainer,
 } from "./styles";
-import SliderProps from "./types";
+import type SliderProps from "./types";
 
 const Slider: React.FC<SliderProps> = ({
   name,

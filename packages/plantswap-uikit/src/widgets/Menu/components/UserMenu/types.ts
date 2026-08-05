@@ -1,5 +1,5 @@
-import { FlexProps } from "styled-system";
-import { ReactNode } from "react";
+import type { FlexProps } from "styled-system";
+import type { ReactNode } from "react";
 
 export const variants = {
   DEFAULT: "default",

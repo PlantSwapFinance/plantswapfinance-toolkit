@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { variant as systemVariant, space } from "styled-system";
 import { WarningIcon, ErrorIcon } from "../Svg";
 import { Box } from "../Box";
-import { MessageProps } from "./types";
+import type { MessageProps } from "./types";
 import variants from "./theme";
 import filterDomProps from "../../util/filterDomProps";
 

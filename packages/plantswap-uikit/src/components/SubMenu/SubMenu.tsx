@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
-import { Placement, Padding } from "@popperjs/core";
+import type { Placement, Padding } from "@popperjs/core";
 import { SubMenuContainer, ClickableElementContainer } from "./styles";
 
 export interface SubMenuProps {

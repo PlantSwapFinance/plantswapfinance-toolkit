@@ -1,7 +1,8 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { space, layout } from "styled-system";
-import { SkeletonProps, animation as ANIMATION, variant as VARIANT } from "./types";
+import type { SkeletonProps } from "./types";
+import { animation as ANIMATION, variant as VARIANT } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const waves = keyframes`

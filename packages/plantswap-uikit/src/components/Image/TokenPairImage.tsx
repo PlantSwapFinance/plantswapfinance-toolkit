@@ -1,5 +1,6 @@
 import React from "react";
-import { TokenPairImageProps, variants } from "./types";
+import type { TokenPairImageProps } from "./types";
+import { variants } from "./types";
 import { StyledPrimaryImage, StyledSecondaryImage } from "./styles";
 import Wrapper from "./Wrapper";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import { AAAIcon, AuctionIcon, RewardIcon, RewardPurppleIcon } from "../../components/Svg";
-import { SvgProps } from "../../components/Svg/types";
+import type { SvgProps } from "../../components/Svg/types";
 
 // Valid SVG path data only holds command letters, numbers (incl. exponents) and separators.
 const INVALID_PATH_CHAR_REGEX = /[^MmLlHhVvCcSsQqTtAaZzEe0-9.,+\-\s]/;

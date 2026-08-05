@@ -1,7 +1,7 @@
 import React from "react";
 import Text from "../Text/Text";
 import { StyledBalanceInput, StyledInput } from "./styles";
-import { BalanceInputProps } from "./types";
+import type { BalanceInputProps } from "./types";
 
 const BalanceInput: React.FC<BalanceInputProps> = ({
   value,

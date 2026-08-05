@@ -2,7 +2,7 @@ import React from "react";
 import { TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
 import Toast from "./Toast";
-import { ToastContainerProps } from "./types";
+import type { ToastContainerProps } from "./types";
 
 const ZINDEX = 1000;
 const TOP_POSITION = 80; // Initial position from the top

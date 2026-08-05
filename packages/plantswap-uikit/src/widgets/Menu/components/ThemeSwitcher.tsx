@@ -1,5 +1,5 @@
 import React from "react";
-import { SvgProps } from "../../../components/Svg";
+import type { SvgProps } from "../../../components/Svg";
 import Text from "../../../components/Text/Text";
 import Flex from "../../../components/Box/Flex";
 import Button from "../../../components/Button/Button";

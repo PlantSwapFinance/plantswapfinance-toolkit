@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Box from "../Box/Box";
 import Input from "../Input/Input";
-import { BalanceInputProps } from "./types";
+import type { BalanceInputProps } from "./types";
 
 export const StyledBalanceInput = styled(Box)<{ isWarning: BalanceInputProps["isWarning"] }>`
   background-color: ${({ theme }) => theme.colors.input};

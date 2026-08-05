@@ -1,7 +1,8 @@
-import React, { cloneElement, Children, ReactElement } from "react";
+import type { ReactElement } from "react";
+import React, { cloneElement, Children } from "react";
 import styled from "styled-components";
 import Flex from "../Box/Flex";
-import { TabMenuProps, TabProps } from "./types";
+import type { TabMenuProps, TabProps } from "./types";
 
 const Wrapper = styled(Flex)`
   border-bottom: 2px solid ${({ theme }) => theme.colors.textSubtle};

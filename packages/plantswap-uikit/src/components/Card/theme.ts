@@ -1,6 +1,6 @@
 import { darkColors, lightColors } from "../../theme/colors";
 import { shadows } from "../../theme/base";
-import { CardTheme } from "./types";
+import type { CardTheme } from "./types";
 
 export const light: CardTheme = {
   background: lightColors.backgroundAlt,

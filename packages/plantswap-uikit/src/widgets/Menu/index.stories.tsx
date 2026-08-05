@@ -7,12 +7,13 @@ import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import Input from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
-import { Language } from "./types";
+import type { Language } from "./types";
 import { links } from "./config";
 import { MenuEntry } from "./components/MenuEntry";
 import UserMenuComponent from "./components/UserMenu";
 import { UserMenuDivider, UserMenuItem } from "./components/UserMenu/styles";
-import { variants, Variant } from "./components/UserMenu/types";
+import type { Variant } from "./components/UserMenu/types";
+import { variants } from "./components/UserMenu/types";
 import Menu from "./Menu";
 import { LogoutIcon } from "../../components/Svg";
 

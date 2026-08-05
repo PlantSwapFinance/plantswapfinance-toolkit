@@ -1,5 +1,5 @@
-import { FC } from "react";
-import { SvgProps } from "../../components/Svg/types";
+import type { FC } from "react";
+import type { SvgProps } from "../../components/Svg/types";
 
 export enum ConnectorNames {
   Injected = "injected",

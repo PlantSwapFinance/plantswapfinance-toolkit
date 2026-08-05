@@ -3,7 +3,7 @@ import { useTheme } from "styled-components";
 import Heading from "../../components/Heading/Heading";
 import getThemeValue from "../../util/getThemeValue";
 import { ModalBody, ModalHeader, ModalTitle, ModalContainer, ModalCloseButton, ModalBackButton } from "./styles";
-import { ModalProps } from "./types";
+import type { ModalProps } from "./types";
 
 const Modal: React.FC<ModalProps> = ({
   title,

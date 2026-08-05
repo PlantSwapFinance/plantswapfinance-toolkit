@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { CogIcon } from "../../../components/Svg";
 import IconButton from "../../../components/Button/IconButton";
 import { MENU_ENTRY_HEIGHT } from "../config";
-import { PanelProps, PushedProps } from "../types";
+import type { PanelProps, PushedProps } from "../types";
 import PlantPrice from "./PlantPrice";
 import ThemeSwitcher from "./ThemeSwitcher";
 import SocialLinks from "./SocialLinks";

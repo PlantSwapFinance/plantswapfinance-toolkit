@@ -1,4 +1,4 @@
-import { MediaQueries, Breakpoints, Spacing } from "./types";
+import type { MediaQueries, Breakpoints, Spacing } from "./types";
 
 export const breakpointMap: { [key: string]: number } = {
   xs: 370,

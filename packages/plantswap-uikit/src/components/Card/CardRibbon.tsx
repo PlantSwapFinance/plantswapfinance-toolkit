@@ -1,6 +1,7 @@
 import React from "react";
-import styled, { DefaultTheme } from "styled-components";
-import { CardRibbonProps } from "./types";
+import type { DefaultTheme } from "styled-components";
+import styled from "styled-components";
+import type { CardRibbonProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 interface StyledCardRibbonProps extends CardRibbonProps {

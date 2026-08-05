@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemedProps, StepProps } from "./types";
+import type { ThemedProps, StepProps } from "./types";
 import filterDomProps from "../../util/filterDomProps";
 
 const StepperWrapper = styled.div.withConfig(filterDomProps)<ThemedProps>`

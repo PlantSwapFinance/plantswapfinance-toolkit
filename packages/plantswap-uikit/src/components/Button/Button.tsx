@@ -1,8 +1,10 @@
-import React, { cloneElement, ElementType, isValidElement } from "react";
-import { SpaceProps } from "styled-system";
+import type { ElementType } from "react";
+import React, { cloneElement, isValidElement } from "react";
+import type { SpaceProps } from "styled-system";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
 import StyledButton from "./StyledButton";
-import { ButtonProps, scales, variants } from "./types";
+import type { ButtonProps } from "./types";
+import { scales, variants } from "./types";
 
 const Button = <E extends ElementType = "button">(props: ButtonProps<E>): React.JSX.Element => {
   const {
