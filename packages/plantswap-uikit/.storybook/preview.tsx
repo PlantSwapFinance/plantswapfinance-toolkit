@@ -1,6 +1,5 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-/* eslint-disable import/no-unresolved */
 import type { Preview } from "@storybook/react";
 import { light } from "../src/theme";
 

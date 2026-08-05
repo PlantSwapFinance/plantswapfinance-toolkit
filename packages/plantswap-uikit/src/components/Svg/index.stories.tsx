@@ -25,13 +25,16 @@ export const Default: React.FC = () => (
 );
 
 const modules = import.meta.glob("./Icons/*.tsx", { eager: true });
-const components = Object.entries(modules).reduce<Record<string, React.ComponentType<unknown>>>((accum, [path, mod]) => {
-  const file = path.replace(/^\.\/Icons\//, "").replace(".tsx", "");
-  return {
-    ...accum,
-    [file]: (mod as { default: React.ComponentType<unknown> }).default,
-  };
-}, {});
+const components = Object.entries(modules).reduce<Record<string, React.ComponentType<unknown>>>(
+  (accum, [path, mod]) => {
+    const file = path.replace(/^\.\/Icons\//, "").replace(".tsx", "");
+    return {
+      ...accum,
+      [file]: (mod as { default: React.ComponentType<unknown> }).default,
+    };
+  },
+  {},
+);
 
 export const Icons: React.FC = () => (
   <Flex justifyContent="start" alignItems="center" flexWrap="wrap">
