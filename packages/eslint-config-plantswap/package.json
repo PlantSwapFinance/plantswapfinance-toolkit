@@ -1,6 +1,6 @@
 {
   "name": "@plantswap-libs/eslint-config-plantswap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Eslint config for PlantSwap.finance",
   "main": "lib/index.js",
   "files": [
