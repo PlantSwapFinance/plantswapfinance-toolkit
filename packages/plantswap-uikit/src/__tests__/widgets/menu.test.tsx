@@ -47,11 +47,7 @@ it("renders correctly", () => {
 
   expect(asFragment()).toMatchInlineSnapshot(`
    <DocumentFragment>
-     .c2 {
-     display: flex;
-   }
-
-   .c31 {
+     .c31 {
      position: fixed;
      top: 0px;
      left: 0px;
@@ -81,6 +77,10 @@ it("renders correctly", () => {
      fill: #4D2419;
      flex-shrink: 0;
      margin-right: 8px;
+   }
+
+   .c2 {
+     display: flex;
    }
 
    .c3 {

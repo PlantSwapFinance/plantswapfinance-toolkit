@@ -7,11 +7,7 @@ it("renders correctly", () => {
 
   expect(asFragment()).toMatchInlineSnapshot(`
    <DocumentFragment>
-     .c0 {
-     display: flex;
-   }
-
-   .c3 {
+     .c3 {
      align-self: center;
      fill: currentColor;
      flex-shrink: 0;
@@ -29,6 +25,10 @@ it("renders correctly", () => {
      font-size: 16px;
      font-weight: 400;
      line-height: 1.5;
+   }
+
+   .c0 {
+     display: flex;
    }
 
    .c2 {
