@@ -1,6 +1,6 @@
 {
   "name": "@plantswap/uikit",
-  "version": "1.0.0-alpha.0",
+  "version": "1.0.0",
   "description": "Set of UI components for plantswap projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
