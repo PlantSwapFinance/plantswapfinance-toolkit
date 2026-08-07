@@ -54,6 +54,48 @@ import { ResetCSS } from '@plantswap/uikit'
 <ResetCSS />
 ```
 
+### Error boundary
+
+`ErrorBoundary` catches render, lifecycle and constructor errors thrown by its descendants and
+swaps that subtree for a themed card instead of letting the whole app unmount. Wrap the app, a
+route, or any widget that can fail on its own.
+
+```jsx
+import { ErrorBoundary } from '@plantswap/uikit'
+;<ErrorBoundary onError={(error, errorInfo) => reportToSentry(error, errorInfo)}>
+  <FarmList />
+</ErrorBoundary>
+```
+
+The default card shows the error message and component stack outside of production builds only.
+Force it either way with `showDetails`, and adjust the copy with `title`, `description` and
+`actionText`.
+
+Pass `resetKeys` to recover automatically — the boundary clears its error whenever one of the
+values changes, which makes navigation a natural recovery point.
+
+```jsx
+<ErrorBoundary resetKeys={[pathname]}>
+  <Outlet />
+</ErrorBoundary>
+```
+
+For a completely different look, pass `fallback` — either a node, or a render function receiving
+the error and a reset handler.
+
+```jsx
+<ErrorBoundary
+  fallback={({ error, resetErrorBoundary }) => (
+    <MyCrashScreen message={error.message} onRetry={resetErrorBoundary} />
+  )}
+>
+  <FarmList />
+</ErrorBoundary>
+```
+
+Note that React error boundaries cannot catch errors thrown from event handlers, async callbacks,
+or server rendering. Store those in state and rethrow during render to surface them here.
+
 ### Types
 
 This project is built with Typescript and export all the relevant types.
