@@ -1,5 +1,6 @@
 import type { AlertTheme } from "../components/Alert/types";
 import type { CardTheme } from "../components/Card/types";
+import type { ErrorTheme } from "../components/Error/types";
 import type { PlantToggleTheme } from "../components/PlantToggle/types";
 import type { RadioTheme } from "../components/Radio/types";
 import type { ToggleTheme } from "../components/Toggle/types";
@@ -14,6 +15,7 @@ export interface PlantTheme {
   alert: AlertTheme;
   colors: Colors;
   card: CardTheme;
+  error: ErrorTheme;
   nav: NavTheme;
   modal: ModalTheme;
   plantToggle: PlantToggleTheme;
