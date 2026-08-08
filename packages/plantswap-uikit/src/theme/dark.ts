@@ -1,6 +1,7 @@
 import type { DefaultTheme } from "styled-components";
 import { dark as darkAlert } from "../components/Alert/theme";
 import { dark as darkCard } from "../components/Card/theme";
+import { dark as darkError } from "../components/Error/theme";
 import { dark as darkPlantToggle } from "../components/PlantToggle/theme";
 import { dark as darkRadio } from "../components/Radio/theme";
 import { dark as darkToggle } from "../components/Toggle/theme";
@@ -16,6 +17,7 @@ const darkTheme: DefaultTheme = {
   alert: darkAlert,
   colors: darkColors,
   card: darkCard,
+  error: darkError,
   toggle: darkToggle,
   nav: darkNav,
   modal: darkModal,

@@ -9,6 +9,7 @@ export * from "./components/Card";
 export * from "./components/Checkbox";
 export * from "./components/Dropdown";
 export * from "./components/EndPage";
+export * from "./components/Error";
 export * from "./components/ErrorBoundary";
 export * from "./components/FallingSprouts";
 export * from "./components/Heading";
