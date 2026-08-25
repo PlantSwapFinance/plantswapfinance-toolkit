@@ -18,5 +18,6 @@
       ],
       "allowedVersions": "<7"
     }
-  ]
+  ],
+  "minimumReleaseAge": "1 day"
 }
