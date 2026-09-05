@@ -17,6 +17,9 @@ jobs:
   verify:
     name: Lint, test and build
     runs-on: ubuntu-latest
+    # Healthy runs finish in ~1-2 minutes. Cap well above that so a hang
+    # does not burn the full 6-hour default.
+    timeout-minutes: 10
     env:
       # The repo's git hooks are irrelevant on CI, and `prepare` would run husky
       # on every install.
