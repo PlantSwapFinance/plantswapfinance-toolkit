@@ -20,7 +20,7 @@
     "js-yaml@npm:^3.13.1": "npm:js-yaml@^5.0.0",
     "undici@npm:^6.25.0": "npm:undici@^8.0.0",
     "undici@npm:^8.4.1": "npm:undici@^8.10.2",
-    "nx@npm:>=23.1.0 < 24.0.0": "npm:23.1.1",
+    "nx@npm:>=23.1.0 < 24.0.0": "npm:nx@23.2.1",
     "@nx/devkit@npm:>=23.1.0 < 24.0.0": "npm:23.1.1",
     "@nx/nx-darwin-arm64@npm:23.1.0": "npm:23.1.1",
     "@nx/nx-darwin-x64@npm:23.1.0": "npm:23.1.1",
