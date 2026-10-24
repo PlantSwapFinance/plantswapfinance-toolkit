@@ -6338,8 +6338,8 @@ __metadata:
   linkType: hard
 
 "babel-plugin-styled-components@npm:^2.0.0":
-  version: 2.3.0
-  resolution: "babel-plugin-styled-components@npm:2.3.0"
+  version: 2.3.1
+  resolution: "babel-plugin-styled-components@npm:2.3.1"
   dependencies:
     "@babel/helper-annotate-as-pure": "npm:^7.25.9"
     "@babel/helper-module-imports": "npm:^7.25.9"
@@ -6348,7 +6348,7 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0
     styled-components: ">= 2"
-  checksum: 10c0/b14c06b15be18ce71ddbdf3c0ad073997d62233e21e1224bde2254b6ed4fee41c0e9458479016c066a2dea1aa88d4da225e84ec9f6e7056f47232ae151297fb4
+  checksum: 10c0/ffb0e94bacac281eedd21686bf49405238b00d9bcd7eb9d46dc9b61f4aa4bf6a0ca6cd383610188d15870fd54df6091ca68d3f29bb1510d3d623019e509cf303
   languageName: node
   linkType: hard
 
