@@ -3556,9 +3556,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nx/devkit@npm:@nx/devkit@24.0.1":
-  version: 24.0.1
-  resolution: "@nx/devkit@npm:24.0.1"
+"@nx/devkit@npm:@nx/devkit@24.0.2":
+  version: 24.0.2
+  resolution: "@nx/devkit@npm:24.0.2"
   dependencies:
     ejs: "npm:5.0.1"
     minimatch: "npm:10.2.5"
@@ -3567,76 +3567,76 @@ __metadata:
     yargs-parser: "npm:21.1.1"
   peerDependencies:
     nx: ">= 23 <= 25 || ^24.0.0-0"
-  checksum: 10c0/739c3820781b065a908853c63a2d73bb2f2f87711b402eeebc0e7893b918768f506e239695d922eacab4e47ca48ab63ebcf37e88a1ccc48673c63a6cd94c5f7e
+  checksum: 10c0/9f5544b83dd1e8af40ed935109e66a2bf5ed6f97f2f5c1a70180c1138f778bbd4c499433bab51df9cec649d6cef42b9af2475b0e4f263bf24f2624fe4f949406
   languageName: node
   linkType: hard
 
-"@nx/nx-darwin-arm64@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-darwin-arm64@npm:24.0.1"
+"@nx/nx-darwin-arm64@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-darwin-arm64@npm:24.0.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@nx/nx-darwin-x64@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-darwin-x64@npm:24.0.1"
+"@nx/nx-darwin-x64@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-darwin-x64@npm:24.0.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@nx/nx-freebsd-x64@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-freebsd-x64@npm:24.0.1"
+"@nx/nx-freebsd-x64@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-freebsd-x64@npm:24.0.2"
   conditions: os=freebsd & cpu=x64
   languageName: node
   linkType: hard
 
-"@nx/nx-linux-arm-gnueabihf@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-linux-arm-gnueabihf@npm:24.0.1"
+"@nx/nx-linux-arm-gnueabihf@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-linux-arm-gnueabihf@npm:24.0.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@nx/nx-linux-arm64-gnu@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-linux-arm64-gnu@npm:24.0.1"
+"@nx/nx-linux-arm64-gnu@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-linux-arm64-gnu@npm:24.0.2"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@nx/nx-linux-arm64-musl@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-linux-arm64-musl@npm:24.0.1"
+"@nx/nx-linux-arm64-musl@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-linux-arm64-musl@npm:24.0.2"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@nx/nx-linux-x64-gnu@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-linux-x64-gnu@npm:24.0.1"
+"@nx/nx-linux-x64-gnu@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-linux-x64-gnu@npm:24.0.2"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@nx/nx-linux-x64-musl@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-linux-x64-musl@npm:24.0.1"
+"@nx/nx-linux-x64-musl@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-linux-x64-musl@npm:24.0.2"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@nx/nx-win32-arm64-msvc@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-win32-arm64-msvc@npm:24.0.1"
+"@nx/nx-win32-arm64-msvc@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-win32-arm64-msvc@npm:24.0.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@nx/nx-win32-x64-msvc@npm:24.0.1":
-  version: 24.0.1
-  resolution: "@nx/nx-win32-x64-msvc@npm:24.0.1"
+"@nx/nx-win32-x64-msvc@npm:24.0.2":
+  version: 24.0.2
+  resolution: "@nx/nx-win32-x64-msvc@npm:24.0.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -10994,9 +10994,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nx@npm:nx@24.0.1":
-  version: 24.0.1
-  resolution: "nx@npm:24.0.1"
+"nx@npm:nx@24.0.2":
+  version: 24.0.2
+  resolution: "nx@npm:24.0.2"
   dependencies:
     "@clack/core": "npm:1.4.3"
     "@clack/prompts": "npm:1.7.0"
@@ -11005,16 +11005,16 @@ __metadata:
     "@emnapi/wasi-threads": "npm:1.0.4"
     "@jest/diff-sequences": "npm:30.0.1"
     "@napi-rs/wasm-runtime": "npm:0.2.4"
-    "@nx/nx-darwin-arm64": "npm:24.0.1"
-    "@nx/nx-darwin-x64": "npm:24.0.1"
-    "@nx/nx-freebsd-x64": "npm:24.0.1"
-    "@nx/nx-linux-arm-gnueabihf": "npm:24.0.1"
-    "@nx/nx-linux-arm64-gnu": "npm:24.0.1"
-    "@nx/nx-linux-arm64-musl": "npm:24.0.1"
-    "@nx/nx-linux-x64-gnu": "npm:24.0.1"
-    "@nx/nx-linux-x64-musl": "npm:24.0.1"
-    "@nx/nx-win32-arm64-msvc": "npm:24.0.1"
-    "@nx/nx-win32-x64-msvc": "npm:24.0.1"
+    "@nx/nx-darwin-arm64": "npm:24.0.2"
+    "@nx/nx-darwin-x64": "npm:24.0.2"
+    "@nx/nx-freebsd-x64": "npm:24.0.2"
+    "@nx/nx-linux-arm-gnueabihf": "npm:24.0.2"
+    "@nx/nx-linux-arm64-gnu": "npm:24.0.2"
+    "@nx/nx-linux-arm64-musl": "npm:24.0.2"
+    "@nx/nx-linux-x64-gnu": "npm:24.0.2"
+    "@nx/nx-linux-x64-musl": "npm:24.0.2"
+    "@nx/nx-win32-arm64-msvc": "npm:24.0.2"
+    "@nx/nx-win32-x64-msvc": "npm:24.0.2"
     "@tybys/wasm-util": "npm:0.9.0"
     "@yarnpkg/lockfile": "npm:1.1.0"
     "@zkochan/js-yaml": "npm:0.0.7"
@@ -11128,7 +11128,7 @@ __metadata:
   bin:
     nx: ./dist/bin/nx.js
     nx-cloud: ./dist/bin/nx-cloud.js
-  checksum: 10c0/34711fd64d3461f63013a921d8cf01086fa250e691f34c7f80ec19959795707b07a861cc8a880311f3ad400b1152dd243d5f54be4d4c0c31caa01e29bbcbaf3b
+  checksum: 10c0/4682110c55faa282658d709a8779f5b4c6c95b66e6d8e6883757247bcc0d441fb29e5f3f5703c00fe204c6a9860f1c7c4e1255f9ba44af7167b0ce9cc417a7f2
   languageName: node
   linkType: hard
 
