@@ -1,5 +1,6 @@
 import React from "react";
 import { act, renderHook } from "@testing-library/react";
+import { renderToString } from "react-dom/server";
 import { breakpointMap } from "../../theme/base";
 import useMatchBreakpoints from "../../hooks/useMatchBreakpoints";
 
@@ -7,23 +8,38 @@ const expectedKeys = Object.keys(breakpointMap).map((size) => `is${size.charAt(0
 
 describe("useMatchBreakpoints", () => {
   it("does not access window during initial render", () => {
-    // Simulate a non-browser / SSR environment where `window` is undefined.
-    const originalWindow = globalThis.window;
-    // @ts-expect-error -- intentionally remove window for this test
-    delete (globalThis as { window?: unknown }).window;
+    // `window` cannot be removed from the jsdom global to fake an SSR
+    // environment: it is a non-configurable accessor, so `delete` was a silent
+    // no-op on Node 24 and throws a TypeError on Node 26, whose V8 made
+    // strict-mode `delete` of a non-configurable property an error.
+    //
+    // Exercise the render phase directly instead. `renderToString` never runs
+    // effects, so it renders exactly like a server would -- any `window`
+    // access during render surfaces as a `window.matchMedia` call.
+    const matchMedia = jest.spyOn(window, "matchMedia").mockImplementation(() => {
+      throw new Error("window.matchMedia must not be accessed during render");
+    });
+
+    let renderedState: Record<string, boolean> | undefined;
+    const Probe = () => {
+      renderedState = useMatchBreakpoints();
+      return null;
+    };
 
     try {
-      const { result } = renderHook(() => useMatchBreakpoints());
-      // Initial render must produce a fully-populated state without touching
-      // `window.matchMedia`. Every breakpoint defaults to `false` until the
-      // effect runs on the client.
-      expect(Object.keys(result.current).sort()).toEqual([...expectedKeys].sort());
-      Object.values(result.current).forEach((value) => {
-        expect(value).toBe(false);
-      });
+      renderToString(<Probe />);
     } finally {
-      (globalThis as { window?: unknown }).window = originalWindow;
+      matchMedia.mockRestore();
     }
+
+    // Initial render must produce a fully-populated state without touching
+    // `window.matchMedia`. Every breakpoint defaults to `false` until the
+    // effect runs on the client.
+    expect(matchMedia).not.toHaveBeenCalled();
+    expect(Object.keys(renderedState ?? {}).sort()).toEqual([...expectedKeys].sort());
+    Object.values(renderedState ?? {}).forEach((value) => {
+      expect(value).toBe(false);
+    });
   });
 
   it("syncs state with matchMedia after mount", () => {
