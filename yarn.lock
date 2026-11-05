@@ -9887,13 +9887,13 @@ __metadata:
   linkType: hard
 
 "jest-styled-components@npm:^7.0.3":
-  version: 7.4.0
-  resolution: "jest-styled-components@npm:7.4.0"
+  version: 7.4.1
+  resolution: "jest-styled-components@npm:7.4.1"
   dependencies:
     "@adobe/css-tools": "npm:^4.4.0"
   peerDependencies:
     styled-components: ">= 5"
-  checksum: 10c0/51f6a33690532dc8496e65b7c58ecd69f6bd75d1a4e61bd14c89c63095550d97244daef8d15406ba01198f74fc3c2706b95e66c53b17181ddf30ab1ffa4c4a32
+  checksum: 10c0/63c73ad54c4b871f2028249724f9029976165e7b5a723722d1ead80fb06379b7758060a9b7de7e7325bb9bc86d0f2d06c58acecd8ad44c8f1d5fe48807e88bb9
   languageName: node
   linkType: hard
 
