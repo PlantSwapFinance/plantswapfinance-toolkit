@@ -5468,11 +5468,11 @@ __metadata:
   linkType: hard
 
 "@types/styled-system@npm:^5.1.10":
-  version: 5.1.25
-  resolution: "@types/styled-system@npm:5.1.25"
+  version: 5.1.26
+  resolution: "@types/styled-system@npm:5.1.26"
   dependencies:
     csstype: "npm:^3.2.2"
-  checksum: 10c0/a485f11a896a0bde5404e7cae6af1b9da70566ff62e8c400628488c3ead7c4a49609c369a4b4ee4e7db151bff9095bbe5d2c1c6c938137044d6b10b3add73e6a
+  checksum: 10c0/7edc82b4825dc3c2fcc3542b2894ca373d80a5fc5f61442e196912831d699ddafb8897e49cacc83100561660f94095d95de702431d74958214d056eb7d6aa938
   languageName: node
   linkType: hard
 
