@@ -59,7 +59,11 @@ export default {
       overrides: [
         {
           test: /\.tsx$/,
-          presets: [["@babel/preset-react", { runtime: "automatic" }]],
+          // `development: false` pins the production `react/jsx-runtime`.
+          // Babel 8 otherwise follows NODE_ENV and emits `jsxDEV` from
+          // `react/jsx-dev-runtime`, which breaks Vite 8 consumers
+          // ("jsxDEV is not a function") and is not meant to ship.
+          presets: [["@babel/preset-react", { runtime: "automatic", development: false }]],
           plugins: ["babel-plugin-styled-components"],
         },
       ],
