@@ -647,6 +647,7 @@ it("renders correctly", () => {
                  class="active"
                  data-discover="true"
                  href="/"
+                 title="Home"
                >
                  <svg
                    class="c12"
@@ -670,8 +671,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11"
                  role="button"
+                 title="Trade"
                >
                  <svg
                    class="c12"
@@ -714,6 +717,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/farms"
+                 title="Farms"
                >
                  <svg
                    class="c12"
@@ -760,6 +764,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/market"
+                 title="Market"
                >
                  <svg
                    class="c12"
@@ -798,6 +803,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/gardens"
+                 title="Garden"
                >
                  <svg
                    class="c12"
@@ -827,6 +833,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/gardensV1"
+                 title="Garden V1"
                >
                  <svg
                    class="c12"
@@ -863,6 +870,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/verticalGardens"
+                 title="Vertical Garden"
                >
                  <svg
                    class="c12"
@@ -899,6 +907,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/collectiblesFarm"
+                 title="Collectibles Farm"
                >
                  <svg
                    class="c12"
@@ -937,6 +946,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/barn"
+                 title="Barn"
                >
                  <svg
                    class="c12"
@@ -979,6 +989,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/tree"
+                 title="Tree"
                >
                  <svg
                    class="c12"
@@ -1012,6 +1023,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/tree"
+                 title="Contribution"
                >
                  <svg
                    class="c12"
@@ -1041,6 +1053,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/treePlanting"
+                 title="TreePlanting"
                >
                  <svg
                    class="c12"
@@ -1070,6 +1083,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/project"
+                 title="Project"
                >
                  <svg
                    class="c12"
@@ -1096,6 +1110,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/roadmap"
+                 title="Roadmap"
                >
                  <svg
                    class="c12"
@@ -1126,8 +1141,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11"
                  role="button"
+                 title="Beta dev."
                >
                  <svg
                    class="c12"
@@ -1168,6 +1185,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/lottery"
+                 title="Lottery"
                >
                  <svg
                    class="c12"
@@ -1196,6 +1214,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/nft"
+                 title="NFT"
                >
                  <svg
                    class="c12"
@@ -1222,6 +1241,7 @@ it("renders correctly", () => {
                  class=""
                  data-discover="true"
                  href="/competition"
+                 title="Team Battle"
                >
                  <svg
                    class="c12"
@@ -1252,8 +1272,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11 rainbow"
                  role="button"
+                 title="Profile & Teams"
                >
                  <svg
                    class="c12"
@@ -1298,8 +1320,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11"
                  role="button"
+                 title="Info"
                >
                  <svg
                    class="c12"
@@ -1342,8 +1366,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11"
                  role="button"
+                 title="IFO"
                >
                  <svg
                    class="c12"
@@ -1381,8 +1407,10 @@ it("renders correctly", () => {
                class="c14"
              >
                <div
+                 aria-expanded="false"
                  class="c11"
                  role="button"
+                 title="More"
                >
                  <svg
                    class="c12"
