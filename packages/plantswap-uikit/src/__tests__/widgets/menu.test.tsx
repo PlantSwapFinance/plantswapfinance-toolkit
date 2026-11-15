@@ -47,7 +47,7 @@ it("renders correctly", () => {
 
   expect(asFragment()).toMatchInlineSnapshot(`
    <DocumentFragment>
-     .c31 {
+     .c32 {
      position: fixed;
      top: 0px;
      left: 0px;
@@ -128,7 +128,7 @@ it("renders correctly", () => {
      cursor: not-allowed;
    }
 
-   .c28 {
+   .c29 {
      align-items: center;
      border: 0;
      border-radius: 16px;
@@ -151,18 +151,18 @@ it("renders correctly", () => {
      box-shadow: none;
    }
 
-   .c28:hover:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled):not(:active) {
+   .c29:hover:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled):not(:active) {
      opacity: 0.65;
    }
 
-   .c28:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
+   .c29:active:not(:disabled):not(.plant-button--disabled):not(.plant-button--disabled) {
      opacity: 0.85;
      transform: translateY(1px);
      box-shadow: none;
    }
 
-   .c28:disabled,
-   .c28.plant-button--disabled {
+   .c29:disabled,
+   .c29.plant-button--disabled {
      background-color: #E9EAEB;
      border-color: #E9EAEB;
      box-shadow: none;
@@ -202,7 +202,7 @@ it("renders correctly", () => {
      animation-iteration-count: 1;
    }
 
-   .c16 {
+   .c17 {
      color: #AC2C2C;
      font-size: 14px;
      font-weight: 400;
@@ -210,7 +210,7 @@ it("renders correctly", () => {
      font-size: 14px;
    }
 
-   .c18 {
+   .c19 {
      color: #FFB237;
      font-size: 14px;
      font-weight: 400;
@@ -218,7 +218,7 @@ it("renders correctly", () => {
      font-size: 14px;
    }
 
-   .c20 {
+   .c21 {
      color: #BDC2C4;
      font-size: 14px;
      font-weight: 400;
@@ -226,7 +226,7 @@ it("renders correctly", () => {
      font-size: 14px;
    }
 
-   .c22 {
+   .c23 {
      color: #399349;
      font-size: 14px;
      font-weight: 400;
@@ -234,7 +234,7 @@ it("renders correctly", () => {
      font-size: 14px;
    }
 
-   .c24 {
+   .c25 {
      color: #0098A1;
      font-size: 14px;
      font-weight: 400;
@@ -257,7 +257,7 @@ it("renders correctly", () => {
      font-size: 16px;
      background-color: transparent;
      color: #2B6E37;
-     box-shadow: none;
+     box-shadow: inset 4px 0px 0px #2B6E37;
      flex-shrink: 0;
    }
 
@@ -283,7 +283,42 @@ it("renders correctly", () => {
      background-size: 400% 100%;
    }
 
-   .c17 {
+   .c15 {
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     height: 48px;
+     padding: 0 16px;
+     font-size: 16px;
+     background-color: transparent;
+     color: #2B6E37;
+     box-shadow: none;
+     flex-shrink: 0;
+   }
+
+   .c15 a {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+   }
+
+   .c15 svg {
+     fill: #2B6E37;
+   }
+
+   .c15:hover {
+     background-color: #EFF4F5;
+   }
+
+   .c15.rainbow {
+     background-clip: text;
+     animation: k1 3s ease-in-out infinite;
+     background: linear-gradient(139.73deg, #FFFFFF 0%, #71BE63 100%);
+     background-size: 400% 100%;
+   }
+
+   .c18 {
      border-radius: 16px;
      padding: 0 8px;
      border: 2px solid;
@@ -293,7 +328,7 @@ it("renders correctly", () => {
      margin-left: 8px;
    }
 
-   .c19 {
+   .c20 {
      border-radius: 16px;
      padding: 0 8px;
      border: 2px solid;
@@ -303,7 +338,7 @@ it("renders correctly", () => {
      margin-left: 8px;
    }
 
-   .c21 {
+   .c22 {
      border-radius: 16px;
      padding: 0 8px;
      border: 2px solid;
@@ -313,7 +348,7 @@ it("renders correctly", () => {
      margin-left: 8px;
    }
 
-   .c23 {
+   .c24 {
      border-radius: 16px;
      padding: 0 8px;
      border: 2px solid;
@@ -323,7 +358,7 @@ it("renders correctly", () => {
      margin-left: 8px;
    }
 
-   .c25 {
+   .c26 {
      border-radius: 16px;
      padding: 0 8px;
      border: 2px solid;
@@ -339,7 +374,7 @@ it("renders correctly", () => {
      flex-shrink: 0;
    }
 
-   .c15 {
+   .c16 {
      max-height: 0;
      transition: max-height 0.3s ease-out;
      overflow: hidden;
@@ -348,7 +383,7 @@ it("renders correctly", () => {
      border-width: 1px 0;
    }
 
-   .c26 {
+   .c27 {
      max-height: 48px;
      transition: max-height 0.3s ease-out;
      overflow: hidden;
@@ -365,12 +400,12 @@ it("renders correctly", () => {
      height: 100%;
    }
 
-   .c29 {
+   .c30 {
      padding: 0;
      width: 48px;
    }
 
-   .c27 {
+   .c28 {
      flex: none;
      padding: 8px 4px;
      background-color: #FFFFFF;
@@ -425,7 +460,7 @@ it("renders correctly", () => {
      display: flex;
    }
 
-   .c30 {
+   .c31 {
      flex-grow: 1;
      margin-top: 64px;
      transition: margin-top 0.2s,margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -433,7 +468,7 @@ it("renders correctly", () => {
      max-width: 100%;
    }
 
-   .c32 {
+   .c33 {
      position: fixed;
      height: 100%;
    }
@@ -458,14 +493,14 @@ it("renders correctly", () => {
    }
 
    @media screen and (min-width: 968px) {
-     .c30 {
+     .c31 {
        margin-left: 56px;
        max-width: calc(100% - 56px);
      }
    }
 
    @media screen and (min-width: 968px) {
-     .c32 {
+     .c33 {
        display: none;
      }
    }
@@ -672,7 +707,7 @@ it("renders correctly", () => {
              >
                <div
                  aria-expanded="false"
-                 class="c11"
+                 class="c15"
                  role="button"
                  title="Trade"
                >
@@ -707,11 +742,11 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c15"
+                 class="c16"
                />
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -749,7 +784,7 @@ it("renders correctly", () => {
                    Farms
                  </div>
                  <div
-                   class="c16 c17"
+                   class="c17 c18"
                    color="failure"
                    font-size="14px"
                  >
@@ -758,7 +793,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -788,7 +823,7 @@ it("renders correctly", () => {
                    Market
                  </div>
                  <div
-                   class="c18 c19"
+                   class="c19 c20"
                    color="warning"
                    font-size="14px"
                  >
@@ -797,7 +832,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -827,7 +862,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -855,7 +890,7 @@ it("renders correctly", () => {
                    Garden V1
                  </div>
                  <div
-                   class="c20 c21"
+                   class="c21 c22"
                    color="textDisabled"
                    font-size="14px"
                  >
@@ -864,7 +899,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -892,7 +927,7 @@ it("renders correctly", () => {
                    Vertical Garden
                  </div>
                  <div
-                   class="c22 c23"
+                   class="c23 c24"
                    color="success"
                    font-size="14px"
                  >
@@ -901,7 +936,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -931,7 +966,7 @@ it("renders correctly", () => {
                    Collectibles Farm
                  </div>
                  <div
-                   class="c22 c23"
+                   class="c23 c24"
                    color="success"
                    font-size="14px"
                  >
@@ -940,7 +975,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -974,7 +1009,7 @@ it("renders correctly", () => {
                    Barn
                  </div>
                  <div
-                   class="c16 c17"
+                   class="c17 c18"
                    color="failure"
                    font-size="14px"
                  >
@@ -983,7 +1018,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1008,7 +1043,7 @@ it("renders correctly", () => {
                    Tree
                  </div>
                  <div
-                   class="c24 c25"
+                   class="c25 c26"
                    color="primaryDark"
                    font-size="14px"
                  >
@@ -1017,7 +1052,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1047,7 +1082,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1077,7 +1112,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1104,7 +1139,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1129,7 +1164,7 @@ it("renders correctly", () => {
                    Roadmap
                  </div>
                  <div
-                   class="c22 c23"
+                   class="c23 c24"
                    color="success"
                    font-size="14px"
                  >
@@ -1142,7 +1177,7 @@ it("renders correctly", () => {
              >
                <div
                  aria-expanded="false"
-                 class="c11"
+                 class="c15"
                  role="button"
                  title="Beta dev."
                >
@@ -1175,11 +1210,11 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c15"
+                 class="c16"
                />
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1208,7 +1243,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1235,7 +1270,7 @@ it("renders correctly", () => {
                </a>
              </div>
              <div
-               class="c11"
+               class="c15"
              >
                <a
                  class=""
@@ -1260,7 +1295,7 @@ it("renders correctly", () => {
                    Team Battle
                  </div>
                  <div
-                   class="c18 c19"
+                   class="c19 c20"
                    color="warning"
                    font-size="14px"
                  >
@@ -1294,7 +1329,7 @@ it("renders correctly", () => {
                    Profile & Teams
                  </div>
                  <div
-                   class="c16 c17"
+                   class="c17 c18"
                    color="failure"
                    font-size="14px"
                  >
@@ -1313,7 +1348,7 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c26"
+                 class="c27"
                />
              </div>
              <div
@@ -1321,7 +1356,7 @@ it("renders correctly", () => {
              >
                <div
                  aria-expanded="false"
-                 class="c11"
+                 class="c15"
                  role="button"
                  title="Info"
                >
@@ -1359,7 +1394,7 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c15"
+                 class="c16"
                />
              </div>
              <div
@@ -1367,7 +1402,7 @@ it("renders correctly", () => {
              >
                <div
                  aria-expanded="false"
-                 class="c11"
+                 class="c15"
                  role="button"
                  title="IFO"
                >
@@ -1400,7 +1435,7 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c15"
+                 class="c16"
                />
              </div>
              <div
@@ -1408,7 +1443,7 @@ it("renders correctly", () => {
              >
                <div
                  aria-expanded="false"
-                 class="c11"
+                 class="c15"
                  role="button"
                  title="More"
                >
@@ -1441,15 +1476,15 @@ it("renders correctly", () => {
                  </svg>
                </div>
                <div
-                 class="c15"
+                 class="c16"
                />
              </div>
            </div>
            <div
-             class="c27"
+             class="c28"
            >
              <button
-               class="c28 c29"
+               class="c29 c30"
                scale="md"
              >
                <svg
@@ -1467,12 +1502,12 @@ it("renders correctly", () => {
            </div>
          </div>
          <div
-           class="c30"
+           class="c31"
          >
            body
          </div>
          <div
-           class="c31 c32"
+           class="c32 c33"
            role="presentation"
          />
        </div>

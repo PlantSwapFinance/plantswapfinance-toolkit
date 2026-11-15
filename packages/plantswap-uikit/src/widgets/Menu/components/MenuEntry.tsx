@@ -26,9 +26,11 @@ const LinkLabel = styled.div.withConfig(filterDomProps)<{ isPushed: boolean }>`
   flex-grow: 1;
 `;
 
-const MenuEntry = styled.div.withConfig(filterDomProps).attrs<Props>(() => ({
-  secondary: false,
-  isActive: false,
+// Default the flags without overriding them: attrs run after the caller's props,
+// so returning constant `false` here used to discard `isActive` and `secondary`.
+const MenuEntry = styled.div.withConfig(filterDomProps).attrs<Props>(({ secondary = false, isActive = false }) => ({
+  secondary,
+  isActive,
 }))<Props>`
   cursor: pointer;
   display: flex;
