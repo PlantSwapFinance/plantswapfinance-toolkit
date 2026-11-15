@@ -60,7 +60,15 @@ const Accordion: React.FC<Props> = ({
 
   return (
     <Container>
-      <MenuEntry onClick={handleClick} className={className} isActive={isActive} role="button">
+      <MenuEntry
+        onClick={handleClick}
+        className={className}
+        isActive={isActive}
+        role="button"
+        aria-expanded={isPushed && isOpen}
+        // The label is hidden while the sidebar is collapsed, so expose it as a tooltip
+        title={isPushed ? undefined : label}
+      >
         {icon}
         <LinkLabel isPushed={isPushed}>{label}</LinkLabel>
         {status && (

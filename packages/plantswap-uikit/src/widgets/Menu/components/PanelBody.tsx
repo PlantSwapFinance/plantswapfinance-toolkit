@@ -69,7 +69,13 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }: Prop
         }
         return (
           <MenuEntry key={entry.label} isActive={entry.href === location.pathname} className={calloutClass}>
-            <MenuLink href={entry.href} target={entry.target} onClick={handleClick}>
+            <MenuLink
+              href={entry.href}
+              target={entry.target}
+              onClick={handleClick}
+              // The label is hidden while the sidebar is collapsed, so expose it as a tooltip
+              title={isPushed ? undefined : entry.label}
+            >
               {iconElement}
               <LinkLabel isPushed={isPushed}>{entry.label}</LinkLabel>
               {entry.status && (
