@@ -47,7 +47,7 @@ const PanelFooter: React.FC<Props> = ({
   if (!isPushed) {
     return (
       <Container>
-        <IconButton variant="text" onClick={() => pushNav(true)}>
+        <IconButton variant="text" onClick={() => pushNav(true)} aria-label="Open settings menu">
           <CogIcon />
         </IconButton>
       </Container>
