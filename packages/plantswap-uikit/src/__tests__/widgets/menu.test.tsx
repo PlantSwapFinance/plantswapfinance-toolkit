@@ -1484,6 +1484,7 @@ it("renders correctly", () => {
              class="c28"
            >
              <button
+               aria-label="Open settings menu"
                class="c29 c30"
                scale="md"
              >
